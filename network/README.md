@@ -2,7 +2,13 @@
 
 Six agents run as Claude scheduled tasks. Each run starts fresh, so **these files are the network's memory.** Every agent reads this README, its own role file, `BOARD.md` and `APPROVALS.md` before doing anything.
 
-Project root: the folder that contains `PLAN.md`. Every path below is relative to it.
+Project root: the GitHub repo `stephenahl/tradesheets-network` (the source of truth since 2026-10-14). Every path below is relative to it. Stephen's Mac folder is no longer needed for agent runs.
+
+## Working with the repo (every agent, every run)
+1. Work in your clone of the repo and `git pull --rebase` before reading anything.
+2. Make your changes, then commit with a message starting with your agent name (e.g. `Builder: lawn care v1`).
+3. Before pushing, `git pull --rebase` again. If a rebase conflict hits BOARD.md, APPROVALS.md or LOG.md, keep both sides' lines; never drop another agent's lines. Then `git push`. Retry once if the push is rejected.
+4. Big binary outputs (xlsx, pdf, png) go in the product folder; keep each under 10 MB.
 
 ## Agents
 | Agent | When (Boise time) | Job |

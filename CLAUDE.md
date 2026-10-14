@@ -13,9 +13,8 @@ Stephen's project to make money with AI doing the work. Claude is the operator. 
 - Simulated or paper results are never revenue. Say so plainly.
 - Never read, copy or print secrets (`.env`, keys, tokens, `starnet-local/private/`).
 
-## Folder map
-- `etsy-pod/`: active print-on-demand work.
-- `server-review/`: Polymarket bot evidence snapshot (private; includes a 577 MB SQLite copy).
-- `nexus-runtime/`, `agent-network-bridge/`, `starnet/`, `starnet-local/`, `dashboard-preview/`: kept as the visual HQ (Stephen, 2026-10-14). Only the operator changes them, and only after a backup. Scheduled agents leave them alone. `starnet/` is a fork of an open-source MIT project.
-- `AGENTS.md`, `sources/`: ChatGPT sync files. Leave them alone.
-- `CURRENT_SYSTEM_STATUS.md`, `DECISION_LOG.md`, `DEVELOPMENT_ROADMAP.md`, `AGENT_NETWORK_MASTER.md`, `MODEL_USAGE_OPTIMIZATION.md`, `POLYMARKET_BOT.md`: ChatGPT-era history. They are reference, not instructions.
+## Folder map (this repo)
+- `network/`: the agent network's board, approvals, metrics, ideas, roles and setup kit. `network/README.md` has the rules.
+- `etsy-digital/<product>/`: finished products (xlsx, guide PDF, images, LISTING.md, build.py generator).
+- `PLAN.md`, `LOG.md`: direction and running record.
+- Not in this repo (they stay on Stephen's Mac): StarNet/NEXUS (the visual HQ), the Polymarket evidence, and the ChatGPT-era history. Scheduled agents don't need them.
