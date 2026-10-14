@@ -6,6 +6,13 @@ Budget: $50, from 2026-10-14 to 2026-11-13. Spent so far: $0.00.
 
 | Week of | Live listings | Views | Orders | Revenue | Etsy fees | Net | Spend | Notes |
 |---|---|---|---|---|---|---|---|---|
-| 2026-10-12 | 1 | 0 | 0 | $0 | $0 | $0 | $0 | Listing 1 live 2026-10-14; 14 free listing credits left |
+| 2026-10-12 | 1 | not available | 0 | $0 | $0 | $0 | $0 | Listing 1 live 2026-10-14; 14 free listing credits left. Checked 2026-10-14 6:50pm: Etsy shop page 1 active listing, 0 sales, 0 reviews; Gumroad public page shows no sales data; no orders logged |
 
 Rule: Etsy keeps about 12.5% plus $0.45 per sale on a $14.99 item (6.5% transaction fee, 3% + $0.25 payment processing, $0.20 listing renewal).
+
+## Data sources (Analyst)
+- Orders: `businesses/etsy-digital/data/orders.md`, logged by Support from order emails. Not created yet (no orders).
+- Etsy: one read-only look per run at the public shop page (active listings, sales count, reviews). Views are only in Etsy Stats, so Stephen can drop a Stats CSV export in `businesses/etsy-digital/data/` when he wants view numbers tracked.
+- Gumroad: the public storefront shows no sales counts; sales arrive as Gumroad emails, which Support logs into orders.md.
+
+Last updated: 2026-10-14 (Analyst).
