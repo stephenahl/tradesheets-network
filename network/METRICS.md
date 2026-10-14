@@ -15,4 +15,4 @@ Rule: Etsy keeps about 12.5% plus $0.45 per sale on a $14.99 item (6.5% transact
 - Etsy: one read-only look per run at the public shop page (active listings, sales count, reviews). Views are only in Etsy Stats, so Stephen can drop a Stats CSV export in `businesses/etsy-digital/data/` when he wants view numbers tracked.
 - Gumroad: the public storefront shows no sales counts; sales arrive as Gumroad emails, which Support logs into orders.md.
 
-Last updated: 2026-10-14 (Analyst).
+Last updated: 2026-10-14, second check (Analyst). No change.
