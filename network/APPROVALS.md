@@ -5,6 +5,7 @@ Stephen: write APPROVED, NO, or a note after any item. Agents act only on APPROV
 ## Open
 - **Publish Lawn Care Business Manager ($14.99) on Etsy and Gumroad.** Files, 7 images and copy are in `etsy-digital/lawn-care-business-manager/`. Uses a free Etsy listing credit. QA: pending (2026-10-14)
 - **Post 5 Pinterest pins for the Cleaning Business Manager** (one per day, linking to the Etsy listing). Images and copy: `businesses/etsy-digital/marketing/cleaning-launch/` (PINS.md + pins/). Free; posted via Chrome on @tradesheetsshop. (Marketer, 2026-10-15)
+- **Publish Pressure Washing Business Manager ($14.99) on Etsy and Gumroad.** Files, 7 images and copy are in `etsy-digital/pressure-washing-business-manager/`. Uses a free Etsy listing credit. QA: pending (2026-10-14)
 
 ## Closed
 - Gumroad: DONE 2026-10-14. Product live at https://tradesheetsshop.gumroad.com/l/cleaning-business-manager ($14.99). Stephen: confirm the payout bank is set in Gumroad Settings → Payments.
