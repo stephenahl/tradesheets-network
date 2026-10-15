@@ -2,7 +2,7 @@
 
 Two parts. Neither one places orders: Stephen reviews the tickets and places what he likes himself.
 
-1. **Research (Claude, scheduled).** Before a slate, Claude researches the games and writes a board to `boards/YYYY-MM-DD.json`. For each candidate leg it records its own probability and the reasoning and sources behind it. It starts from the sharpest sportsbook price with the vig removed and moves off that only for evidence the market may have missed. Then it commits the board to GitHub.
+1. **Research (Claude, scheduled).** Every leg goes through the sport's checklist in `RESEARCH.md` (player and team stats, injuries, form, matchups, rest, weather). Before a slate, Claude researches the games and writes a board to `boards/YYYY-MM-DD.json`. For each candidate leg it records its own probability and the reasoning and sources behind it. It starts from the sharpest sportsbook price with the vig removed and moves off that only for evidence the market may have missed. Then it commits the board to GitHub.
 2. **Combo builder (`combo.mjs`, run on Stephen's Mac).** Reads the newest board, pulls live Polymarket prices from the public API (no keys), recomputes each leg's edge and ranks 2- and 3-leg combos built only from legs with real edge.
 
 ## Run it (Mac Terminal)
