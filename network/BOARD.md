@@ -16,7 +16,6 @@
 
 ## Blocked
 - [stephen] Confirm the Gumroad payout bank is set
-- [stephen] Analyst's scheduled run can't read etsy.com/shop/TradeSheetsShop or tradesheetsshop.gumroad.com (web fetch permission request times out with nobody there). Allow those two domains for the task, or the shop page check stops working, 2026-10-15
 
 ## Done
 - [analyst] METRICS.md tracking set up; data sources defined in METRICS.md, 2026-10-14

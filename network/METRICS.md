@@ -15,4 +15,4 @@ Rule: Etsy keeps about 12.5% plus $0.45 per sale on a $14.99 item (6.5% transact
 - Etsy: one read-only look per run at the public shop page (active listings, sales count, reviews). Views are only in Etsy Stats, so Stephen can drop a Stats CSV export in `businesses/etsy-digital/data/` when he wants view numbers tracked.
 - Gumroad: the public storefront shows no sales counts; sales arrive as Gumroad emails, which Support logs into orders.md.
 
-Last updated: 2026-10-15 6:50pm (Analyst). No new data: orders.md still not created, and the Etsy and Gumroad public pages couldn't be read this run (web fetch permission not granted in the scheduled run). Last known: 1 listing, 0 sales, 0 reviews; spend $0 of $50.
+Last updated: 2026-10-15 6:50pm (Analyst). Etsy shop page: 1 active listing ($14.99), 0 sales, 0 reviews. Gumroad public page: name "Stephen Ahl", no products or sales shown. No orders.md yet. Revenue $0, spend $0 of $50. No change.
