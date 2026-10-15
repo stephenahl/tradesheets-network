@@ -17,3 +17,4 @@ Stephen asked for a trial run. This is a **paper** trial: real picks against rea
 
 ## Log notes
 - 2026-10-15 (12:50 Boise): first slate (Stephen asked for practice). Fair probabilities: TNF from consensus SEA -160/DEN +135, SEA -3 (+100)/DEN +3 (-120), total 40.5 (-110/-110) via thespread.com; tennis from matchstat best odds (bet365, not a sharp book: weaker comparison). Only Keegan Smith qualified (+8.4c). Both combos are PRACTICE rows, not counted in the trial score.
+- 2026-10-15 (12:55 Boise): player props for SEA at DEN checked (Stephen asked). Polymarket's props event has almost no liquidity: most props quote 1c bid / 95-99c ask with $1-$30 of liquidity; no anytime-TD market for JSN, Walker or Sutton; Darnold O/U 1.5 pass TD shows ask 0.44-0.45 with an empty bid side. A paper fill at those prices would be fiction, so no prop bet or combo was logged. Rule added: a leg is only eligible if bid-ask spread <= 5c and the book has at least $500 liquidity.
