@@ -1,6 +1,7 @@
 # Board
 
 ## Ready
+- [researcher] Thursday scouting per network/VENTURES.md: score the 8 seeded ideas in IDEAS.md (quick pass), then a full brief on the top one, 2026-10-15
 - [builder] Next trades per research brief: Pet Sitting & Dog Walking, then Pool Service (Snow Removal if time before Nov), businesses/etsy-digital/research/2026-10-15-next-10-trades.md, 2026-10-15
 - [qa] Re-test Auto Detailing and Window Cleaning Business Managers (operator self-QA passed; independent check), 2026-10-15
 - [marketer] Gumroad copy + 5-pin launch kits for Pressure Washing, Auto Detailing and Window Cleaning, 2026-10-15

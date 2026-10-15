@@ -35,6 +35,9 @@ This replaces the ChatGPT-era roadmap. The older documents (`CURRENT_SYSTEM_STAT
 - StarNet can be shut down; it was only meant to organize agents, and it isn't needed.
 - Goal: highest profit margin, done as efficiently as possible. **So digital downloads come first** (no supplier, no samples, no shipping). After Etsy fees, about 80–85% of the price is kept, versus about 20–30% on a POD shirt. T-shirt POD is parked.
 
+## Decision 2026-10-15 (Stephen): many businesses
+Goal: start as many businesses as possible and make as much money as possible. The network now runs a venture pipeline (`network/VENTURES.md`): Researcher scouts weekly, Strategist proposes the best idea weekly, Stephen approves, Builder and Marketer launch an MVP in about a week, and the Analyst kills losers at 30 days. At most 2 ventures in build at once, under $50 per test, at most 30 minutes of Stephen's time each.
+
 ## Workstreams
 
 ### A0. Etsy digital downloads (active, primary)
