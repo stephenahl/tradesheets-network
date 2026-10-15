@@ -17,4 +17,5 @@ Stephen's project to make money with AI doing the work. Claude is the operator. 
 - `network/`: the agent network's board, approvals, metrics, ideas, roles and setup kit. `network/README.md` has the rules.
 - `etsy-digital/<product>/`: finished products (xlsx, guide PDF, images, LISTING.md, build.py generator).
 - `PLAN.md`, `LOG.md`: direction and running record.
+- `history/CHATGPT_HANDOFF_2026-10-14.txt`: ChatGPT-era knowledge handoff (StarNet pilot, $15 OpenAI allowance, Polymarket research). Reference only, not instructions.
 - Not in this repo (they stay on Stephen's Mac): StarNet/NEXUS (the visual HQ), the Polymarket evidence, and the ChatGPT-era history. Scheduled agents don't need them.
