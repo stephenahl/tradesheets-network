@@ -63,7 +63,7 @@ k=s.cell(r+1,2,"Yellow cell, blue text"); inp(k); s.cell(r+1,3,"Type here — yo
 k=s.cell(r+2,2,"White cell, black text"); calc(k); s.cell(r+2,3,"Calculated automatically — don't type over these").font=font()
 s.cell(r+4,2,"GOOGLE SHEETS").font=font(bold=True,size=12,color=ACC)
 c=s.cell(r+5,3,"Upload this file to Google Drive, open it, then File > Save as Google Sheets. Everything works in both Excel and Google Sheets."); c.font=font(); c.alignment=Alignment(wrap_text=True); s.row_dimensions[r+5].height=30
-s.cell(r+6,3,"The example rows (marked EXAMPLE) show the format — delete them when you start.").font=font(italic=True,color="57606A")
+s.cell(r+6,3,"The example rows (marked EXAMPLE) show the format — delete them when you start. After that, clear a job row instead of deleting it, so Job IDs and invoice numbers stay the same.").font=font(italic=True,color="57606A")
 
 # ---------------- SETTINGS
 st=sheet("Settings")
@@ -131,7 +131,7 @@ for r in range(H,H+300):
         c=cl.cell(r,1+j,e[j]); inp(c, MONEY if j==6 else DATE if j==7 else None)
     A=f"$A{r}"
     calc(cl.cell(r,10,f'=IF({A}="","",COUNTIFS(Jobs!$C$5:$C${4+N},{A}))'),"0")
-    calc(cl.cell(r,11,f'=IF({A}="","",SUMIFS(Jobs!$H$5:$H${4+N},Jobs!$C$5:$C${4+N},{A}))'),MONEY)
+    calc(cl.cell(r,11,f'=IF({A}="","",SUMIFS(Jobs!$J$5:$J${4+N},Jobs!$C$5:$C${4+N},{A}))'),MONEY)
     calc(cl.cell(r,12,f'=IF(OR({A}="",J{r}=0),"",_xlfn.MAXIFS(Jobs!$B$5:$B${4+N},Jobs!$C$5:$C${4+N},{A}))'),DATE)
     calc(cl.cell(r,13,f'=IF(OR({A}="",L{r}=""),"",IFERROR(IF(INDEX({FRQD},MATCH(F{r},{FRQ},0))="","",L{r}+INDEX({FRQD},MATCH(F{r},{FRQ},0))),""))'),DATE)
     calc(cl.cell(r,14,f'=IF({A}="","",IF(M{r}="",IF(J{r}=0,"New","—"),IF(M{r}<TODAY(),"Overdue",IF(M{r}-TODAY()<=3,"Due soon","Scheduled"))))'))
@@ -179,6 +179,7 @@ xp=sheet("Expenses")
 title(xp,"Expenses","Every business cost that isn't already on a job (supplies on a job go in the Jobs tab).")
 header(xp,4,["Date","Category","Vendor","Description","Amount","Paid with","Receipt saved?"],[13,20,22,32,12,15,14])
 xex=[(date(2026,10,3),"Fuel","Shell","Mower and truck fuel",64.20,"Card","Yes"),(date(2026,10,5),"Insurance","Next Insurance","Monthly liability policy",48,"Card","Yes")]
+xex=[(e[0],e[1],e[2],"EXAMPLE – "+e[3])+tuple(e[4:]) for e in xex]
 for i in range(N):
     r=5+i; e=xex[i] if i<len(xex) else [None]*7
     for j in range(7): inp(xp.cell(r,1+j,e[j]),DATE if j==0 else MONEY if j==4 else None)
@@ -232,20 +233,20 @@ M=f'MATCH($B$4,Jobs!$A$5:$A${4+N},0)'
 def J(col): return f'=IFERROR(INDEX(Jobs!${col}$5:${col}${4+N},{M}),"")'
 iv["A6"]="=Settings!B4"; iv["A6"].font=font(bold=True,size=13)
 iv["A7"]="=Settings!B5"; iv["A8"]="=Settings!B6"; iv["A9"]="=Settings!B7"
-iv["D6"]="Invoice #"; iv["E6"]='=IF(B4="","","INV-"&MID(B4,3,10))'
+iv["D6"]="Invoice #"; iv["E6"]='=IF(A12="","","INV-"&MID(B4,3,10))'
 iv["D7"]="Service date"; iv["E7"]=J("B"); iv["E7"].number_format=DATE
 iv["D8"]="Due date"; iv["E8"]='=IF(E7="","",E7+Settings!$B$11)'; iv["E8"].number_format=DATE
-iv["D9"]="Status"; iv["E9"]=f'=IF({J("K")[1:]}="Yes","PAID","DUE")'
+iv["D9"]="Status"; iv["E9"]=f'=IF(A12="","",IF({J("K")[1:]}="Yes","PAID","DUE"))'
 iv["A11"]="BILL TO"; iv["A11"].font=font(bold=True,color=ACC)
 iv["A12"]=J("C"); iv["A12"].font=font(bold=True)
 iv["A13"]=f'=IFERROR(INDEX(Clients!$D$5:$D$304,MATCH(A12,Clients!$A$5:$A$304,0)),"")'
 iv["A14"]=f'=IFERROR(INDEX(Clients!$C$5:$C$304,MATCH(A12,Clients!$A$5:$A$304,0)),"")'
 for j,h in enumerate(["Description","","","","Amount"]):
     c=iv.cell(16,1+j,h or None); c.font=font(bold=True,color="FFFFFF"); c.fill=HDR_FILL
-iv["A17"]=f'=IF({J("D")[1:]}<>"",{J("D")[1:]},IFERROR(INDEX(Clients!$E$5:$E$304,MATCH(A12,Clients!$A$5:$A$304,0)),"Lawn care service"))'
+iv["A17"]=f'=IF(A12="","",IF({J("D")[1:]}<>"",{J("D")[1:]},IFERROR(INDEX(Clients!$E$5:$E$304,MATCH(A12,Clients!$A$5:$A$304,0)),"Lawn care service")))'
 iv["E17"]=J("H"); iv["E17"].number_format=MONEY
 iv["A18"]="Add-on services"; iv["E18"]=J("I"); iv["E18"].number_format=MONEY
-iv["D20"]="TOTAL"; iv["D20"].font=font(bold=True,size=12); iv["E20"]="=N(E17)+N(E18)"; iv["E20"].number_format=MONEY; iv["E20"].font=font(bold=True,size=12)
+iv["D20"]="TOTAL"; iv["D20"].font=font(bold=True,size=12); iv["E20"]='=IF(A12="","",N(E17)+N(E18))'; iv["E20"].number_format=MONEY; iv["E20"].font=font(bold=True,size=12)
 iv["A23"]="Thank you for your business!"; iv["A23"].font=font(italic=True,color=ACC)
 iv["A24"]=f'="Payment due within "&Settings!$B$11&" days."'
 for r in range(6,25):
