@@ -7,7 +7,7 @@ Stephen: write APPROVED, NO, or a note after any item. Agents act only on APPROV
 - **Publish Auto Detailing and Window Cleaning Business Managers ($14.99 each) on Etsy.** In etsy-digital/auto-detailing-business-manager/ and window-cleaning-business-manager/. Free listing credits. Operator self-QA passed. **APPROVED by Stephen 2026-10-15 (blanket approval for hands-free work).** Saved as Etsy DRAFTS (Auto Detailing 4595855724, Window Cleaning 4595835191): the final Publish click was blocked by an auto-mode safety check, so Stephen clicks Publish on each (Etsy > Listings > Drafts).
 
 ## Closed
-- Pressure Washing Business Manager: PUBLISHED on Etsy 2026-10-15 by Stephen (draft prepared by Claude): https://www.etsy.com/listing/4595743330 ($14.99, free credit; 12 left). Gumroad version not created yet.
+- Pressure Washing Business Manager: PUBLISHED on Etsy 2026-10-15 by Stephen (draft prepared by Claude): https://www.etsy.com/listing/4595743330 ($14.99, free credit; 12 left). Gumroad: LIVE 2026-10-15 at https://tradesheetsshop.gumroad.com/l/lawn-care-business-manager ($14.99; 7 covers, thumbnail, xlsx + guide).
 - Lawn Care Business Manager: PUBLISHED on Etsy 2026-10-14 by Claude (Stephen APPROVED): https://www.etsy.com/listing/4595734716 ($14.99, manual renewal, free credit; 13 left). Gumroad version not created yet.
 - Fixed Cleaning files: DONE 2026-10-14. Etsy listing 4595582995 has the fixed xlsx and new clients photo (now last in the gallery); Gumroad has the fixed xlsx and new clients cover.
 - Gumroad: DONE 2026-10-14. Product live at https://tradesheetsshop.gumroad.com/l/cleaning-business-manager ($14.99). Stephen: confirm the payout bank is set in Gumroad Settings → Payments.
