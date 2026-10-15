@@ -1,0 +1,30 @@
+{
+  "researched_at": "2026-10-15T19:30Z",
+  "method": "Start from the sharpest available price with the vig removed, then adjust only for evidence that the market may not have priced. Sources listed per leg.",
+  "legs": [
+    {"id": "sea-ml", "label": "NFL: Seahawks to win at Broncos", "market_slug": "nfl-sea-den-2026-10-16", "outcome": "Seahawks", "starts_utc": "2026-10-16T00:15:00Z",
+     "prob": 0.59, "ask_at_research": 0.59, "bid_at_research": 0.58, "liquidity_at_research": 581027,
+     "why": "Consensus books SEA -160 / DEN +135 -> 59.1% no-vig. No injury news found that the line hasn't absorbed.", "sources": ["thespread.com SEA-DEN odds"]},
+    {"id": "sea-m25", "label": "NFL: Seahawks -2.5 (win by 3+)", "market_slug": "nfl-sea-den-2026-10-16-spread-away-2pt5", "outcome": "Seahawks", "starts_utc": "2026-10-16T00:15:00Z",
+     "prob": 0.525, "ask_at_research": 0.52, "bid_at_research": 0.51, "liquidity_at_research": 192399,
+     "why": "Books SEA -3 (+100) / DEN +3 (-120) -> 47.8% to cover -3; ~9% of games land on exactly 3 -> ~52.5% to win by 3+.", "sources": ["thespread.com"]},
+    {"id": "over-405", "label": "NFL: SEA-DEN over 40.5 points", "market_slug": "nfl-sea-den-2026-10-16-total-40pt5", "outcome": "Over", "starts_utc": "2026-10-16T00:15:00Z",
+     "prob": 0.49, "ask_at_research": 0.51, "bid_at_research": 0.49, "liquidity_at_research": 92225,
+     "why": "Books 40.5 at -110/-110 (50%). Total fell from 42.5 to 40.5 this week; Denver at altitude is a slower-paced matchup. Slight under lean.", "sources": ["thespread.com", "covers.com"]},
+    {"id": "under-405", "label": "NFL: SEA-DEN under 40.5 points", "market_slug": "nfl-sea-den-2026-10-16-total-40pt5", "outcome": "Under", "starts_utc": "2026-10-16T00:15:00Z",
+     "prob": 0.51, "ask_at_research": 0.51, "bid_at_research": 0.49, "liquidity_at_research": 92225,
+     "why": "Mirror of the over.", "sources": []},
+    {"id": "smith", "label": "ATP Jinan: Keegan Smith to beat Landaluce", "market_slug": "atp-landalu-smit-2026-10-15", "outcome": "Keegan Smith", "starts_utc": "2026-10-16T05:30:00Z",
+     "prob": 0.32, "ask_at_research": 0.26, "bid_at_research": 0.25, "liquidity_at_research": 40508,
+     "why": "Books (bet365) 1.43/2.72 -> Smith 34.5% no-vig; Polymarket has him at 25.5%. Landaluce #73 vs Smith #202, but Smith has won two three-setters here this week. Shaded toward the favorite because the book quote isn't sharp: 32%.", "sources": ["matchstat Landaluce-Smith"]},
+    {"id": "ruud", "label": "ATP Shanghai QF: Casper Ruud to beat Jodar", "market_slug": "atp-jodar-ruud-2026-10-15", "outcome": "Casper Ruud", "starts_utc": "2026-10-16T06:30:00Z",
+     "prob": 0.46, "ask_at_research": 0.47, "bid_at_research": 0.46, "liquidity_at_research": 182764,
+     "why": "Books 1.80/2.02 -> Ruud 47.1%. Jodar 54-17 in 2026 and strongest on hard courts; Ruud's best surface is clay. 46%.", "sources": ["matchstat Jodar-Ruud"]}
+  ],
+  "lifts": {
+    "sea-m25|sea-ml": 1.69,
+    "sea-ml|under-405": 1.0,
+    "over-405|sea-ml": 1.0
+  },
+  "notes": "Player props skipped: Polymarket's TNF props have $1-$30 of liquidity. Combos need two VALUE legs; tonight only Smith qualifies, so the honest output is 'no combo, Smith single'."
+}
