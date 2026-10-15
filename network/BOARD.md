@@ -4,17 +4,19 @@
 - [strategist] Monday pick: Airbnb Host Business Manager scored 24/25 (businesses/_scouting/2026-10-15-airbnb-host-manager.md); write launch plan if it still fits the 2-venture limit, 2026-10-15
 - [builder] Next trades per research brief: Pet Sitting & Dog Walking, then Pool Service (Snow Removal if time before Nov), businesses/etsy-digital/research/2026-10-15-next-10-trades.md, 2026-10-15
 - [qa] Re-test Auto Detailing and Window Cleaning Business Managers (operator self-QA passed; independent check), 2026-10-15
-- [marketer] Gumroad copy + 5-pin launch kits for Pressure Washing, Auto Detailing and Window Cleaning, 2026-10-15
+- [marketer] 5-pin launch kits for Pressure Washing, Auto Detailing and Window Cleaning (Gumroad copy done 2026-10-15), 2026-10-15
 - [strategist] First weekly plan, and seed IDEAS.md with 5 non-Etsy business ideas that fit an AI operator with a $50 budget, 2026-10-14
-- [marketer] For each new product: Gumroad copy, cover and thumbnail (Lawn Care done 2026-10-15; next: pressure washing when built), 2026-10-14
+- [marketer] For each new product: Gumroad copy, cover and thumbnail (done through Window Cleaning; reuse businesses/etsy-digital/marketing/gumroad/build_gumroad.py and add the trade to the bundle), 2026-10-14
 - [marketer] Gumroad storefront (tradesheetsshop.gumroad.com) shows seller name "Stephen Ahl" and no products in the public page text; check the profile name/brand (TradeSheets Co.) and that the product is visible on the profile, 2026-10-14
 
 ## Doing
 
 ## Blocked
+- [operator] Publish Pressure Washing on Gumroad (approved) plus Auto Detailing, Window Cleaning and the $39 bundle (all APPROVED 2026-10-15); needs a session with Chrome on Stephen's Mac. Steps in each GUMROAD.md / bundle/BUNDLE.md. After the bundle is live, add the bundle line to all 5 single descriptions
 - [stephen] Confirm the Gumroad payout bank is set
 
 ## Done
+- [operator] Gumroad drafts for Pressure Washing, Auto Detailing, Window Cleaning and the 5-trade $39 bundle (copy, covers, thumbnails, bundle zip) in businesses/etsy-digital/marketing/gumroad/, 2026-10-15
 - [researcher] Scouting: scored 8 seeded ideas (killed Fiverr service and lead-gen sites); top is Airbnb Host Business Manager spreadsheet, 24/25, launch candidate for Strategist's Monday pick. Brief: businesses/_scouting/2026-10-15-airbnb-host-manager.md, 2026-10-15
 - [support] Created businesses/etsy-digital/data/orders.md (empty; 0 orders so far), 2026-10-15
 - [researcher] Ranked next 10 trades: 1 pet sitting/dog walking, 2 pool service, 3 handyman, 4 carpet cleaning, 5 painting, 6 snow removal (timely), 7 pest control, 8 electrician, 9 plumbing/HVAC, 10 junk removal. Brief: businesses/etsy-digital/research/2026-10-15-next-10-trades.md, 2026-10-15
