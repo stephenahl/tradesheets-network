@@ -32,6 +32,9 @@ All 14 are covered exactly once (a test checks this). The native StarNet workers
 
 Each station card shows: room, working / queued / blocked counts from BOARD.md, absorbed NEXUS roles, and the agent's latest LOG.md line. The header badge shows tasks waiting on Stephen and when the last GitHub sync happened.
 
+## Brain (2026-10-15)
+StarNet's 4 agents now run on Claude through Claude Code, signed in with Stephen's Claude Pro plan (no API key, $0 per turn): NEXUS CONTROL on Opus 5.5; ATLAS, FORGE and SENTINEL on Sonnet 5.5. They share the Pro usage limit with the scheduled agents, so use them lightly. The old ChatGPT/OpenAI sign-in is left in place and unused ($14.87 of the $15 pilot allowance untouched). Use only one StarNet tab at a time: two windows cause save conflicts.
+
 ## Install (operator, when the Mac is linked)
 1. One-time: `git clone https://github.com/stephenahl/tradesheets-network ~/tradesheets-network` (uses Stephen's GitHub login on the Mac; ask first if git prompts for credentials).
 2. `starnet/agent-network-bridge/install.sh <path to installed agent-network-bridge>`: backs up the plugin, copies `lib/repo-sync.cjs` and `lib/network-files.cjs` plus tests, patches `index.js` and `ui/app.js` (idempotent), runs the tests.
