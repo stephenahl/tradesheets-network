@@ -26,7 +26,7 @@ Paper merge only. NEXUS stays execution-disabled and its $15 OpenAI allowance ($
 | Marketer | Content & Digital | ORBIT (acquisition), PULSE (publishing schedule) |
 | Analyst | Shared Knowledge Hub | LEDGER (margins, costs), ARCHIVE (evidence, memory) |
 | Support | Customer & Business Ops (future area) | ECHO (message triage), HARBOR (routine ops) |
-| — | Polymarket Lab | QUANT: frozen with the paper bot |
+| Polymarket research (scheduled, Thu/Sat/Sun) | Polymarket Lab | QUANT: the BTC paper bot stays frozen; the sports scanner's picks show in the Polymarket tab |
 
 All 14 are covered exactly once (a test checks this). The native StarNet workers from the ChatGPT pilot (ATLAS/FORGE/SENTINEL LOCAL) keep their desks and stay idle. The map and desk bindings are unchanged.
 
@@ -34,6 +34,9 @@ Each station card shows: room, working / queued / blocked counts from BOARD.md, 
 
 ## Brain (2026-10-15)
 StarNet's 4 agents now run on Claude through Claude Code, signed in with Stephen's Claude Pro plan (no API key, $0 per turn): NEXUS CONTROL on Opus 5.5; ATLAS, FORGE and SENTINEL on Sonnet 5.5. They share the Pro usage limit with the scheduled agents, so use them lightly. The old ChatGPT/OpenAI sign-in is left in place and unused ($14.87 of the $15 pilot allowance untouched). Use only one StarNet tab at a time: two windows cause save conflicts.
+
+## Polymarket picks panel (v3, 2026-10-15)
+The Polymarket tab shows "Today's picks": the newest research board (`polymarket/scanner/boards/`) with Claude's probability, the price, the edge and the reasoning for every leg, plus the best combos built only from VALUE legs. "Get live prices" fetches Polymarket's public market data (no keys; cached 60 s) and re-ranks. The math is `lib/picks.cjs`, shared with `polymarket/scanner/combo.mjs`. The panel never places orders; Stephen orders in the Polymarket app.
 
 ## Install (operator, when the Mac is linked)
 1. One-time: `git clone https://github.com/stephenahl/tradesheets-network ~/tradesheets-network` (uses Stephen's GitHub login on the Mac; ask first if git prompts for credentials).

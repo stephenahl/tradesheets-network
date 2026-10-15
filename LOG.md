@@ -50,3 +50,4 @@
 - 2026-10-15: Operator: TNF player props on Polymarket checked: too illiquid to trade (1c/99c quotes, $1-$30 liquidity), so no prop picks logged. Added liquidity rule to the combos trial (spread <= 5c, >= $500 liquidity).
 - 2026-10-15: Polymarket scanner + combo builder added (polymarket/scanner/). First board: only VALUE leg is Keegan Smith (32% vs ask 0.26); no combo qualifies tonight. Fixed builder so same-game correlation is priced, not counted as edge. Research runs scheduled Thu/Sat/Sun 8:49 Boise (replaces the one-off Sunday slate task). Paper only.
 - 2026-10-15: Polymarket scanner: added RESEARCH.md checklist (player/team stats by sport, per Stephen); scheduled research run now follows it for every leg. Live takes on 3 matches given (no trades by Claude).
+- 2026-10-15: StarNet v3: Polymarket tab gets a "Today's picks" panel (research board + live public prices + combos; read-only, no keys). Shared picks.cjs now powers combo.mjs too; 9/9 tests pass.

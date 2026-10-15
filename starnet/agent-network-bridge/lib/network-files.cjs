@@ -22,7 +22,7 @@ const ROOMS = {
   analyst: { room: 'Shared Knowledge Hub', nexus: ['LEDGER', 'ARCHIVE'] },
   support: { room: 'Customer & Business Operations', nexus: ['ECHO', 'HARBOR'] },
 };
-const FROZEN = [{ room: 'Polymarket Lab', nexus: ['QUANT'], note: 'Frozen (no edge shown); paper bot only' }];
+const FROZEN = [{ room: 'Polymarket Lab', nexus: ['QUANT'], note: 'BTC bot frozen (no edge). Sports scanner: research boards + picks panel (paper trial C1)' }];
 
 // Latest LOG.md line written by each agent ("- 2026-10-15: QA: tested ...").
 function lastActivity(logText) {
