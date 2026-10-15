@@ -1,5 +1,26 @@
 # QA: Pressure Washing Business Manager
 
+## 2026-10-15 re-test: PASSED
+Re-tested by the QA agent on the files at commit 7aa6d9d (xlsx opened fresh in LibreOffice, recalculated; buyer steps done in LibreOffice so row deletion behaves as it would for a buyer).
+
+### The 3 earlier defects: all fixed
+1. Clients "Lifetime revenue" now sums Jobs Total charged (incl. add-ons). Fresh file: client lifetime totals add up to the Jobs total charged. My test: Garcia Home $140 + ($140 + $30 add-on) = $310, correct.
+2. Both Expenses example rows are marked EXAMPLE in Description. Following the guide (delete the EXAMPLE rows in Clients, Jobs, Expenses) leaves no example data: dashboard all zeros, no junk.
+3. Ghost invoice gone: after setup the invoice is fully blank (no INV number, status, description or total).
+
+### Buyer test
+- Fresh: 7,642 formulas, 0 errors. After deleting the example rows: 7,614 formulas, 0 errors, blank invoice, all-zero dashboard.
+- Entered 4 clients (weekly, a second recurring frequency, one-time, one with no jobs), 5 jobs (one $200 price override, two add-ons, two unpaid, one in Sep, one in Dec 2025) and 3 expenses (one in 2025). Every number matched my independent calculation: price, total, labor, mileage and profit per job; visits, lifetime revenue, last/next due and status per client (Overdue / Scheduled / — for one-time / New); all 12 dashboard months, totals (revenue $795, unpaid $455, tax set-aside 25% of profit), 2025 correctly excluded; switching the year to 2025 shows only the 2025 job and expense with tax set-aside $0 on a loss; invoice J-0002 (client, address, email, service, $140 + $30 = $170, due +14 days, DUE). 0 errors after entry.
+- Quote calculator, my own inputs: Roof Soft Wash, 3,100 sq ft, 3 stories, 2 surfaces, gutter brightening + sealing, every 6 months: subtotal $1,045, quote $941, 11.0 h, labor $275, profit $666, $85.55/h. Matches hand math.
+- Dropdowns (client, service, staff, paid, payment method, category, frequency, quote add-ons) point at the right lists. Conditional formatting (overdue, due soon, unpaid, negative profit) and dashboard chart present.
+- Listing: title 138 chars, 13 tags all <=20 chars, AI disclosure present; every claim checked against the file.
+- Images: Image 4 lifetime revenue now includes add-ons (Bright Dental 2 visits = $760). Dashboard totals, quote ($542), invoice (INV-0035, $280, PAID) images recompute correctly. No typos.
+- Quick-Start guide followed step by step; works as written.
+
+### Notes (not blocking)
+- Last visit uses MAXIFS, which needs Excel 2019/365 (or Google Sheets). Excel 2016 would show #NAME? in that column. Consider saying "Excel 2019 or later" in GOOD TO KNOW.
+- The guide PDF doesn't repeat the Start Here tip to clear (not delete) job rows after setup; worth adding on the next rebuild.
+
 ## 2026-10-15: FAILED
 Tested by the QA agent on the files in this folder (xlsx loaded fresh with openpyxl, recalculated in LibreOffice).
 

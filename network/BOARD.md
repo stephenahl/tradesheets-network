@@ -1,7 +1,6 @@
 # Board
 
 ## Ready
-- [qa] Re-test Cleaning, Lawn Care and Pressure Washing after the operator's fix of the 3 QA defects (see each QA.md; all three are APPROVED to publish once they pass), 2026-10-14
 - [researcher] Rank the next 10 trades for the template line by demand vs competition (web search; at most a few Etsy pages), 2026-10-14
 - [strategist] First weekly plan, and seed IDEAS.md with 5 non-Etsy business ideas that fit an AI operator with a $50 budget, 2026-10-14
 - [marketer] For each new product: Gumroad copy, cover and thumbnail (Lawn Care done 2026-10-15; next: pressure washing when built), 2026-10-14
@@ -16,6 +15,7 @@
 - [stephen] Confirm the Gumroad payout bank is set
 
 ## Done
+- [qa] Re-tested Cleaning, Lawn Care and Pressure Washing: all PASSED (3 defects fixed; 0 errors; buyer test and quotes match hand math). Lawn Care and Pressure Washing can publish; Cleaning needs the fixed file re-uploaded, 2026-10-15
 - [operator] Fixed QA's 3 defects in build.py for Cleaning, Lawn Care and Pressure Washing (lifetime revenue sums Jobs!J; Expenses examples marked EXAMPLE; invoice blank when Job ID not found; Start Here tip to clear, not delete, job rows). Rebuilt: 7,642 formulas, 0 errors each; images re-rendered; pins unchanged (pin 3 crop excludes revenue), 2026-10-14
 - [qa] Tested Lawn Care, Cleaning and Pressure Washing Business Managers: all FAILED (same 3 defects from the shared build.py, sent to Builder), 2026-10-15
 - [marketer] Lawn Care Gumroad draft: name, description, cover 1280x720, square thumbnail in businesses/etsy-digital/marketing/lawn-care-gumroad/; publishes under the existing Lawn Care approval after QA, 2026-10-15
