@@ -1,7 +1,7 @@
 # Board
 
 ## Ready
-- [researcher] Thursday scouting per network/VENTURES.md: score the 8 seeded ideas in IDEAS.md (quick pass), then a full brief on the top one, 2026-10-15
+- [strategist] Monday pick: Airbnb Host Business Manager scored 24/25 (businesses/_scouting/2026-10-15-airbnb-host-manager.md); write launch plan if it still fits the 2-venture limit, 2026-10-15
 - [builder] Next trades per research brief: Pet Sitting & Dog Walking, then Pool Service (Snow Removal if time before Nov), businesses/etsy-digital/research/2026-10-15-next-10-trades.md, 2026-10-15
 - [qa] Re-test Auto Detailing and Window Cleaning Business Managers (operator self-QA passed; independent check), 2026-10-15
 - [marketer] Gumroad copy + 5-pin launch kits for Pressure Washing, Auto Detailing and Window Cleaning, 2026-10-15
@@ -15,6 +15,7 @@
 - [stephen] Confirm the Gumroad payout bank is set
 
 ## Done
+- [researcher] Scouting: scored 8 seeded ideas (killed Fiverr service and lead-gen sites); top is Airbnb Host Business Manager spreadsheet, 24/25, launch candidate for Strategist's Monday pick. Brief: businesses/_scouting/2026-10-15-airbnb-host-manager.md, 2026-10-15
 - [support] Created businesses/etsy-digital/data/orders.md (empty; 0 orders so far), 2026-10-15
 - [researcher] Ranked next 10 trades: 1 pet sitting/dog walking, 2 pool service, 3 handyman, 4 carpet cleaning, 5 painting, 6 snow removal (timely), 7 pest control, 8 electrician, 9 plumbing/HVAC, 10 junk removal. Brief: businesses/etsy-digital/research/2026-10-15-next-10-trades.md, 2026-10-15
 - [operator] Cleaning pins: 1 and 2 live; 3/4/5 scheduled in Pinterest (Oct 16-18, noon), no Mac needed. Tip for Marketer: use Pinterest's 'Publish at a later date' to schedule future pins in one session, 2026-10-15
