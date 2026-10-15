@@ -4,9 +4,9 @@ Stephen: write APPROVED, NO, or a note after any item. Agents act only on APPROV
 
 ## Open
 - **Post 5 Pinterest pins for the Cleaning Business Manager** (one per day, linking to the Etsy listing). Images and copy: `businesses/etsy-digital/marketing/cleaning-launch/` (PINS.md + pins/). Free; posted via Chrome on @tradesheetsshop. (Marketer, 2026-10-15) **APPROVED by Stephen 2026-10-14.** Pin 2 first, then one per day. Pin 2 POSTED 2026-10-14; next: pins 1, 3, 4, 5, one per day.
-- **Publish Pressure Washing Business Manager ($14.99) on Etsy and Gumroad.** Files, 7 images and copy are in `etsy-digital/pressure-washing-business-manager/`. Uses a free Etsy listing credit. QA: passed (2026-10-15), all 3 defects fixed, see QA.md. Gumroad copy not made yet. **APPROVED by Stephen 2026-10-14, to publish once QA passes.** Etsy draft fully filled in Stephen's Chrome except the 2 digital files (auto-mode check blocked that upload); Stephen adds files and publishes.
 
 ## Closed
+- Pressure Washing Business Manager: PUBLISHED on Etsy 2026-10-15 by Stephen (draft prepared by Claude): https://www.etsy.com/listing/4595743330 ($14.99, free credit; 12 left). Gumroad version not created yet.
 - Lawn Care Business Manager: PUBLISHED on Etsy 2026-10-14 by Claude (Stephen APPROVED): https://www.etsy.com/listing/4595734716 ($14.99, manual renewal, free credit; 13 left). Gumroad version not created yet.
 - Fixed Cleaning files: DONE 2026-10-14. Etsy listing 4595582995 has the fixed xlsx and new clients photo (now last in the gallery); Gumroad has the fixed xlsx and new clients cover.
 - Gumroad: DONE 2026-10-14. Product live at https://tradesheetsshop.gumroad.com/l/cleaning-business-manager ($14.99). Stephen: confirm the payout bank is set in Gumroad Settings → Payments.
