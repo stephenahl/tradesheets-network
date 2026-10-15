@@ -8,7 +8,7 @@
 - [marketer] Gumroad storefront (tradesheetsshop.gumroad.com) shows seller name "Stephen Ahl" and no products in the public page text; check the profile name/brand (TradeSheets Co.) and that the product is visible on the profile, 2026-10-14
 
 ## Doing
-- [operator] StarNet/NEXUS HQ: Network HQ tab added to StarNet's Agent Network panel (needs Stephen to re-approve the plugin in StarNet). Next: merge NEXUS's 14 roles into the 7 agents, 2026-10-14
+- [operator] StarNet HQ v2 built in starnet/ (GitHub-synced Network HQ, agent stations, 14 NEXUS roles folded into the 7 agents; 5 tests pass). Next: install on the Mac when it's linked (clone repo, run install.sh), then Stephen re-approves the plugin, 2026-10-14
 
 ## Blocked
 - [marketer] Post the 5 Cleaning Business Manager pins (waiting on Stephen's APPROVED in APPROVALS.md), 2026-10-15
