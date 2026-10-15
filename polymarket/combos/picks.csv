@@ -5,3 +5,6 @@ date,event,start_utc,leg,polymarket_ask,sharp_fair_prob,edge,combo_id,closing_pr
 2026-10-15,NFL TNF: Seahawks at Broncos,2026-10-16T00:15Z,Seahawks moneyline (leg; below threshold),0.57,0.5912,+0.0212,,,,,
 2026-10-15,NFL TNF: Seahawks at Broncos,2026-10-16T00:15Z,Under 40.5 (leg; no edge),0.50,0.50,+0.0000,,,,,
 2026-10-15,NFL PRACTICE COMBO: Seahawks ML + Under 40.5,2026-10-16T00:15Z,combo price 0.57*0.50*0.98=0.2793 (3.58x); fair 0.2956; EV +5.8% (same-game legs treated as independent),0.2793,0.2956,+0.0163,PRACTICE-F1,,,,
+2026-10-15,NFL TNF props (prices quoted by Stephen from his app),2026-10-16T00:15Z,Jaxon Smith-Njigba anytime TD,0.47,0.45-0.513,-0.02 to +0.04,,,,,
+2026-10-15,NFL TNF props (prices quoted by Stephen from his app),2026-10-16T00:15Z,Bo Nix under 35.5 pass attempts,0.65,0.53-0.60,-0.05 to -0.12,,,,,
+2026-10-15,NFL PROPS PRACTICE COMBO: JSN TD + Nix U35.5 att,2026-10-16T00:15Z,combo 0.47*0.65=0.3055 (3.27x); fair ~0.24-0.30 (negatively correlated legs); EV ~-5% to -20%,0.3055,0.27,-0.035,PRACTICE-P1,,,,
