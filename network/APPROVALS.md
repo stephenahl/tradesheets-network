@@ -4,6 +4,7 @@ Stephen: write APPROVED, NO, or a note after any item. Agents act only on APPROV
 
 ## Open
 - **Post 5 Pinterest pins for the Cleaning Business Manager** (one per day, linking to the Etsy listing). Images and copy: `businesses/etsy-digital/marketing/cleaning-launch/` (PINS.md + pins/). Free; posted via Chrome on @tradesheetsshop. (Marketer, 2026-10-15) **APPROVED by Stephen 2026-10-14.** Pin 2 first, then one per day. Pin 2 POSTED 2026-10-14; next: pins 1, 3, 4, 5, one per day.
+- **Publish Auto Detailing and Window Cleaning Business Managers ($14.99 each) on Etsy.** In etsy-digital/auto-detailing-business-manager/ and window-cleaning-business-manager/. Free listing credits. Operator self-QA passed. **APPROVED by Stephen 2026-10-15 (blanket approval for hands-free work).**
 
 ## Closed
 - Pressure Washing Business Manager: PUBLISHED on Etsy 2026-10-15 by Stephen (draft prepared by Claude): https://www.etsy.com/listing/4595743330 ($14.99, free credit; 12 left). Gumroad version not created yet.
