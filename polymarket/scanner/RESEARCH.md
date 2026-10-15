@@ -30,7 +30,10 @@ If no book prices the event (small ITF/Challenger events often aren't priced), s
 - Matchups: pass rush vs pass protection, run defense vs run game, red-zone rates.
 - Situation: rest (short week, coming off a bye), travel and time zones, altitude, home field.
 - Weather for totals: wind above 15 mph lowers scoring; heavy rain and snow too.
+- Previous games: the last 3-5 games for both teams (score, yards, EPA, how they won or lost) and how they played with or without the injured players.
+- Trends: home/road, divisional, after a loss, on short rest (treat small-sample ATS trends as weak evidence).
 - Line movement since open and what caused it.
+- **Injury rule (Stephen, 2026-10-15):** when a key player is out, follow the chain. Who replaces him? Which opposing player gains the matchup (e.g. no CB1 means the top WR faces CB2/CB3)? Which props and sides does that move? Then check when the news broke and whether the price already moved: an injury on the official report a day earlier is usually already priced into sides and totals, so the edge, if any, is in the player props it affects.
 - Player props: snap share, targets or carries per game, the opponent's defense against that position, and the game's projected script.
 
 ### NBA / college basketball
