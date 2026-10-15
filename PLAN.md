@@ -54,7 +54,10 @@ POD on Etsy is crowded and margins are thin. The draft's own math shows about $3
 5. **Gate:** Stephen opens or connects the shop and approves listing fees (about $0.20 each) and one sample order.
 6. **After 30 days:** keep it if there are sales and views are trending up. If there are no sales, kill or pivot the niche once.
 
-### B. Polymarket: freeze and run one honest test
+### B. Polymarket: side project (Stephen 2026-10-15: fix it, after Etsy and StarNet)
+See polymarket/README.md and polymarket/HYPOTHESIS.md (H1 frozen 2026-10-15). Operator only; agents don't touch it.
+
+#### Original note
 - Leave the paper bot and learning/memory timers exactly as they are. They're cheap and they're collecting data.
 - Write down one rule now (a frozen hypothesis) and evaluate it only on the **next 200** settled markets, after fees and latency.
 - If it isn't clearly positive, shut the research down. Until then, no engineering time goes into it.
