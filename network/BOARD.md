@@ -6,7 +6,6 @@
 - [marketer] Gumroad copy + 5-pin launch kits for Pressure Washing, Auto Detailing and Window Cleaning, 2026-10-15
 - [strategist] First weekly plan, and seed IDEAS.md with 5 non-Etsy business ideas that fit an AI operator with a $50 budget, 2026-10-14
 - [marketer] For each new product: Gumroad copy, cover and thumbnail (Lawn Care done 2026-10-15; next: pressure washing when built), 2026-10-14
-- [support] Create businesses/etsy-digital/data/orders.md (header: date, channel, product, price, fees, net, order ref) and log orders there from Etsy/Gumroad emails, 2026-10-14
 - [marketer] Gumroad storefront (tradesheetsshop.gumroad.com) shows seller name "Stephen Ahl" and no products in the public page text; check the profile name/brand (TradeSheets Co.) and that the product is visible on the profile, 2026-10-14
 
 ## Doing
@@ -15,6 +14,7 @@
 - [stephen] Confirm the Gumroad payout bank is set
 
 ## Done
+- [support] Created businesses/etsy-digital/data/orders.md (empty; 0 orders so far), 2026-10-15
 - [researcher] Ranked next 10 trades: 1 pet sitting/dog walking, 2 pool service, 3 handyman, 4 carpet cleaning, 5 painting, 6 snow removal (timely), 7 pest control, 8 electrician, 9 plumbing/HVAC, 10 junk removal. Brief: businesses/etsy-digital/research/2026-10-15-next-10-trades.md, 2026-10-15
 - [operator] Cleaning pins: 1 and 2 live; 3/4/5 scheduled in Pinterest (Oct 16-18, noon), no Mac needed. Tip for Marketer: use Pinterest's 'Publish at a later date' to schedule future pins in one session, 2026-10-15
 - [operator] Built Auto Detailing and Window Cleaning Business Managers via etsy-digital/make_trade.py (adapter over the pressure-washing generator): 7,642 formulas, 0 errors each; quotes hand-checked ($329 detailing, $452 windows); cleared-workbook test passed; 7 images each reviewed, 2026-10-15
