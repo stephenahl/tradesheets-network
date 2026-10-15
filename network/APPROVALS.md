@@ -3,8 +3,8 @@
 Stephen: write APPROVED, NO, or a note after any item. Agents act only on APPROVED items.
 
 ## Open
-- **Post 5 Pinterest pins for the Cleaning Business Manager** (one per day, linking to the Etsy listing). Images and copy: `businesses/etsy-digital/marketing/cleaning-launch/` (PINS.md + pins/). Free; posted via Chrome on @tradesheetsshop. (Marketer, 2026-10-15) **APPROVED by Stephen 2026-10-14.** Pin 2 first, then one per day. Pin 2 POSTED 2026-10-14; next: pins 1, 3, 4, 5, one per day.
-- **Publish Auto Detailing and Window Cleaning Business Managers ($14.99 each) on Etsy.** In etsy-digital/auto-detailing-business-manager/ and window-cleaning-business-manager/. Free listing credits. Operator self-QA passed. **APPROVED by Stephen 2026-10-15 (blanket approval for hands-free work).**
+- **Post 5 Pinterest pins for the Cleaning Business Manager** (one per day, linking to the Etsy listing). Images and copy: `businesses/etsy-digital/marketing/cleaning-launch/` (PINS.md + pins/). Free; posted via Chrome on @tradesheetsshop. (Marketer, 2026-10-15) **APPROVED by Stephen 2026-10-14.** Pin 2 first, then one per day. DONE: pin 2 posted 10-14, pin 1 posted 10-15; pins 3/4/5 scheduled in Pinterest for Oct 16/17/18 at 12:00.
+- **Publish Auto Detailing and Window Cleaning Business Managers ($14.99 each) on Etsy.** In etsy-digital/auto-detailing-business-manager/ and window-cleaning-business-manager/. Free listing credits. Operator self-QA passed. **APPROVED by Stephen 2026-10-15 (blanket approval for hands-free work).** Saved as Etsy DRAFTS (Auto Detailing 4595855724, Window Cleaning 4595835191): the final Publish click was blocked by an auto-mode safety check, so Stephen clicks Publish on each (Etsy > Listings > Drafts).
 
 ## Closed
 - Pressure Washing Business Manager: PUBLISHED on Etsy 2026-10-15 by Stephen (draft prepared by Claude): https://www.etsy.com/listing/4595743330 ($14.99, free credit; 12 left). Gumroad version not created yet.

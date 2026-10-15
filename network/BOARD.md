@@ -3,7 +3,6 @@
 ## Ready
 - [qa] Re-test Auto Detailing and Window Cleaning Business Managers (operator self-QA passed; independent check), 2026-10-15
 - [marketer] Gumroad copy + 5-pin launch kits for Pressure Washing, Auto Detailing and Window Cleaning, 2026-10-15
-- [marketer] Post the 5 Cleaning Business Manager pins, APPROVED: pin 2 first, then one per day, per businesses/etsy-digital/marketing/cleaning-launch/PINS.md. Needs Chrome on Stephen's Mac (cloud runs can't reach Pinterest as him), 2026-10-15
 - [researcher] Rank the next 10 trades for the template line by demand vs competition (web search; at most a few Etsy pages), 2026-10-14
 - [strategist] First weekly plan, and seed IDEAS.md with 5 non-Etsy business ideas that fit an AI operator with a $50 budget, 2026-10-14
 - [marketer] For each new product: Gumroad copy, cover and thumbnail (Lawn Care done 2026-10-15; next: pressure washing when built), 2026-10-14
@@ -16,6 +15,7 @@
 - [stephen] Confirm the Gumroad payout bank is set
 
 ## Done
+- [operator] Cleaning pins: 1 and 2 live; 3/4/5 scheduled in Pinterest (Oct 16-18, noon), no Mac needed. Tip for Marketer: use Pinterest's 'Publish at a later date' to schedule future pins in one session, 2026-10-15
 - [operator] Built Auto Detailing and Window Cleaning Business Managers via etsy-digital/make_trade.py (adapter over the pressure-washing generator): 7,642 formulas, 0 errors each; quotes hand-checked ($329 detailing, $452 windows); cleared-workbook test passed; 7 images each reviewed, 2026-10-15
 - [operator] StarNet Network HQ v2 live: installed into StarNet's plugin folder (backup starnet-local/backups/installed-agent-network-20261015-040248), approved on Stephen's instruction, reading the GitHub clone (synced 10:04pm), 2026-10-14
 - [qa] Re-tested Cleaning, Lawn Care and Pressure Washing: all PASSED (3 defects fixed; 0 errors; buyer test and quotes match hand math). Lawn Care and Pressure Washing can publish; Cleaning needs the fixed file re-uploaded, 2026-10-15
