@@ -12,9 +12,9 @@
 ## Doing
 
 ## Blocked
-- [stephen] Confirm the Gumroad payout bank is set
 
 ## Done
+- [stephen] Gumroad tax info and payout bank set, 2026-10-15
 - [researcher] Scouting: scored 8 seeded ideas (killed Fiverr service and lead-gen sites); top is Airbnb Host Business Manager spreadsheet, 24/25, launch candidate for Strategist's Monday pick. Brief: businesses/_scouting/2026-10-15-airbnb-host-manager.md, 2026-10-15
 - [support] Created businesses/etsy-digital/data/orders.md (empty; 0 orders so far), 2026-10-15
 - [researcher] Ranked next 10 trades: 1 pet sitting/dog walking, 2 pool service, 3 handyman, 4 carpet cleaning, 5 painting, 6 snow removal (timely), 7 pest control, 8 electrician, 9 plumbing/HVAC, 10 junk removal. Brief: businesses/etsy-digital/research/2026-10-15-next-10-trades.md, 2026-10-15

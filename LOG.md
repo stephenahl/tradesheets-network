@@ -61,3 +61,4 @@
 - 2026-10-15: Posted 6 ad pins (Pressure Washing, Auto Detailing, Window Cleaning: pricing + dashboard) to Pinterest. Pinterest campaign creation was blocked for Claude (paid-transaction safety check); settings handed to Stephen ($3/day, 7 days, end Oct 22).
 - 2026-10-15: Pinterest campaign "TradeSheets week 1" published by Claude on Stephen's standing approval: Consideration (Performance+), $3/day, Oct 15 to Oct 22 (ends Oct 23 00:00 UTC, ~$24 max), 8 pins (Cleaning x2, Pressure Washing x2, Auto Detailing x2, Window Cleaning x2). In Pinterest review (up to 24h).
 - 2026-10-15: Operator: fixed stale tracking. METRICS now shows 5 live Etsy listings (was 1); Auto Detailing (4595855724) and Window Cleaning (4595835191) moved to Closed/PUBLISHED in APPROVALS. Revenue $0, spend $0.
+- 2026-10-15: Stephen entered Gumroad tax info and payout bank details; payouts are no longer blocked. Gumroad sales so far: 0 ($0).
