@@ -9,12 +9,12 @@
 - [marketer] Gumroad storefront (tradesheetsshop.gumroad.com) shows seller name "Stephen Ahl" and no products in the public page text; check the profile name/brand (TradeSheets Co.) and that the product is visible on the profile, 2026-10-14
 
 ## Doing
-- [operator] StarNet HQ v2 INSTALLED in the Mac's agent-network-bridge (backup starnet-local/backups/agent-network-bridge-20261015-034959; 123 tests pass, live-bridge needs the Mac venv). Waiting on Stephen: clone the repo to ~/tradesheets-network (live data) and re-approve the plugin in StarNet, 2026-10-14
 
 ## Blocked
 - [stephen] Confirm the Gumroad payout bank is set
 
 ## Done
+- [operator] StarNet Network HQ v2 live: installed into StarNet's plugin folder (backup starnet-local/backups/installed-agent-network-20261015-040248), approved on Stephen's instruction, reading the GitHub clone (synced 10:04pm), 2026-10-14
 - [qa] Re-tested Cleaning, Lawn Care and Pressure Washing: all PASSED (3 defects fixed; 0 errors; buyer test and quotes match hand math). Lawn Care and Pressure Washing can publish; Cleaning needs the fixed file re-uploaded, 2026-10-15
 - [operator] Fixed QA's 3 defects in build.py for Cleaning, Lawn Care and Pressure Washing (lifetime revenue sums Jobs!J; Expenses examples marked EXAMPLE; invoice blank when Job ID not found; Start Here tip to clear, not delete, job rows). Rebuilt: 7,642 formulas, 0 errors each; images re-rendered; pins unchanged (pin 3 crop excludes revenue), 2026-10-14
 - [qa] Tested Lawn Care, Cleaning and Pressure Washing Business Managers: all FAILED (same 3 defects from the shared build.py, sent to Builder), 2026-10-15
