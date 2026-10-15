@@ -52,3 +52,5 @@
 - 2026-10-15: Polymarket scanner: added RESEARCH.md checklist (player/team stats by sport, per Stephen); scheduled research run now follows it for every leg. Live takes on 3 matches given (no trades by Claude).
 - 2026-10-15: StarNet v3: Polymarket tab gets a "Today's picks" panel (research board + live public prices + combos; read-only, no keys). Shared picks.cjs now powers combo.mjs too; 9/9 tests pass.
 - 2026-10-15: Stephen: goal is as many businesses and as much money as possible. Added network/VENTURES.md (scout Thu, pick Mon, launch in ~1 week, kill at 30 days; max 2 in build, <$50/test), seeded 8 ideas in IDEAS.md, updated Researcher/Strategist roles and PLAN.md.
+- 2026-10-15: Stephen: upgrade to the $200 Claude plan once real revenue reaches $20 (Analyst flags it).
+- 2026-10-15: Product engine moved into the repo (etsy-digital/_engine + README; make_trade.py points at it) so scheduled Builders can make new trades from scratch; Builder role updated.

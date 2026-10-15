@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Clone the Pressure Washing pipeline (/home/claude/pw) into a new trade folder with exact-string replacements.
+"""Clone the Pressure Washing pipeline (etsy-digital/_engine) into a new trade folder with exact-string replacements.
 Every replacement must match, so a silent miss can't ship a half-converted product."""
 import shutil, sys, os, re
 
-SRC = "/home/claude/pw"
+SRC = os.path.join(os.path.dirname(os.path.abspath(__file__)), "_engine")   # the pressure-washing pipeline, kept in the repo
 
 TRADES = {
 "detail": dict(
-  dir="/home/claude/detail", file="Auto-Detailing-Business-Manager.xlsx", accent="8A2C2C", light="F6E9E9", kpi="#F6E9E9",
+  dir="/tmp/trade-detail", file="Auto-Detailing-Business-Manager.xlsx", accent="8A2C2C", light="F6E9E9", kpi="#F6E9E9",
   name="Auto Detailing Business Manager",
   build=[
     ('T = dict(name="Pressure Washing Business Manager", trade="pressure washing", accent="1F5E8C", light="E5EEF6")',
@@ -90,7 +90,7 @@ TRADES = {
   ],
 ),
 "window": dict(
-  dir="/home/claude/window", file="Window-Cleaning-Business-Manager.xlsx", accent="5B4A8B", light="EEEAF6", kpi="#EEEAF6",
+  dir="/tmp/trade-window", file="Window-Cleaning-Business-Manager.xlsx", accent="5B4A8B", light="EEEAF6", kpi="#EEEAF6",
   name="Window Cleaning Business Manager",
   build=[
     ('T = dict(name="Pressure Washing Business Manager", trade="pressure washing", accent="1F5E8C", light="E5EEF6")',

@@ -3,6 +3,7 @@
 Etsy shop: TradeSheetsShop (https://www.etsy.com/shop/TradeSheetsShop). Brand: TradeSheets Co.
 
 Budget: $50, from 2026-10-14 to 2026-11-13. Spent so far: $0.00.
+Upgrade trigger (Stephen, 2026-10-15): move to the $200/month Claude plan once total real revenue reaches $20. The Analyst flags it the day revenue crosses $20.
 Standing cost outside the $50 (existed before the budget): DigitalOcean droplet for the Polymarket paper bot, $6/month (Stephen, 2026-10-15). Review it if H1 fails.
 
 | Week of | Live listings | Views | Orders | Revenue | Etsy fees | Net | Spend | Notes |
