@@ -1,1 +1,7 @@
 date,event,start_utc,leg,polymarket_ask,sharp_fair_prob,edge,combo_id,closing_price,result,single_pnl,combo_pnl
+2026-10-15,ATP Jinan: Landaluce vs Smith,2026-10-16T05:30Z,Keegan Smith to win (single; QUALIFIES),0.26,0.3445,+0.0845,,,,,
+2026-10-15,ATP Shanghai QF: Jodar vs Ruud,2026-10-16T06:30Z,Casper Ruud to win (leg; below 3c threshold),0.46,0.4712,+0.0112,,,,,
+2026-10-15,TENNIS PRACTICE COMBO: Smith + Ruud,2026-10-16T05:30Z,combo price 0.26*0.46*0.98=0.1172 (8.53x); fair 0.1623; EV +38%,0.1172,0.1623,+0.0451,PRACTICE-T1,,,,
+2026-10-15,NFL TNF: Seahawks at Broncos,2026-10-16T00:15Z,Seahawks moneyline (leg; below threshold),0.57,0.5912,+0.0212,,,,,
+2026-10-15,NFL TNF: Seahawks at Broncos,2026-10-16T00:15Z,Under 40.5 (leg; no edge),0.50,0.50,+0.0000,,,,,
+2026-10-15,NFL PRACTICE COMBO: Seahawks ML + Under 40.5,2026-10-16T00:15Z,combo price 0.57*0.50*0.98=0.2793 (3.58x); fair 0.2956; EV +5.8% (same-game legs treated as independent),0.2793,0.2956,+0.0163,PRACTICE-F1,,,,

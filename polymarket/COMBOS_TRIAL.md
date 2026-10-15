@@ -14,3 +14,6 @@ Stephen asked for a trial run. This is a **paper** trial: real picks against rea
 - **Pass:** singles ROI > 0 AND combos ROI > 0 AND average closing price moved toward our side (we beat the closing line). Then Stephen decides about a small real-money test.
 - **Fail:** singles ROI <= 0 or we don't beat the closing line. Stop; no real money.
 - Paper results are never revenue.
+
+## Log notes
+- 2026-10-15 (12:50 Boise): first slate (Stephen asked for practice). Fair probabilities: TNF from consensus SEA -160/DEN +135, SEA -3 (+100)/DEN +3 (-120), total 40.5 (-110/-110) via thespread.com; tennis from matchstat best odds (bet365, not a sharp book: weaker comparison). Only Keegan Smith qualified (+8.4c). Both combos are PRACTICE rows, not counted in the trial score.
