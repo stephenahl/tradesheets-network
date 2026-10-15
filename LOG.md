@@ -60,4 +60,9 @@
 - 2026-10-15: Stephen approved Etsy Ads at $3/day for one week, outside the $50 budget. Etsy blocks ads for new shops for 15 days (unlocks ~Oct 29); reminder set to turn them on then. Offsite Ads already on (Etsy pays upfront; 15% fee only on sales it drives).
 - 2026-10-15: Posted 6 ad pins (Pressure Washing, Auto Detailing, Window Cleaning: pricing + dashboard) to Pinterest. Pinterest campaign creation was blocked for Claude (paid-transaction safety check); settings handed to Stephen ($3/day, 7 days, end Oct 22).
 - 2026-10-15: Pinterest campaign "TradeSheets week 1" published by Claude on Stephen's standing approval: Consideration (Performance+), $3/day, Oct 15 to Oct 22 (ends Oct 23 00:00 UTC, ~$24 max), 8 pins (Cleaning x2, Pressure Washing x2, Auto Detailing x2, Window Cleaning x2). In Pinterest review (up to 24h).
+<<<<<<< HEAD
 - 2026-10-15: Operator: Gumroad drafts for Pressure Washing, Auto Detailing and Window Cleaning ($14.99 each, ~$12.75 kept) and a new Service Business Manager Bundle (all 5 trades, $39 vs $74.95 separately, ~$33.65 kept) in businesses/etsy-digital/marketing/gumroad/: copy from each LISTING.md, covers, thumbnails, 576 KB bundle zip. Fixed APPROVALS: Pressure Washing is not on Gumroad yet (its link was the Lawn Care product). PW already approved; AD, WC and bundle await Stephen. Nothing published, $0 spent.
+=======
+- 2026-10-15: Operator: fixed stale tracking. METRICS now shows 5 live Etsy listings (was 1); Auto Detailing (4595855724) and Window Cleaning (4595835191) moved to Closed/PUBLISHED in APPROVALS. Revenue $0, spend $0.
+>>>>>>> origin/main
+- 2026-10-15: Stephen APPROVED publishing Auto Detailing, Window Cleaning and the $39 5-trade bundle on Gumroad (Pressure Washing already approved). Not live yet: this cloud thread has no browser; the next Chrome session on the Mac publishes all 4.

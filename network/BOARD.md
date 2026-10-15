@@ -12,7 +12,7 @@
 ## Doing
 
 ## Blocked
-- [operator] Publish Pressure Washing on Gumroad (approved) plus Auto Detailing, Window Cleaning and the $39 bundle (waiting on Stephen's APPROVED); needs a session with Chrome on Stephen's Mac
+- [operator] Publish Pressure Washing on Gumroad (approved) plus Auto Detailing, Window Cleaning and the $39 bundle (all APPROVED 2026-10-15); needs a session with Chrome on Stephen's Mac. Steps in each GUMROAD.md / bundle/BUNDLE.md. After the bundle is live, add the bundle line to all 5 single descriptions
 - [stephen] Confirm the Gumroad payout bank is set
 
 ## Done
