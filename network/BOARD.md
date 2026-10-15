@@ -9,7 +9,7 @@
 - [marketer] Gumroad storefront (tradesheetsshop.gumroad.com) shows seller name "Stephen Ahl" and no products in the public page text; check the profile name/brand (TradeSheets Co.) and that the product is visible on the profile, 2026-10-14
 
 ## Doing
-- [operator] StarNet HQ v2 built in starnet/ (GitHub-synced Network HQ, agent stations, 14 NEXUS roles folded into the 7 agents; 5 tests pass). Next: install on the Mac when it's linked (clone repo, run install.sh), then Stephen re-approves the plugin, 2026-10-14
+- [operator] StarNet HQ v2 INSTALLED in the Mac's agent-network-bridge (backup starnet-local/backups/agent-network-bridge-20261015-034959; 123 tests pass, live-bridge needs the Mac venv). Waiting on Stephen: clone the repo to ~/tradesheets-network (live data) and re-approve the plugin in StarNet, 2026-10-14
 
 ## Blocked
 - [stephen] Confirm the Gumroad payout bank is set
