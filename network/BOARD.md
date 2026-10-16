@@ -14,6 +14,9 @@
 ## Doing
 
 ## Blocked
+
+## Done
+- [stephen] Gumroad tax info and payout bank set, 2026-10-15
 - [operator] Publish Pressure Washing on Gumroad (approved) plus Auto Detailing, Window Cleaning and the $39 bundle (all APPROVED 2026-10-15); needs a session with Chrome on Stephen's Mac. Steps in each GUMROAD.md / bundle/BUNDLE.md. After the bundle is live, add the bundle line to all 5 single descriptions
 - [stephen] Confirm the Gumroad payout bank is set, and complete Gumroad's payout info request (email 2026-10-14: tax info needed before the next payout)
 
