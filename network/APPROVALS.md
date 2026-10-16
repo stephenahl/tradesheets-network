@@ -6,6 +6,7 @@ Stephen: write APPROVED, NO, or a note after any item. Agents act only on APPROV
 - 2026-10-15, Stephen: "I give you approval to start paid campaigns. You are my marketer." Claude (operator) may create and run paid ad campaigns. Every campaign gets a daily budget and an end date, and all ad spend is logged in METRICS.md and reported to Stephen.
 
 ## Open
+- **Post 16 organic Pinterest pins** (Lawn Care x5, Pressure Washing/Auto Detailing/Window Cleaning x3 each, 2 bundle pins), scheduled one a day at noon Oct 19 to Nov 3, linking to the Etsy listings and the $39 Gumroad bundle. Images and copy: `businesses/etsy-digital/marketing/organic-pins/` (PINS.md + pins/). Free. Needs one Chrome session on the Mac. (Operator, 2026-10-16)
 - **Post 5 Pinterest pins for the Cleaning Business Manager** (one per day, linking to the Etsy listing). Images and copy: `businesses/etsy-digital/marketing/cleaning-launch/` (PINS.md + pins/). Free; posted via Chrome on @tradesheetsshop. (Marketer, 2026-10-15) **APPROVED by Stephen 2026-10-14.** Pin 2 first, then one per day. DONE: pin 2 posted 10-14, pin 1 posted 10-15; pins 3/4/5 scheduled in Pinterest for Oct 16/17/18 at 12:00.
 
 ## Closed

@@ -4,7 +4,6 @@
 - [strategist] Monday pick: Airbnb Host Business Manager scored 24/25 (businesses/_scouting/2026-10-15-airbnb-host-manager.md); write launch plan if it still fits the 2-venture limit, 2026-10-15
 - [builder] Next trades per research brief: Pet Sitting & Dog Walking, then Pool Service (Snow Removal if time before Nov), businesses/etsy-digital/research/2026-10-15-next-10-trades.md, 2026-10-15
 - [qa] Re-test Auto Detailing and Window Cleaning Business Managers (operator self-QA passed; independent check), 2026-10-15
-- [marketer] 5-pin launch kits for Pressure Washing, Auto Detailing and Window Cleaning (Gumroad copy done 2026-10-15), 2026-10-15
 - [strategist] First weekly plan, and seed IDEAS.md with 5 non-Etsy business ideas that fit an AI operator with a $50 budget, 2026-10-14
 - [marketer] For each new product: Gumroad copy, cover and thumbnail (done through Window Cleaning; reuse businesses/etsy-digital/marketing/gumroad/build_gumroad.py and add the trade to the bundle), 2026-10-14
 - [marketer] Gumroad storefront (tradesheetsshop.gumroad.com) shows seller name "Stephen Ahl" and no products in the public page text; check the profile name/brand (TradeSheets Co.) and that the product is visible on the profile, 2026-10-14
@@ -18,6 +17,7 @@
 - [stephen] Confirm the Gumroad payout bank is set, and complete Gumroad's payout info request (email 2026-10-14: tax info needed before the next payout)
 
 ## Done
+- [operator] Organic pin kit: 16 pins (Lawn Care x5, Pressure Washing/Auto Detailing/Window Cleaning pins 3-5, 2 bundle pins) with copy and a 1-a-day schedule in businesses/etsy-digital/marketing/organic-pins/; every trade now has 5 pins. Posting awaits Stephen's approval, 2026-10-16
 - [operator] Gumroad drafts for Pressure Washing, Auto Detailing, Window Cleaning and the 5-trade $39 bundle (copy, covers, thumbnails, bundle zip) in businesses/etsy-digital/marketing/gumroad/, 2026-10-15
 - [researcher] Scouting: scored 8 seeded ideas (killed Fiverr service and lead-gen sites); top is Airbnb Host Business Manager spreadsheet, 24/25, launch candidate for Strategist's Monday pick. Brief: businesses/_scouting/2026-10-15-airbnb-host-manager.md, 2026-10-15
 - [support] Created businesses/etsy-digital/data/orders.md (empty; 0 orders so far), 2026-10-15
