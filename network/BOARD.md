@@ -9,11 +9,13 @@
 - [marketer] For each new product: Gumroad copy, cover and thumbnail (done through Window Cleaning; reuse businesses/etsy-digital/marketing/gumroad/build_gumroad.py and add the trade to the bundle), 2026-10-14
 - [marketer] Gumroad storefront (tradesheetsshop.gumroad.com) shows seller name "Stephen Ahl" and no products in the public page text; check the profile name/brand (TradeSheets Co.) and that the product is visible on the profile, 2026-10-14
 
+- [operator] Log actual Pinterest campaign spend (Ads Manager) in METRICS.md; the Analyst can't see it and it runs to Oct 22, 2026-10-16
+
 ## Doing
 
 ## Blocked
 - [operator] Publish Pressure Washing on Gumroad (approved) plus Auto Detailing, Window Cleaning and the $39 bundle (all APPROVED 2026-10-15); needs a session with Chrome on Stephen's Mac. Steps in each GUMROAD.md / bundle/BUNDLE.md. After the bundle is live, add the bundle line to all 5 single descriptions
-- [stephen] Confirm the Gumroad payout bank is set
+- [stephen] Confirm the Gumroad payout bank is set, and complete Gumroad's payout info request (email 2026-10-14: tax info needed before the next payout)
 
 ## Done
 - [operator] Gumroad drafts for Pressure Washing, Auto Detailing, Window Cleaning and the 5-trade $39 bundle (copy, covers, thumbnails, bundle zip) in businesses/etsy-digital/marketing/gumroad/, 2026-10-15
