@@ -114,7 +114,7 @@ async function readPicks({ root, live = false, fetchImpl = globalThis.fetch, now
     schema_version: 1, available: true,
     board: file ? path.basename(file) : 'given', researched_at: board.researched_at || null, method: board.method || null, notes: board.notes || null,
     prices: live ? (errors.length === legs.length && legs.length ? 'research (live fetch failed)' : 'live') : 'research',
-    errors: errors.slice(0, 10), rules, legs, combos: rankCombos(good, lifts, rules).slice(0, 10),
+    errors: errors.slice(0, 10), rules, legs, combos: rankCombos(good, lifts, rules).filter((c) => c.payout >= (rules.minPayout || 0)).slice(0, 10),
     observed_at_utc: new Date(now).toISOString(),
   };
 }

@@ -9,7 +9,7 @@ Two parts. Neither one places orders: Stephen reviews the tickets and places wha
 ```
 cd ~/tradesheets-network && git pull && node polymarket/scanner/combo.mjs
 ```
-Options: `--min-edge 0.03` (default 3c), `--max-legs 3`, `--top 10`, `--stake 2`, `--board <file>`, `--offline` (use the board's saved prices).
+Options: `--min-edge 0.03` (default 3c), `--max-legs 3`, `--min-payout 10` (only combos paying at least 10x), `--top 10`, `--stake 2`, `--board <file>`, `--offline` (use the board's saved prices).
 The cloud workspace can't reach Polymarket from a shell; the Mac can.
 
 ## Reading the output
