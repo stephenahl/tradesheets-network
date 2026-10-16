@@ -1,13 +1,13 @@
 date,event,start_utc,leg,polymarket_ask,sharp_fair_prob,edge,combo_id,closing_price,result,single_pnl,combo_pnl
-2026-10-15,ATP Jinan: Landaluce vs Smith,2026-10-16T05:30Z,Keegan Smith to win (single; QUALIFIES),0.26,0.3445,+0.0845,,,,,
-2026-10-15,ATP Shanghai QF: Jodar vs Ruud,2026-10-16T06:30Z,Casper Ruud to win (leg; below 3c threshold),0.46,0.4712,+0.0112,,,,,
-2026-10-15,TENNIS PRACTICE COMBO: Smith + Ruud,2026-10-16T05:30Z,combo price 0.26*0.46*0.98=0.1172 (8.53x); fair 0.1623; EV +38%,0.1172,0.1623,+0.0451,PRACTICE-T1,,,,
-2026-10-15,NFL TNF: Seahawks at Broncos,2026-10-16T00:15Z,Seahawks moneyline (leg; below threshold),0.57,0.5912,+0.0212,,,,,
-2026-10-15,NFL TNF: Seahawks at Broncos,2026-10-16T00:15Z,Under 40.5 (leg; no edge),0.50,0.50,+0.0000,,,,,
-2026-10-15,NFL PRACTICE COMBO: Seahawks ML + Under 40.5,2026-10-16T00:15Z,combo price 0.57*0.50*0.98=0.2793 (3.58x); fair 0.2956; EV +5.8% (same-game legs treated as independent),0.2793,0.2956,+0.0163,PRACTICE-F1,,,,
-2026-10-15,NFL TNF props (prices quoted by Stephen from his app),2026-10-16T00:15Z,Jaxon Smith-Njigba anytime TD,0.47,0.45-0.513,-0.02 to +0.04,,,,,
-2026-10-15,NFL TNF props (prices quoted by Stephen from his app),2026-10-16T00:15Z,Bo Nix under 35.5 pass attempts,0.65,0.53-0.60,-0.05 to -0.12,,,,,
-2026-10-15,NFL PROPS PRACTICE COMBO: JSN TD + Nix U35.5 att,2026-10-16T00:15Z,combo 0.47*0.65=0.3055 (3.27x); fair ~0.24-0.30 (negatively correlated legs); EV ~-5% to -20%,0.3055,0.27,-0.035,PRACTICE-P1,,,,
-2026-10-15,NFL TNF props,2026-10-16T00:15Z,Bo Nix OVER 35.5 pass attempts (assumed ask 0.36 = 1 - Stephen's 0.65 under; confirm in app),0.36,0.40-0.47,+0.04 to +0.11,,,,,
-2026-10-15,NFL PROPS PRACTICE COMBO: Seahawks ML + Nix OVER 35.5 att (positively correlated),2026-10-16T00:15Z,combo 0.57*0.36*0.98=0.201 (4.97x); joint fair ~0.59*0.465=0.274 using Stokastic conditional splits; EV ~+35% before fees; void if Nix over ask > 0.48,0.201,0.274,+0.073,PRACTICE-P2,,,,
-2026-10-15,NFL PROPS PRACTICE COMBO (3-leg): Seahawks ML + Nix OVER 35.5 att + JSN anytime TD,2026-10-16T00:15Z,combo 0.57*0.36*0.47*0.98=0.0945 (10.6x); joint fair ~0.59*0.465*0.58=0.159 (Stokastic conditionals: JSN scores in 58% of SEA wins); EV ~+60-68% before fees; void if app quotes below 9x,0.0945,0.159,+0.0645,PRACTICE-P3,,,,
+2026-10-15,ATP Jinan: Landaluce vs Smith,2026-10-16T05:30Z,Keegan Smith to win (single; QUALIFIES),0.26,0.3445,+0.0845,,~0.255 (last pre-match quote),LOST: Landaluce won 3-6 6-2 6-3,-1.00,
+2026-10-15,ATP Shanghai QF: Jodar vs Ruud,2026-10-16T06:30Z,Casper Ruud to win (leg; below 3c threshold),0.46,0.4712,+0.0112,,~0.465,LOST: Jodar won 4-6 6-4 6-3,n/a (leg only),
+2026-10-15,TENNIS PRACTICE COMBO: Smith + Ruud,2026-10-16T05:30Z,combo price 0.26*0.46*0.98=0.1172 (8.53x); fair 0.1623; EV +38%,0.1172,0.1623,+0.0451,PRACTICE-T1,,LOST (both legs lost),,-1.00 PRACTICE
+2026-10-15,NFL TNF: Seahawks at Broncos,2026-10-16T00:15Z,Seahawks moneyline (leg; below threshold),0.57,0.5912,+0.0212,,~0.57,LOST: Broncos 17-14 OT,n/a (leg only),
+2026-10-15,NFL TNF: Seahawks at Broncos,2026-10-16T00:15Z,Under 40.5 (leg; no edge),0.50,0.50,+0.0000,,~0.50,WON: 31 total points,n/a (leg only),
+2026-10-15,NFL PRACTICE COMBO: Seahawks ML + Under 40.5,2026-10-16T00:15Z,combo price 0.57*0.50*0.98=0.2793 (3.58x); fair 0.2956; EV +5.8% (same-game legs treated as independent),0.2793,0.2956,+0.0163,PRACTICE-F1,,LOST (SEA lost),,-1.00 PRACTICE
+2026-10-15,NFL TNF props (prices quoted by Stephen from his app),2026-10-16T00:15Z,Jaxon Smith-Njigba anytime TD,0.47,0.45-0.513,-0.02 to +0.04,,,LOST: JSN 12 rec 134 yds 0 TD,n/a (leg only),
+2026-10-15,NFL TNF props (prices quoted by Stephen from his app),2026-10-16T00:15Z,Bo Nix under 35.5 pass attempts,0.65,0.53-0.60,-0.05 to -0.12,,,WON: Nix 27 attempts,n/a (leg only),
+2026-10-15,NFL PROPS PRACTICE COMBO: JSN TD + Nix U35.5 att,2026-10-16T00:15Z,combo 0.47*0.65=0.3055 (3.27x); fair ~0.24-0.30 (negatively correlated legs); EV ~-5% to -20%,0.3055,0.27,-0.035,PRACTICE-P1,,LOST (JSN no TD),,-1.00 PRACTICE
+2026-10-15,NFL TNF props,2026-10-16T00:15Z,Bo Nix OVER 35.5 pass attempts (assumed ask 0.36 = 1 - Stephen's 0.65 under; confirm in app),0.36,0.40-0.47,+0.04 to +0.11,,,LOST: Nix 27 attempts,n/a (leg only),
+2026-10-15,NFL PROPS PRACTICE COMBO: Seahawks ML + Nix OVER 35.5 att (positively correlated),2026-10-16T00:15Z,combo 0.57*0.36*0.98=0.201 (4.97x); joint fair ~0.59*0.465=0.274 using Stokastic conditional splits; EV ~+35% before fees; void if Nix over ask > 0.48,0.201,0.274,+0.073,PRACTICE-P2,,LOST,,-1.00 PRACTICE
+2026-10-15,NFL PROPS PRACTICE COMBO (3-leg): Seahawks ML + Nix OVER 35.5 att + JSN anytime TD,2026-10-16T00:15Z,combo 0.57*0.36*0.47*0.98=0.0945 (10.6x); joint fair ~0.59*0.465*0.58=0.159 (Stokastic conditionals: JSN scores in 58% of SEA wins); EV ~+60-68% before fees; void if app quotes below 9x,0.0945,0.159,+0.0645,PRACTICE-P3,,LOST,,-1.00 PRACTICE
