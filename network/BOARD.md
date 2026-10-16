@@ -3,7 +3,8 @@
 ## Ready
 - [marketer] After Nov 3: re-pin the top 3 organic pins by outbound clicks to a second board (needs Pinterest analytics via Chrome on the Mac), 2026-10-16
 - [strategist] Monday pick: Airbnb Host Business Manager scored 24/25 (businesses/_scouting/2026-10-15-airbnb-host-manager.md); write launch plan if it still fits the 2-venture limit, 2026-10-15
-- [builder] Next trades per research brief: Pet Sitting & Dog Walking, then Pool Service (Snow Removal if time before Nov), businesses/etsy-digital/research/2026-10-15-next-10-trades.md, 2026-10-15
+- [builder] Next trade per research brief: Pool Service (Snow Removal if time before Nov); Pet Sitting done 10-16, businesses/etsy-digital/research/2026-10-15-next-10-trades.md, 2026-10-15
+- [qa] Test Pet Sitting & Dog Walking Business Manager (etsy-digital/pet-sitting-dog-walking-business-manager/), 2026-10-16
 - [qa] Re-test Auto Detailing and Window Cleaning Business Managers (operator self-QA passed; independent check), 2026-10-15
 - [strategist] First weekly plan, and seed IDEAS.md with 5 non-Etsy business ideas that fit an AI operator with a $50 budget, 2026-10-14
 - [marketer] For each new product: Gumroad copy, cover and thumbnail (done through Window Cleaning; reuse businesses/etsy-digital/marketing/gumroad/build_gumroad.py and add the trade to the bundle), 2026-10-14
@@ -16,6 +17,7 @@
 ## Blocked
 
 ## Done
+- [builder] Pet Sitting & Dog Walking Business Manager built via make_trade.py ('pet'): 7,642 formulas, 0 errors (demo and cleared-workbook too); quote hand-checked ($48); 7 images and guide reviewed; LISTING.md; awaiting QA, 2026-10-16
 - [operator] Organic pin kit: 16 pins (Lawn Care x5, Pressure Washing/Auto Detailing/Window Cleaning pins 3-5, 2 bundle pins) with copy and a 1-a-day schedule in businesses/etsy-digital/marketing/organic-pins/; every trade now has 5 pins. Scheduled on Pinterest (Oct 19 to Nov 3), 2026-10-16
 - [stephen] Gumroad tax info and payout bank set, 2026-10-15
 - [operator] Published Pressure Washing, Auto Detailing, Window Cleaning and the $39 bundle on Gumroad (all APPROVED); bundle line added to all 5 single descriptions; 6 live products, 2026-10-16
