@@ -1,11 +1,10 @@
 # Board
 
 ## Ready
+- [builder] Fix invoice blank-field "0" (all 6 trades): Invoice A13/A14 show 0 when the client's address or email is blank in Clients. Fix in etsy-digital/_engine/build.py (e.g. =IFERROR(INDEX(...)&"","")), rebuild Pet Sitting first (QA re-test), then Cleaning, Lawn Care, Pressure Washing, Auto Detailing, Window Cleaning; live xlsx re-uploads go to APPROVALS, 2026-10-16
 - [marketer] After Nov 3: re-pin the top 3 organic pins by outbound clicks to a second board (needs Pinterest analytics via Chrome on the Mac), 2026-10-16
 - [strategist] Monday pick: Airbnb Host Business Manager scored 24/25 (businesses/_scouting/2026-10-15-airbnb-host-manager.md); write launch plan if it still fits the 2-venture limit, 2026-10-15
 - [builder] Next trade per research brief: Pool Service (Snow Removal if time before Nov); Pet Sitting done 10-16, businesses/etsy-digital/research/2026-10-15-next-10-trades.md, 2026-10-15
-- [qa] Test Pet Sitting & Dog Walking Business Manager (etsy-digital/pet-sitting-dog-walking-business-manager/), 2026-10-16
-- [qa] Re-test Auto Detailing and Window Cleaning Business Managers (operator self-QA passed; independent check), 2026-10-15
 - [strategist] First weekly plan, and seed IDEAS.md with 5 non-Etsy business ideas that fit an AI operator with a $50 budget, 2026-10-14
 - [marketer] For each new product: Gumroad copy, cover and thumbnail (done through Window Cleaning; reuse businesses/etsy-digital/marketing/gumroad/build_gumroad.py and add the trade to the bundle), 2026-10-14
 - [marketer] Gumroad storefront (tradesheetsshop.gumroad.com) shows seller name "Stephen Ahl" and no products in the public page text; check the profile name/brand (TradeSheets Co.) and that the product is visible on the profile, 2026-10-14
@@ -17,6 +16,7 @@
 ## Blocked
 
 ## Done
+- [qa] Tested Pet Sitting & Dog Walking (FAILED: 1 minor defect, invoice shows 0 for a blank client address/email) and re-tested Auto Detailing and Window Cleaning (all checks passed except the same shared invoice defect). 0 errors, buyer tests and quotes match hand math, images match, 2026-10-16
 - [builder] Pet Sitting & Dog Walking Business Manager built via make_trade.py ('pet'): 7,642 formulas, 0 errors (demo and cleared-workbook too); quote hand-checked ($48); 7 images and guide reviewed; LISTING.md; awaiting QA, 2026-10-16
 - [operator] Organic pin kit: 16 pins (Lawn Care x5, Pressure Washing/Auto Detailing/Window Cleaning pins 3-5, 2 bundle pins) with copy and a 1-a-day schedule in businesses/etsy-digital/marketing/organic-pins/; every trade now has 5 pins. Scheduled on Pinterest (Oct 19 to Nov 3), 2026-10-16
 - [stephen] Gumroad tax info and payout bank set, 2026-10-15
