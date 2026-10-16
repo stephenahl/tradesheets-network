@@ -1,0 +1,32 @@
+{
+  "researched_at": "2026-10-16T16:40Z",
+  "method": "No-vig sportsbook anchor (FanDuel/bet365 via SI, Dimers, TheLines, BettorsInsider), then stats per RESEARCH.md. Moves capped at 4 points.",
+  "legs": [
+    {"id": "mem-ml", "label": "CFB: Memphis to win at Tulane", "market_slug": "cfb-mphs-tulane-2026-10-16", "outcome": "Memphis", "starts_utc": "2026-10-16T23:30:00Z",
+     "prob": 0.70, "ask_at_research": 0.71, "bid_at_research": 0.70, "liquidity_at_research": 207120,
+     "why": "No-vig 69.1% (FD -260/+210) to 69.9% (bet365 -265/+220); Dimers model 71.6%. Memphis 5-1 (2-0 AAC), QB Marcus Strokes 70.1%, 16 TD / 3 INT; Tulane 2-3, lost conf opener to Army, weak defense. No injuries reported. Memphis weakness: poor starting field position. 70%.",
+     "sources": ["si.com Memphis-Tulane preview", "dimers.com 2026_7_tuln_mem"]},
+    {"id": "mem-m65", "label": "CFB: Memphis -6.5 at Tulane", "market_slug": "cfb-mphs-tulane-2026-10-16", "outcome": "Memphis", "starts_utc": "2026-10-16T23:30:00Z",
+     "prob": 0.52, "ask_at_research": 0.53, "bid_at_research": 0.52, "liquidity_at_research": 167943,
+     "why": "No-vig 51.9% (FD -120/-102) to 52.4% (bet365). Dimers projects 31-23 (Memphis by 8). 52%.", "sources": ["si.com", "dimers.com"], "market_note": "spread market slug differs; price recorded from the event's Memphis (-6.5) market"},
+    {"id": "pur-ml", "label": "CFB: Purdue to beat Washington", "market_slug": "cfb-wash-pur-2026-10-16", "outcome": "Purdue", "starts_utc": "2026-10-17T00:00:00Z",
+     "prob": 0.60, "ask_at_research": 0.61, "bid_at_research": 0.60, "liquidity_at_research": 384469,
+     "why": "No-vig 60.6% (Purdue -164 / UW +148); Dimers model 61.3%, projects Purdue 27-23 at home. 60%.", "sources": ["dimers.com 2026_7_pur_wash"]},
+    {"id": "ccu-ml", "label": "CFB: Coastal Carolina to beat App State", "market_slug": "cfb-applst-coast-2026-10-16", "outcome": "Coastal Carolina", "starts_utc": "2026-10-17T00:00:00Z",
+     "prob": 0.50, "ask_at_research": 0.49, "bid_at_research": 0.48, "liquidity_at_research": 143075,
+     "why": "No-vig 48.1% (App -117 / CCU +100) but Dimers model has Coastal 51.9% to 54.6% at home. Blend, moved 2 points: 50%.", "sources": ["dimers.com 2026_7_ccar_app"]},
+    {"id": "app-ml", "label": "CFB: App State to win at Coastal Carolina", "market_slug": "cfb-applst-coast-2026-10-16", "outcome": "Appalachian State", "starts_utc": "2026-10-17T00:00:00Z",
+     "prob": 0.50, "ask_at_research": 0.52, "bid_at_research": 0.51, "liquidity_at_research": 143075,
+     "why": "Mirror of Coastal.", "sources": []},
+    {"id": "tb-ml", "label": "MLB ALCS G4: Rays to win at Guardians", "market_slug": "mlb-tb-cle-2026-10-16", "outcome": "Tampa Bay Rays", "starts_utc": "2026-10-17T00:00:00Z",
+     "prob": 0.51, "ask_at_research": 0.51, "bid_at_research": 0.50, "liquidity_at_research": 143511,
+     "why": "No-vig 51.5% (TB -116 / CLE -102). Rays start Nick Martinez (15-6, 3.10 ERA, 13 scoreless IP vs CLE this year, but 6 R in his last 6.1 IP); CLE likely bullpen game (bullpen 2.08 playoff ERA). Rays won 5 of 6 regular-season meetings; CLE leads series 2-1 at home. Rain in forecast. Shaded to 51%.",
+     "sources": ["thelines.com Rays-Guardians G4", "bettorsinsider.com G4 preview"]},
+    {"id": "tb-cle-u65", "label": "MLB ALCS G4: Under 6.5 runs", "market_slug": "mlb-tb-cle-2026-10-16", "outcome": "Under", "starts_utc": "2026-10-17T00:00:00Z",
+     "prob": 0.51, "ask_at_research": 0.51, "bid_at_research": 0.49, "liquidity_at_research": 39129,
+     "why": "No-vig under 50.4% (O -108 / U -112). Game 3 was 3-2; CLE ranked 24th in runs; both staffs top-8 in ERA; CLE pens strike TB out (27 K in 100 PA this series). Nudged to 51%.",
+     "sources": ["thelines.com"], "market_note": "totals market; slug is the O/U 6.5 market of this event"}
+  ],
+  "lifts": { "mem-m65|mem-ml": 1.37, "tb-cle-u65|tb-ml": 1.0 },
+  "notes": "No leg clears the 3c VALUE bar today: every price is within 1-2c of the no-vig line. Combos logged today are PRACTICE only."
+}
