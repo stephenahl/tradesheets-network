@@ -9,7 +9,7 @@ Standing cost outside the $50 (existed before the budget): DigitalOcean droplet 
 
 | Week of | Live listings | Views | Orders | Revenue | Etsy fees | Net | Spend | Notes |
 |---|---|---|---|---|---|---|---|---|
-| 2026-10-12 | 5 | not available | 0 | $0 | $0 | $0 | $0 | 5 live on Etsy as of 2026-10-15: Cleaning 4595582995, Lawn Care 4595734716, Pressure Washing 4595743330, Auto Detailing 4595855724, Window Cleaning 4595835191 (duplicate Cleaning 4596142179 deactivated). Listing 1 live 2026-10-14. Checked 2026-10-14 6:50pm: Etsy shop page 1 active listing, 0 sales, 0 reviews; Gumroad public page shows no sales data; no orders logged |
+| 2026-10-12 | 5 Etsy + 6 Gumroad | not available | 0 | $0 | $0 | $0 | $0 | 5 live on Etsy as of 2026-10-15: Cleaning 4595582995, Lawn Care 4595734716, Pressure Washing 4595743330, Auto Detailing 4595855724, Window Cleaning 4595835191 (duplicate Cleaning 4596142179 deactivated). Gumroad: 6 live as of 2026-10-16: Cleaning, Lawn Care, Pressure Washing, Auto Detailing, Window Cleaning ($14.99 each) and the $39 5-trade bundle. Listing 1 live 2026-10-14. Checked 2026-10-14 6:50pm: Etsy shop page 1 active listing, 0 sales, 0 reviews; Gumroad public page shows no sales data; no orders logged |
 
 Rule: Etsy keeps about 12.5% plus $0.45 per sale on a $14.99 item (6.5% transaction fee, 3% + $0.25 payment processing, $0.20 listing renewal).
 
