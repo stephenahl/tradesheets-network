@@ -7,7 +7,7 @@
 //   node polymarket/scanner/combo.mjs                      # newest board, live prices
 //   node polymarket/scanner/combo.mjs --board path.json    # a specific board
 //   node polymarket/scanner/combo.mjs --offline            # use the prices saved in the board (no network)
-//   options: --min-edge 0.03  --max-legs 3  --top 10  --stake 2
+//   options: --min-edge 0.03  --max-legs 3  --min-payout 10  --top 10  --stake 2
 import fs from 'node:fs';
 import path from 'node:path';
 import { createRequire } from 'node:module';
@@ -21,7 +21,8 @@ const args = process.argv.slice(2);
 const opt = (name, def) => { const i = args.indexOf(name); return i >= 0 ? args[i + 1] : def; };
 const OFFLINE = args.includes('--offline');
 const TOP = Number(opt('--top', 10)); const STAKE = Number(opt('--stake', 2));
-const rules = { ...RULES, minEdge: Number(opt('--min-edge', RULES.minEdge)), maxLegs: Number(opt('--max-legs', RULES.maxLegs)) };
+const rules = { ...RULES, minEdge: Number(opt('--min-edge', RULES.minEdge)), maxLegs: Number(opt('--max-legs', RULES.maxLegs)),
+  minPayout: Number(opt('--min-payout', 0)) };
 const boardArg = opt('--board', null);
 
 const r = await readPicks({ root: ROOT, live: !OFFLINE, rules, board: boardArg ? JSON.parse(fs.readFileSync(boardArg, 'utf8')) : null,
