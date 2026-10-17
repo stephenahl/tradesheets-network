@@ -9,6 +9,8 @@
 - [marketer] For each new product: Gumroad copy, cover and thumbnail (done through Window Cleaning; reuse businesses/etsy-digital/marketing/gumroad/build_gumroad.py and add the trade to the bundle), 2026-10-14
 - [marketer] Gumroad storefront (tradesheetsshop.gumroad.com) shows seller name "Stephen Ahl" and no products in the public page text; check the profile name/brand (TradeSheets Co.) and that the product is visible on the profile, 2026-10-14
 
+- [operator] Verify Etsy listings are active: public shop page (2026-10-17) shows 1 active listing, 0 sales, but METRICS records 5 live (Cleaning, Lawn Care, Pressure Washing, Auto Detailing, Window Cleaning). Check Shop Manager; reactivate any that dropped (Stephen approves), 2026-10-17
+- [marketer] Traffic is near zero: Etsy weekly email shows 1 shop visit for week ending Oct 16, 0 from ads, despite the Pinterest campaign since Oct 15 (pins may link to Gumroad/still in review). Check where ad and organic pins send clicks, 2026-10-17
 - [operator] Log actual Pinterest campaign spend (Ads Manager) in METRICS.md; the Analyst can't see it and it runs to Oct 22, 2026-10-16
 
 ## Doing
