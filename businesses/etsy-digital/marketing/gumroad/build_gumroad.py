@@ -1,6 +1,7 @@
-"""Gumroad drafts for Pressure Washing, Auto Detailing, Window Cleaning and the 5-trade bundle.
-Per trade: GUMROAD.md (description adapted from the Etsy LISTING.md), cover 1280x720, thumbnail 1000x1000.
-Bundle: cover, thumbnail and TradeSheets-5-Trade-Bundle.zip (5 workbooks + 5 guides).
+"""Gumroad drafts for each trade and the all-trades bundle.
+Per trade in NEW: GUMROAD.md (description adapted from the Etsy LISTING.md), cover 1280x720, thumbnail 1000x1000.
+Bundle (folder BUNDLE_DIR): cover, thumbnail and TradeSheets-<n>-Trade-Bundle.zip (n workbooks + n guides).
+History: 2026-10-15 PW/AD/WC + 5-trade bundle (live, assets in bundle/); 2026-10-17 Pet Sitting + 6-trade bundle draft (bundle-6/).
 Same cover style as lawn-care-gumroad/build_gumroad.py. Run: python3 build_gumroad.py"""
 import base64, os, pathlib, re, zipfile
 from playwright.sync_api import sync_playwright
@@ -14,9 +15,14 @@ TRADES = [
     ("pressure-washing", "Pressure Washing", "1F5E8C", "E5EEF6"),
     ("auto-detailing", "Auto Detailing", "8A2C2C", "F6E9E9"),
     ("window-cleaning", "Window Cleaning", "5B4A8B", "EEEAF6"),
+    ("pet-sitting-dog-walking", "Pet Sitting & Dog Walking", "A0522D", "FBEDE3"),
 ]
-NEW = ["pressure-washing", "auto-detailing", "window-cleaning"]
-FILE = lambda name: name.replace(" ", "-") + "-Business-Manager.xlsx"
+NEW = ["pet-sitting-dog-walking"]
+DATE = "2026-10-17"
+N = len(TRADES)
+BUNDLE_DIR = f"bundle-{N}"
+SINGLES = round(N * 14.99, 2)
+FILE = lambda name: name.replace(" & ", "-").replace(" ", "-") + "-Business-Manager.xlsx"
 
 
 def gumroad_md(slug, name):
@@ -32,7 +38,7 @@ def gumroad_md(slug, name):
         out.append(line)
     desc = "\n".join(out).replace("Send me a message and I'm happy to help.", "Reply to your receipt email and I'll help.")
     desc = desc.replace("This template was designed by me", "Designed by TradeSheets Co.")
-    return f"""# Gumroad product draft: {name} Business Manager (2026-10-15)
+    return f"""# Gumroad product draft: {name} Business Manager ({DATE})
 
 DRAFT. Not published. Going live on Gumroad needs Stephen's APPROVED (see network/APPROVALS.md).
 
@@ -46,7 +52,7 @@ Set up like the live Cleaning and Lawn Care products (https://tradesheetsshop.gu
 - **Content:** upload `etsy-digital/{slug}-business-manager/{FILE(name)}` and `Quick-Start-Guide.pdf`
 - **Summary (the "You'll get" line):** One spreadsheet for quotes, recurring clients, jobs, invoices, expenses and profit. Google Sheets & Excel.
 - **Additional details:** Format: .xlsx + PDF guide · Tabs: 8 · Works in: Google Sheets, Excel
-- **Cross-sell:** add a line at the end of the description linking the 5-trade bundle once it is live.
+- **Cross-sell:** end the description with the same linked bundle line the other 5 singles use (bundle: https://tradesheetsshop.gumroad.com/l/service-business-manager-bundle).
 
 ## Description
 {desc}
@@ -63,44 +69,44 @@ def trade_pages(slug, name, acc, light):
     hero = PRODUCTS / f"{slug}-business-manager" / "images" / "1_hero.png"
     img = "data:image/png;base64," + base64.b64encode(hero.read_bytes()).decode()
     base = BASE.format(acc=acc, light=light)
-    cover = f"""<style>{base}body{{width:1280px;height:720px}}h1{{font-size:76px;font-weight:800;letter-spacing:-1.5px;color:#{acc}}}
+    cover = f"""<style>{base}body{{width:1280px;height:720px}}h1{{font-size:{76 if len(name) <= 20 else 64}px;font-weight:800;letter-spacing:-1.5px;color:#{acc}}}
 .sub{{font-size:32px;margin:18px 0 32px}}.pill{{font-size:27px;padding:16px 32px}}</style>
-<h1>{name} Business Manager</h1><div class=sub>Quotes · Clients · Jobs · Invoices · Profit dashboard</div>
+<h1>{name.replace('&', '&amp;')}{' ' if len(name) <= 20 else '<br>'}Business Manager</h1><div class=sub>Quotes · Clients · Jobs · Invoices · Profit dashboard</div>
 <div class=pill>Google Sheets &amp; Excel · Instant download</div>"""
-    thumb = f"""<style>{base}body{{width:1000px;height:1000px;justify-content:flex-start;padding-top:90px}}h1{{font-size:96px;line-height:1.02;font-weight:800;letter-spacing:-2px;color:#{acc}}}
+    thumb = f"""<style>{base}body{{width:1000px;height:1000px;justify-content:flex-start;padding-top:90px}}h1{{font-size:{96 if len(name) <= 20 else 74}px;line-height:1.02;font-weight:800;letter-spacing:-2px;color:#{acc}}}
 .sub{{font-size:34px;margin:22px 0 34px}}.pill{{font-size:28px;padding:14px 30px}}
 .shot{{margin-top:50px;width:808px;height:520px;border-radius:20px;background:url({img}) -95px -515px / 1900px auto no-repeat;box-shadow:0 20px 50px rgba(20,30,40,.2)}}</style>
-<h1>{name}<br>Business Manager</h1><div class=sub>Quotes · Clients · Invoices · Profit</div>
+<h1>{name.replace('&', '&amp;')}<br>Business Manager</h1><div class=sub>Quotes · Clients · Invoices · Profit</div>
 <div class=pill>Google Sheets &amp; Excel</div><div class=shot></div>"""
     return cover, thumb
 
 
 def bundle_pages():
     base = BASE.format(acc="1d2428", light="eef0f2")
-    chips = "".join(f'<div class=chip style="background:#{a}">{n}</div>' for _, n, a, _ in TRADES)
+    chips = "".join(f'<div class=chip style="background:#{a}">{n.replace("&", "&amp;")}</div>' for _, n, a, _ in TRADES)
     chip = ".chip{{color:#fff;font-weight:700;border-radius:14px}}"
     cover = f"""<style>{base}{chip.format()}body{{width:1280px;height:720px}}h1{{font-size:70px;font-weight:800;letter-spacing:-1.5px}}
 .sub{{font-size:30px;margin:14px 0 34px}}.row{{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;width:1120px;margin-bottom:36px}}
 .chip{{font-size:28px;padding:16px 26px}}.pill{{font-size:26px;padding:15px 30px}}</style>
-<h1>Service Business Manager Bundle</h1><div class=sub>5 trade-specific spreadsheets · Google Sheets &amp; Excel</div>
-<div class=row>{chips}</div><div class=pill>All 5 for $39 · save $35.95</div>"""
+<h1>Service Business Manager Bundle</h1><div class=sub>{N} trade-specific spreadsheets · Google Sheets &amp; Excel</div>
+<div class=row>{chips}</div><div class=pill>All {N} for $39 · save ${SINGLES - 39:.2f}</div>"""
     thumb = f"""<style>{base}{chip.format()}body{{width:1000px;height:1000px}}h1{{font-size:88px;line-height:1.02;font-weight:800;letter-spacing:-2px}}
-.sub{{font-size:34px;margin:20px 0 40px}}.col{{display:flex;flex-direction:column;gap:16px;width:640px;margin-bottom:40px}}
-.chip{{font-size:34px;padding:16px}}.pill{{font-size:30px;padding:16px 34px}}</style>
-<h1>5 Business<br>Managers</h1><div class=sub>Google Sheets &amp; Excel</div>
+.sub{{font-size:34px;margin:16px 0 30px}}.col{{display:flex;flex-direction:column;gap:12px;width:640px;margin-bottom:30px}}
+.chip{{font-size:28px;padding:11px}}.pill{{font-size:30px;padding:16px 34px}}</style>
+<h1>{N} Business<br>Managers</h1><div class=sub>Google Sheets &amp; Excel</div>
 <div class=col>{chips}</div><div class=pill>Bundle · $39</div>"""
     return cover, thumb
 
 
 def build_zip():
-    path = HERE / "bundle" / "TradeSheets-5-Trade-Bundle.zip"
+    path = HERE / BUNDLE_DIR / f"TradeSheets-{N}-Trade-Bundle.zip"
     with zipfile.ZipFile(path, "w", zipfile.ZIP_DEFLATED) as z:
         for slug, name, _, _ in TRADES:
             src = PRODUCTS / f"{slug}-business-manager"
             folder = f"{name} Business Manager/"
             for arc, f in [(FILE(name), src / FILE(name)),
-                           (f"{name.replace(' ', '-')}-Quick-Start-Guide.pdf", src / "Quick-Start-Guide.pdf")]:
-                info = zipfile.ZipInfo(folder + arc, date_time=(2026, 10, 15, 0, 0, 0))
+                           (FILE(name).replace("-Business-Manager.xlsx", "-Quick-Start-Guide.pdf"), src / "Quick-Start-Guide.pdf")]:
+                info = zipfile.ZipInfo(folder + arc, date_time=(2026, 10, 17, 0, 0, 0))
                 info.compress_type = zipfile.ZIP_DEFLATED
                 z.writestr(info, f.read_bytes())
     print("wrote", path.relative_to(HERE), f"{path.stat().st_size // 1024} KB")
@@ -113,8 +119,8 @@ if __name__ == "__main__":
             (HERE / slug).mkdir(exist_ok=True)
             (HERE / slug / "GUMROAD.md").write_text(gumroad_md(slug, name))
             pages.append((slug, *trade_pages(slug, name, acc, light)))
-    (HERE / "bundle").mkdir(exist_ok=True)
-    pages.append(("bundle", *bundle_pages()))
+    (HERE / BUNDLE_DIR).mkdir(exist_ok=True)
+    pages.append((BUNDLE_DIR, *bundle_pages()))
     with sync_playwright() as pw:
         b = pw.chromium.launch(executable_path=os.environ.get("PW_CHROMIUM")); pg = b.new_page()
         for folder, cover, thumb in pages:
