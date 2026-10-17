@@ -1,0 +1,102 @@
+{
+ "researched_at": "2026-10-17T15:20:00Z",
+ "method": "No-vig sportsbook anchor (VegasInsider Week 6 table, Oct 16 late; DK movement notes), then RESEARCH.md stats. Moves capped at 4 points. Polymarket prices via DefiRate venue comparison (Oct 16-17), NOT the Polymarket API, which this run could not reach.",
+ "legs": [
+  {
+   "id": "ari-ml",
+   "label": "NFL: Cardinals to win at Rams",
+   "market_slug": "nfl-ari-la-2026-10-18",
+   "outcome": "Cardinals",
+   "starts_utc": "2026-10-18T20:05:00Z",
+   "prob": 0.15,
+   "ask_at_research": 0.13,
+   "bid_at_research": 0.125,
+   "why": "Anchor: Rams -800/Cards +550 no-vig 14.8% ARI; -12.5 spread (Kalshi coin flip at 12.5-13) maps to ~14-15%. Cards 1-4, lost 45-21 at DET; Murray/Harrison Jr status unclear in sources (n/a). Rams 2-3, lost 37-34 OT to BUF on MNF (6 days rest, home). CBS model: Cards +12.5 cover, under. No stat strong enough to move off anchor. 15% vs 13c ask: +2c, below VALUE bar. Polymarket price from DefiRate's venue comparison (Polymarket API was unreachable from this run); slug is the standard pattern, unverified; liquidity not observed.",
+   "sources": [
+    "vegasinsider.com/nfl/nfl-week-6-odds-2026 (updated Oct 16 10:46 PM ET)",
+    "defirate.com/odds/nfl/cardinals-vs-rams-10-18-2026",
+    "cbssports.com Week 6 picks (Oct 17)"
+   ]
+  },
+  {
+   "id": "cle-ml",
+   "label": "NFL: Browns to beat Ravens",
+   "market_slug": "nfl-bal-cle-2026-10-18",
+   "outcome": "Browns",
+   "starts_utc": "2026-10-18T17:00:00Z",
+   "prob": 0.41,
+   "ask_at_research": 0.39,
+   "bid_at_research": 0.385,
+   "why": "Anchor: BAL -162/CLE +136 no-vig 40.7% CLE. Lamar Jackson (ankle) ruled out Fri, Huntley starts (2 TD in 30-23 OT win vs ATL); line moved BAL -5.5 -> -3, so news is priced. BAL 2nd in off. success rate (with Lamar), 8th def; C Jurgens, Hendrickson questionable. CLE 3-2, lost 17-12 to NYJ in rain; Njoku questionable. Over 5-0 last 5 meetings. Kalshi BAL 62. 41% vs 39c: +2c, below bar. Weather n/a. Polymarket price from DefiRate's venue comparison (Polymarket API was unreachable from this run); slug is the standard pattern, unverified; liquidity not observed.",
+   "sources": [
+    "vegasinsider.com/nfl/nfl-week-6-odds-2026 (updated Oct 16 10:46 PM ET)",
+    "defirate.com/odds/nfl/ravens-vs-browns-10-18-2026",
+    "si.com ravens-vs-browns week 6 2026",
+    "cbsnews.com Lamar ruled out, Huntley to start"
+   ]
+  },
+  {
+   "id": "phi-ml",
+   "label": "NFL: Eagles to beat Panthers",
+   "market_slug": "nfl-car-phi-2026-10-18",
+   "outcome": "Eagles",
+   "starts_utc": "2026-10-18T17:00:00Z",
+   "prob": 0.4,
+   "ask_at_research": 0.39,
+   "bid_at_research": 0.385,
+   "why": "Anchor: CAR -166/PHI +140 no-vig 40.0% PHI. Hurts out (calf blood clot, reported Thu); Tanner McKee starts (1 career start: 21/40, 1 TD 1 INT). Line moved PHI -1.5 -> CAR -3/-3.5, priced. Barkley and DeVonta Smith missed last week, status unclear. CAR 2-2 off a bye (rest edge). PHI 2-3, lost 19-17 to JAX. 92% of ML dollars on PHI at DK. 40% vs 39c: +1c. Polymarket price from DefiRate's venue comparison (Polymarket API was unreachable from this run); slug is the standard pattern, unverified; liquidity not observed.",
+   "sources": [
+    "vegasinsider.com/nfl/nfl-week-6-odds-2026 (updated Oct 16 10:46 PM ET)",
+    "defirate.com/odds/nfl/panthers-vs-eagles-10-18-2026",
+    "si.com jalen-hurts-injury-update odds shift (Oct 15)"
+   ]
+  },
+  {
+   "id": "nyj-ml",
+   "label": "NFL: Jets to win at Patriots",
+   "market_slug": "nfl-nyj-ne-2026-10-18",
+   "outcome": "Jets",
+   "starts_utc": "2026-10-18T17:00:00Z",
+   "prob": 0.26,
+   "ask_at_research": 0.25,
+   "bid_at_research": 0.245,
+   "why": "Anchor: NE -340/NYJ +270 no-vig 25.9% NYJ; spread 7.5 steady. NE 3-2 (45-pt game vs LV), secondary injuries unspecified; NYJ 2-3, beat CLE 17-12. 77%/91% of spread tickets/money on NE. CBS model: NE cover, under. No injury chain found. 26% vs 25c: +1c. Polymarket price from DefiRate's venue comparison (Polymarket API was unreachable from this run); slug is the standard pattern, unverified; liquidity not observed.",
+   "sources": [
+    "vegasinsider.com/nfl/nfl-week-6-odds-2026 (updated Oct 16 10:46 PM ET)",
+    "defirate.com/odds/nfl/jets-vs-patriots-10-18-2026"
+   ]
+  },
+  {
+   "id": "lac-ml",
+   "label": "NFL: Chargers to win at Chiefs",
+   "market_slug": "nfl-lac-kc-2026-10-18",
+   "outcome": "Chargers",
+   "starts_utc": "2026-10-18T20:25:00Z",
+   "prob": 0.21,
+   "ask_at_research": 0.23,
+   "bid_at_research": 0.215,
+   "why": "Anchor: KC -440/LAC +340 no-vig 21.8% LAC. Chargers 0-5, WRs Quentin Johnston and Brenen Thompson out, Tre' Harris doubtful: thin receiver room vs KC (4-0, off bye: rest edge). Moved 1 pt down for WR losses + bye. 21% vs 23c: -2c (no play). Polymarket price from DefiRate's venue comparison (Polymarket API was unreachable from this run); slug is the standard pattern, unverified; liquidity not observed.",
+   "sources": [
+    "vegasinsider.com/nfl/nfl-week-6-odds-2026 (updated Oct 16 10:46 PM ET)",
+    "defirate.com/odds/nfl/chargers-vs-chiefs-10-18-2026"
+   ]
+  },
+  {
+   "id": "atl-ml",
+   "label": "NFL: Falcons to beat Bears",
+   "market_slug": "nfl-chi-atl-2026-10-18",
+   "outcome": "Falcons",
+   "starts_utc": "2026-10-18T17:00:00Z",
+   "prob": 0.48,
+   "ask_at_research": 0.5,
+   "bid_at_research": 0.49,
+   "why": "Anchor: CHI -118/ATL -102 no-vig 48.3% ATL. Penix (ribs) expected to start; Caleb Williams (hamstring) expected back after 3 games out; total jumped 47.5 -> 52.5 (87% of tickets Over). Kalshi CHI 52/ATL 50. 48% vs 50c: -2c. Polymarket price from DefiRate's venue comparison (Polymarket API was unreachable from this run); slug is the standard pattern, unverified; liquidity not observed.",
+   "sources": [
+    "vegasinsider.com/nfl/nfl-week-6-odds-2026 (updated Oct 16 10:46 PM ET)",
+    "defirate.com/odds/nfl/nfl-week-6-odds-predictions-2026"
+   ]
+  }
+ ],
+ "lifts": {},
+ "notes": "No VALUE leg: every NFL Sunday moneyline is within 2c of the no-vig line (QB news for Hurts and Lamar already priced). Strongest lean: Cardinals (15% vs 13c) and Browns (41% vs 39c), both +2c. Slugs unverified and liquidity not observed: run combo.mjs live on the Mac to confirm prices. CFB/NBA/tennis not researched this run (lookup budget spent on NFL)."
+}
