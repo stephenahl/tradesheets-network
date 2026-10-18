@@ -1,0 +1,151 @@
+{
+ "researched_at": "2026-10-18T15:10:00Z",
+ "method": "No-vig sportsbook anchor (VegasInsider table updated Oct 18 10:50 AM ET; Covers multi-book for PIT-TB), then RESEARCH.md stats. Moves capped at 4 points. Polymarket prices via DefiRate venue comparison (Oct 17-18), NOT the Polymarket API: gamma-api.polymarket.com and defirate index fetches were not approved for this run. Slugs follow the standard pattern; only nfl-dal-gb-2026-10-19 was verified (PredScope). HOU-JAX (London, 13:30Z) had already started and is excluded. TEN-IND skipped: no Polymarket price found within the lookup budget.",
+ "legs": [
+  {
+   "id": "chi-ml",
+   "label": "NFL: Bears to win at Falcons",
+   "market_slug": "nfl-chi-atl-2026-10-18",
+   "outcome": "Bears",
+   "starts_utc": "2026-10-18T17:00:00Z",
+   "prob": 0.515,
+   "ask_at_research": 0.512,
+   "bid_at_research": 0.5,
+   "liquidity_at_research": null,
+   "why": "Anchor: CHI -118/ATL -102 (VI Oct 18) no-vig 51.7% CHI. Caleb Williams (hamstring) returns after missing 3 games (ESPN inactives: 'Williams to play'); line flipped ATL -1.5 -> CHI -1.5 on that news, total 47.5 -> 51.5, so it is priced. Penix (ribs) expected to start; ATL was 0-2 without him, #8 success rate since his return. CHI offense 14th EPA/play; CHI defense allows 4th-most yds/play and is 24th in EPA/rush vs Bijan Robinson (580 yds, 5.7 ypc): slight ATL lean, offset by CHI 2-1 without Williams. CHI Q list: Monangai, Edwards, Gordon, Stevenson. Weather: dome. Rest: normal. H2H n/a. Kept ~anchor at 51.5%. Polymarket US best Bears ask 51.2c (DefiRate): +0.3c, no edge.",
+   "sources": [
+    "vegasinsider.com/nfl/nfl-week-6-odds-2026 (updated Oct 18 10:50 AM)",
+    "defirate.com/odds/nfl/bears-vs-falcons-10-18-2026",
+    "si.com/betting/bears-vs-falcons-prediction-odds-spread-injuries-trends-for-nfl-week-6-2026",
+    "espn.com FFSundayInactives Week 6 (headline)",
+    "sportsbettingdime.com Week 6 line movement"
+   ]
+  },
+  {
+   "id": "tb-ml",
+   "label": "NFL: Buccaneers to beat Steelers",
+   "market_slug": "nfl-pit-tb-2026-10-18",
+   "outcome": "Buccaneers",
+   "starts_utc": "2026-10-18T17:00:00Z",
+   "prob": 0.45,
+   "ask_at_research": 0.44,
+   "bid_at_research": 0.43,
+   "liquidity_at_research": null,
+   "why": "Anchor: 9-book consensus PIT -142/TB +119 (Covers) no-vig 43.8% TB; VI shows PIT -130/TB +110 (45.7%): blended ~44.5%. Mayfield OUT (backup starter not named in sources: n/a), but Mayfield ranked last among starters in adj EPA/play, so the drop-off is smaller than usual; line opened PIT -3 and moved TOWARD TB (-2.5/-1.5), so the market agrees. TB defense 6th opp EPA/play, 7th opp rush success; S Winfield doubtful, CB Morrison Q. PIT WR room thin: Skowronek, R. Wilson out, Pittman IR; Warren 5.9 ypc. TB 1-4 off a mini-bye (TNF win over DAL: rest edge). PIT 4-1 ATS last 5 vs TB (weak). Weather n/a (no rain noted). Moved +0.5 for rest + receiver losses: 45%. Polymarket TB ask 44c (DefiRate 8:12 AM ET): +1c, below bar.",
+   "sources": [
+    "covers.com/sport/football/nfl/matchup/380002/odds",
+    "vegasinsider.com/nfl/nfl-week-6-odds-2026 (updated Oct 18 10:50 AM)",
+    "defirate.com/odds/nfl/steelers-vs-buccaneers-10-18-2026 (observed Oct 18 8:12 AM ET)",
+    "si.com/betting/steelers-vs-buccaneers-prediction-odds-spread-injuries-trends-for-nfl-week-6-2026"
+   ]
+  },
+  {
+   "id": "nyg-ml",
+   "label": "NFL: Giants to beat Saints",
+   "market_slug": "nfl-no-nyg-2026-10-18",
+   "outcome": "Giants",
+   "starts_utc": "2026-10-18T17:00:00Z",
+   "prob": 0.51,
+   "ask_at_research": 0.5,
+   "bid_at_research": 0.49,
+   "liquidity_at_research": null,
+   "why": "Anchor: NYG -112/NO -108 (VI Oct 18) no-vig 50.4% NYG; favorite flipped NYG -1.5 -> NO -1.5 during the week with no injury reason given. Giants 3-1-1 and 4-1 ATS (without Dart, out since Week 2); Saints 1-4. NO missing LBs Kaden Elliss and Anfernee Jennings (run defense); NYG lost S Pinnock (concussion), S Nubin Q. numberFire model 53.7% NYG. Home field, normal rest, weather n/a. Moved +0.6 for the NO LB losses and the model: 51%. Polymarket ~50c (DefiRate, -101): +1c, below bar.",
+   "sources": [
+    "vegasinsider.com/nfl/nfl-week-6-odds-2026 (updated Oct 18 10:50 AM)",
+    "defirate.com/odds/nfl/saints-vs-giants-10-18-2026",
+    "fanduel.com/research/saints-vs-giants-predictions-odds-picks-best-bets-for-nfl-week-6-2026",
+    "sportsbettingdime.com Week 6 line movement"
+   ]
+  },
+  {
+   "id": "cle-ml",
+   "label": "NFL: Browns to beat Ravens",
+   "market_slug": "nfl-bal-cle-2026-10-18",
+   "outcome": "Browns",
+   "starts_utc": "2026-10-18T17:00:00Z",
+   "prob": 0.395,
+   "ask_at_research": 0.39,
+   "bid_at_research": 0.385,
+   "liquidity_at_research": null,
+   "why": "Carry-over from the 10-17 board with a fresh anchor. Anchor: BAL -175/CLE +145 (VI Oct 18) no-vig 39.1% CLE (was 40.7% Friday). Lamar Jackson OUT (ESPN inactives), Huntley starts; spread opened BAL -4, now -3 (priced). BAL 2nd off. success rate with Lamar, 8th def. Over 5-0 last 5 meetings. 39.5% vs 39c (Polymarket ask from DefiRate Oct 17, stale): ~0c.",
+   "sources": [
+    "vegasinsider.com/nfl/nfl-week-6-odds-2026 (updated Oct 18 10:50 AM)",
+    "boards/2026-10-17.json (cle-ml)",
+    "espn.com FFSundayInactives Week 6 (headline)"
+   ]
+  },
+  {
+   "id": "buf-ml",
+   "label": "NFL: Bills to win at Raiders",
+   "market_slug": "nfl-buf-lv-2026-10-18",
+   "outcome": "Bills",
+   "starts_utc": "2026-10-18T20:25:00Z",
+   "prob": 0.68,
+   "ask_at_research": 0.675,
+   "bid_at_research": 0.665,
+   "liquidity_at_research": null,
+   "why": "Anchor: BUF -245/LV +200 (VI Oct 18) no-vig 68.1% BUF. BUF 4-1 (32.4 ppg), off a 37-34 OT MNF win over LAR on short rest (6 days) plus travel to LV: slight fatigue flag. LV 3-2 (25.6 ppg), lost 2 straight incl. 45-17 at NE; one of the worst rushing offenses, leans on Cousins. Injuries: BUF OT Spencer Brown, DE Landon Jackson, CB Alford Q; LV C Zuhn, DT Hemingway, WR Nailor Q. Spread drifted 5.5 -> 4.5 at some books; total 52.5 -> 53.5-57.5 on over money (dome). Kalshi BUF slipped ~2 pts this week. Short rest offsets matchup edge: kept at anchor 68%. Polymarket US 67.5c: +0.5c, no edge.",
+   "sources": [
+    "vegasinsider.com/nfl/nfl-week-6-odds-2026 (updated Oct 18 10:50 AM)",
+    "defirate.com/odds/nfl/bills-vs-raiders-10-18-2026",
+    "si.com/betting/bills-vs-raiders-prediction-odds-spread-injuries-trends-for-nfl-week-6-2026",
+    "sportsbettingdime.com Week 6 line movement"
+   ]
+  },
+  {
+   "id": "dal-ml",
+   "label": "NFL SNF: Cowboys to win at Packers",
+   "market_slug": "nfl-dal-gb-2026-10-19",
+   "outcome": "Cowboys",
+   "starts_utc": "2026-10-19T00:20:00Z",
+   "prob": 0.49,
+   "ask_at_research": 0.49,
+   "bid_at_research": 0.48,
+   "liquidity_at_research": 6000000,
+   "why": "Anchor: GB -115/DAL -105 (VI Oct 18) no-vig 48.9% DAL; favorite flipped DAL -1.5 -> GB -1.5 during the week, total 50.5 -> 53. DAL lost at TB on TNF last week (extra rest edge for DAL vs GB normal week). GB beat CHI 31-7 last week. Specific injuries/EPA for this game not found within budget (n/a). Kept at anchor 49%. Polymarket 49c (DefiRate Oct 17): 0c. Slug verified via PredScope (event dated 10-19 UTC); event liquidity ~$6.0M.",
+   "sources": [
+    "vegasinsider.com/nfl/nfl-week-6-odds-2026 (updated Oct 18 10:50 AM)",
+    "defirate.com/odds/nfl/cowboys-vs-packers-10-18-2026 (observed Oct 17 1:12 PM ET)",
+    "predscope.com/event/nfl-dal-gb-2026-10-19",
+    "sportsbettingdime.com Week 6 line movement"
+   ]
+  },
+  {
+   "id": "sf-ml",
+   "label": "NFL MNF: 49ers to beat Commanders",
+   "market_slug": "nfl-was-sf-2026-10-19",
+   "outcome": "49ers",
+   "starts_utc": "2026-10-20T00:15:00Z",
+   "prob": 0.785,
+   "ask_at_research": 0.778,
+   "bid_at_research": 0.77,
+   "liquidity_at_research": null,
+   "why": "Starts ~33h out (just past the 30h window; re-check prices Monday). Anchor: SF -455/WAS +350 (VI Oct 18) no-vig 78.7% SF; spread opened 7.5, as high as 10.5 at some books on 87% of money (no injury reason). SF 5-0, 2nd EPA/play, 1st success rate, 4th opp EPA; Purdy 13 TD/2 INT. Nick Bosa (calf) OUT per DefiRate (pass rush hit vs Daniels). WAS 1-3-1, Stefon Diggs (hamstring) out, tied NYG 27-27. Home, normal rest both. Bosa out nets against public SF money: kept 78.5%. Polymarket US 77.8c: +0.7c, no edge.",
+   "sources": [
+    "vegasinsider.com/nfl/nfl-week-6-odds-2026 (updated Oct 18 10:50 AM)",
+    "defirate.com/odds/nfl/commanders-vs-49ers-10-19-2026",
+    "si.com/betting/commanders-vs-49ers-prediction-odds-spread-injuries-trends-for-nfl-week-6-2026",
+    "sportsbettingdime.com Week 6 line movement"
+   ]
+  },
+  {
+   "id": "ari-ml",
+   "label": "NFL: Cardinals to win at Rams",
+   "market_slug": "nfl-ari-la-2026-10-18",
+   "outcome": "Cardinals",
+   "starts_utc": "2026-10-18T20:05:00Z",
+   "prob": 0.15,
+   "ask_at_research": 0.13,
+   "bid_at_research": 0.125,
+   "liquidity_at_research": null,
+   "why": "Carry-over from the 10-17 board. Anchor unchanged: LAR -800/ARI +550 (VI Oct 18) no-vig 14.8%; spread steady 12.5, sharp money split on ARI (55.7% of money vs 62.5% of tickets on LAR). Rams off 37-34 OT MNF loss to BUF (6 days rest). 15% vs 13c (Polymarket ask from DefiRate Oct 17, stale): +2c, below bar. Strongest lean on the board; confirm the live ask on the Mac.",
+   "sources": [
+    "vegasinsider.com/nfl/nfl-week-6-odds-2026 (updated Oct 18 10:50 AM)",
+    "boards/2026-10-17.json (ari-ml)",
+    "sportsbettingdime.com Week 6 line movement"
+   ]
+  }
+ ],
+ "lifts": {},
+ "notes": "No VALUE leg: every NFL moneyline is within 2c of the no-vig line. QB news (Williams back, Mayfield/Hurts/Lamar out) moved the books days ago and Polymarket followed. Strongest lean: Cardinals +2c (stale ask). One leg per game, so no same-game lifts. CFB: no games Sunday/Monday. NBA: regular season not in window. Tennis (Vienna/Basel R1 Monday) not researched: lookup budget spent on NFL. Polymarket API not reachable from this run; run combo.mjs live on the Mac."
+}
