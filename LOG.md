@@ -88,3 +88,4 @@
 - 2026-10-18: Polymarket: research board 2026-10-18 (8 NFL legs: CHI, TB, NYG, CLE, BUF, DAL SNF, SF MNF, ARI; no-vig VI/Covers anchors + injury/EPA checks). No VALUE leg (max edge +2c, ARI on a stale ask), so nothing added to combos/picks.csv. Polymarket API unreachable; prices via DefiRate. CFB/NBA none in window; tennis not researched. Paper only, not revenue.
 - 2026-10-18: Polymarket: Stephen asked for a combo. Logged 2 PRACTICE combos (not trial-counted, no VALUE legs): G1 Cardinals+Bucs ML est 17.1x, joint 6.75%, EV +16% on a stale ARI ask; G2 Bucs+Giants ML est 4.46x, EV +2%. Paper only, not revenue.
 - 2026-10-18: Support: no new orders, buyer messages or reviews (Gmail, last 2 days). Only Etsy promos and welcome/personalize emails. Revenue $0.
+- 2026-10-18: Operator: Pinterest ad check postponed (Chrome on the Mac not reachable). Settled ALCS G4 leg: Rays 7-3 (paper).
