@@ -3,12 +3,12 @@
 ## Ready
 - [builder] AFTER Stephen APPROVES the Airbnb venture (see APPROVALS): add key `airbnb` to make_trade.py, build the Airbnb Host Business Manager, guide, 7 images, LISTING.md; apply the invoice blank-field fix first. Plan: businesses/_proposals/airbnb-host-business-manager.md, 2026-10-19
 - [qa] AFTER the Airbnb build: full buyer test, 2026-10-19
-- [qa] Re-test Pet Sitting (invoice fix) and spot-check the invoice fix in the other 5 rebuilt xlsx (blank address/email/service, cleared workbook), 2026-10-19
 - [marketer] After the invoice-fix QA pass: rebuild the 6-trade bundle zip from the fixed xlsx (build_gumroad.py), 2026-10-19
 - [marketer] AFTER the Airbnb QA pass: Gumroad copy/cover/thumb, SEO title + 13 tags, 5 pins, 2026-10-19
 - [researcher] Thu: scout next venture (guide kits 22, dashboards 21) and find why Etsy shows 1 of 5 listings active / near-zero views; evidence only, 2026-10-19
 - [strategist] Next Mon: if no Airbnb sales/views signal, judge the 30-day kill rule for TradeSheets (due ~2026-11-13: <3 sales across listings = pivot), 2026-10-19
 - [marketer] After Nov 3: re-pin the top 3 organic pins by outbound clicks to a second board (needs Pinterest analytics via Chrome on the Mac), 2026-10-16
+- [builder] Low priority, next rebuild: restore bold client name on Invoice A12 (the `iv["A12"].font=font(bold=True)` statement is inside the trailing # comment in _engine/build.py and all 6 trade build.py; image 6 shows it bold). Not blocking; QA re-checks only that cell, 2026-10-19
 - [builder] Next trade per research brief: Pool Service (Snow Removal if time before Nov); Pet Sitting done 10-16, businesses/etsy-digital/research/2026-10-15-next-10-trades.md, 2026-10-15
 - [strategist] First weekly plan, and seed IDEAS.md with 5 non-Etsy business ideas that fit an AI operator with a $50 budget, 2026-10-14
 - [marketer] For each new product: Gumroad copy, cover and thumbnail (done through Pet Sitting; add the trade to TRADES/NEW in businesses/etsy-digital/marketing/gumroad/build_gumroad.py, which also rebuilds the bundle-<n>/ draft), 2026-10-14
@@ -23,6 +23,7 @@
 ## Blocked
 
 ## Done
+- [qa] Re-tested the invoice fix: Pet Sitting PASSED (ready to publish) and all 5 live-trade xlsx PASSED (ready to re-upload). 0 errors fresh/cleared/buyer test; blank address, email and service print blank; dashboards match hand math. 1 cosmetic note (client name not bold), 2026-10-19
 - [builder] Invoice blank-field fix in _engine/build.py and all 6 trades (A13/A14 address/email, plus A12 client and the A17 description fallback that also showed 0); all 6 xlsx rebuilt: 7,642 formulas, 0 errors each; old file reproduces the defect, new one shows blanks; demo invoices and images unchanged. Pet Sitting back to QA; live re-uploads in APPROVALS, 2026-10-19
 - [marketer] Pet Sitting & Dog Walking Gumroad draft (GUMROAD.md, cover, thumbnail) and 6-trade bundle update draft ($39 kept, BUNDLE.md, cover, thumbnail, 693 KB zip) in businesses/etsy-digital/marketing/gumroad/; both wait on QA pass + Stephen, 2026-10-17
 - [qa] Tested Pet Sitting & Dog Walking (FAILED: 1 minor defect, invoice shows 0 for a blank client address/email) and re-tested Auto Detailing and Window Cleaning (all checks passed except the same shared invoice defect). 0 errors, buyer tests and quotes match hand math, images match, 2026-10-16

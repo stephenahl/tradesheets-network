@@ -1,5 +1,17 @@
 # QA: Pet Sitting & Dog Walking Business Manager
 
+## 2026-10-19: PASSED (invoice blank-field fix re-test)
+Tested by the QA agent at commit a373056 (Builder's invoice fix). Fresh xlsx loaded with openpyxl and recalculated in LibreOffice (UNO calculateAll); buyer steps done in LibreOffice (EXAMPLE rows deleted as rows).
+- Cell-by-cell diff against the previous shipped file: only Invoice A12, A13, A14, A17 changed; 7,642 formulas; nothing else (values, validations) differs.
+- Fresh file: 0 errors; demo invoice J-0003 unchanged (INV-0003 $28 + $8 = $36).
+- Cleared workbook (all EXAMPLE rows deleted): 0 errors, invoice fully blank.
+- Buyer test, 4 clients + 5 jobs of my own: phone-only client (no email/address), client with no service, client with address but no email, a full client, and a job for a name not in Clients. Invoices: blank address/email now print blank (old file printed "0" and "0", reproduced); no service on job or client prints "Pet care service" (old file printed "0"); job service, client service, override $100 + $15 add-on = $115, paid/due status, INV numbers all right. Unknown Job ID and blank Job ID: blank invoice. 0 errors after entry.
+- Non-blocking regression: the client name on the invoice (A12) is no longer bold. In _engine/build.py and each trade build.py the `iv["A12"].font=font(bold=True)` statement ended up inside the new line's trailing # comment. Listing image 6 shows it bold. Cosmetic only; fix on the next rebuild.
+- Pre-existing, not blocking: with the Job ID cell empty, the Add-on amount shows "-" (zero) on an otherwise blank invoice.
+- Pet full numbers: jobs 25+5=30 (labor 0.5h×$18=9, 3 mi×$0.70=2.10, supplies 1, profit 17.90); 40 (profit 22); 100+15=115 (−2 −72 −7 = 34); 28 (16.20); 50 (32). Dashboard Oct 2026: revenue $263, job costs $141 (140.90), profit $122, unpaid $205, tax set-aside $31 (25%). Next due/status: Weekly Oct 17 Overdue, Monthly Nov 11 Scheduled, One-time —, Daily Oct 16 Overdue. All match hand math.
+- Quote calculator, listing, images and guide unchanged since the 2026-10-16 pass (formulas identical; images/LISTING/guide files untouched since v1).
+- Verdict: the 2026-10-16 defect is fixed. Ready to publish.
+
 ## 2026-10-16: FAILED (1 minor defect)
 Tested by the QA agent on the files at commit eaf2e21 (xlsx loaded fresh with openpyxl, recalculated in LibreOffice; buyer steps done through LibreOffice so row deletion behaves as it would for a buyer). The repo xlsx is identical to a fresh `make_trade.py pet` build.
 
