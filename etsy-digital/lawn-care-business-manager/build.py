@@ -238,12 +238,12 @@ iv["D7"]="Service date"; iv["E7"]=J("B"); iv["E7"].number_format=DATE
 iv["D8"]="Due date"; iv["E8"]='=IF(E7="","",E7+Settings!$B$11)'; iv["E8"].number_format=DATE
 iv["D9"]="Status"; iv["E9"]=f'=IF(A12="","",IF({J("K")[1:]}="Yes","PAID","DUE"))'
 iv["A11"]="BILL TO"; iv["A11"].font=font(bold=True,color=ACC)
-iv["A12"]=J("C"); iv["A12"].font=font(bold=True)
-iv["A13"]=f'=IFERROR(INDEX(Clients!$D$5:$D$304,MATCH(A12,Clients!$A$5:$A$304,0)),"")'
-iv["A14"]=f'=IFERROR(INDEX(Clients!$C$5:$C$304,MATCH(A12,Clients!$A$5:$A$304,0)),"")'
+iv["A12"]=f'=IFERROR(INDEX(Jobs!$C$5:$C${4+N},{M})&"","")'  # &"" so a blank cell shows blank, not 0; iv["A12"].font=font(bold=True)
+iv["A13"]=f'=IFERROR(INDEX(Clients!$D$5:$D$304,MATCH(A12,Clients!$A$5:$A$304,0))&"","")'
+iv["A14"]=f'=IFERROR(INDEX(Clients!$C$5:$C$304,MATCH(A12,Clients!$A$5:$A$304,0))&"","")'
 for j,h in enumerate(["Description","","","","Amount"]):
     c=iv.cell(16,1+j,h or None); c.font=font(bold=True,color="FFFFFF"); c.fill=HDR_FILL
-iv["A17"]=f'=IF(A12="","",IF({J("D")[1:]}<>"",{J("D")[1:]},IFERROR(INDEX(Clients!$E$5:$E$304,MATCH(A12,Clients!$A$5:$A$304,0)),"Lawn care service")))'
+iv["A17"]=f'=IF(A12="","",IF({J("D")[1:]}<>"",{J("D")[1:]},IFERROR(IF(INDEX(Clients!$E$5:$E$304,MATCH(A12,Clients!$A$5:$A$304,0))&""="",NA(),INDEX(Clients!$E$5:$E$304,MATCH(A12,Clients!$A$5:$A$304,0))&""),"Lawn care service")))'
 iv["E17"]=J("H"); iv["E17"].number_format=MONEY
 iv["A18"]="Add-on services"; iv["E18"]=J("I"); iv["E18"].number_format=MONEY
 iv["D20"]="TOTAL"; iv["D20"].font=font(bold=True,size=12); iv["E20"]='=IF(A12="","",N(E17)+N(E18))'; iv["E20"].number_format=MONEY; iv["E20"].font=font(bold=True,size=12)
