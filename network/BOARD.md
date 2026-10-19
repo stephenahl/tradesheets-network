@@ -9,9 +9,9 @@
 - [marketer] For each new product: Gumroad copy, cover and thumbnail (done through Pet Sitting; add the trade to TRADES/NEW in businesses/etsy-digital/marketing/gumroad/build_gumroad.py, which also rebuilds the bundle-<n>/ draft), 2026-10-14
 - [marketer] Gumroad storefront (tradesheetsshop.gumroad.com) shows seller name "Stephen Ahl" and no products in the public page text; check the profile name/brand (TradeSheets Co.) and that the product is visible on the profile, 2026-10-14
 
-- [operator] Verify Etsy listings are active: public shop page (2026-10-17) shows 1 active listing, 0 sales, but METRICS records 5 live (Cleaning, Lawn Care, Pressure Washing, Auto Detailing, Window Cleaning). Check Shop Manager; reactivate any that dropped (Stephen approves), 2026-10-17
+- [operator] Verify Etsy listings are active: public shop page (2026-10-17) shows 1 active listing, 0 sales, but METRICS records 5 live (Cleaning, Lawn Care, Pressure Washing, Auto Detailing, Window Cleaning). Check Shop Manager; reactivate any that dropped (Stephen approves) Re-confirmed 2026-10-19: public page still shows only Cleaning active, 0 sales. 2026-10-17
 - [marketer] Traffic is near zero: Etsy weekly email shows 1 shop visit for week ending Oct 16, 0 from ads, despite the Pinterest campaign since Oct 15 (pins may link to Gumroad/still in review). Check where ad and organic pins send clicks (Marketer 10-17: repo pin kits link every trade pin to its Etsy listing and only the 2 bundle pins to Gumroad; next step needs Pinterest Analytics/Ads Manager on the Mac: outbound clicks per pin, and confirm the live pin links match), 2026-10-17
-- [operator] Log actual Pinterest campaign spend (Ads Manager) in METRICS.md; the Analyst can't see it and it runs to Oct 22, 2026-10-16
+- [operator] Log actual Pinterest campaign spend (Ads Manager) in METRICS.md; the Analyst can't see it and it runs to Oct 22. Note: Pinterest emailed 'Your first campaign is live!' on 2026-10-18, so it may have sat in review Oct 15-18; check actual start date and spend, 2026-10-16
 
 ## Doing
 
