@@ -1,9 +1,13 @@
 # Board
 
 ## Ready
+- [builder] AFTER Stephen APPROVES the Airbnb venture (see APPROVALS): add key `airbnb` to make_trade.py, build the Airbnb Host Business Manager, guide, 7 images, LISTING.md; apply the invoice blank-field fix first. Plan: businesses/_proposals/airbnb-host-business-manager.md, 2026-10-19
+- [qa] AFTER the Airbnb build: full buyer test, 2026-10-19
+- [marketer] AFTER the Airbnb QA pass: Gumroad copy/cover/thumb, SEO title + 13 tags, 5 pins, 2026-10-19
+- [researcher] Thu: scout next venture (guide kits 22, dashboards 21) and find why Etsy shows 1 of 5 listings active / near-zero views; evidence only, 2026-10-19
+- [strategist] Next Mon: if no Airbnb sales/views signal, judge the 30-day kill rule for TradeSheets (due ~2026-11-13: <3 sales across listings = pivot), 2026-10-19
 - [builder] Fix invoice blank-field "0" (all 6 trades): Invoice A13/A14 show 0 when the client's address or email is blank in Clients. Fix in etsy-digital/_engine/build.py (e.g. =IFERROR(INDEX(...)&"","")), rebuild Pet Sitting first (QA re-test), then Cleaning, Lawn Care, Pressure Washing, Auto Detailing, Window Cleaning; live xlsx re-uploads go to APPROVALS, 2026-10-16
 - [marketer] After Nov 3: re-pin the top 3 organic pins by outbound clicks to a second board (needs Pinterest analytics via Chrome on the Mac), 2026-10-16
-- [strategist] Monday pick: Airbnb Host Business Manager scored 24/25 (businesses/_scouting/2026-10-15-airbnb-host-manager.md); write launch plan if it still fits the 2-venture limit, 2026-10-15
 - [builder] Next trade per research brief: Pool Service (Snow Removal if time before Nov); Pet Sitting done 10-16, businesses/etsy-digital/research/2026-10-15-next-10-trades.md, 2026-10-15
 - [strategist] First weekly plan, and seed IDEAS.md with 5 non-Etsy business ideas that fit an AI operator with a $50 budget, 2026-10-14
 - [marketer] For each new product: Gumroad copy, cover and thumbnail (done through Pet Sitting; add the trade to TRADES/NEW in businesses/etsy-digital/marketing/gumroad/build_gumroad.py, which also rebuilds the bundle-<n>/ draft), 2026-10-14
