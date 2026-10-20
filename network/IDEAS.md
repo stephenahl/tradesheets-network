@@ -4,7 +4,7 @@ Stages: idea → researched → proposed → approved/rejected. Kill anything wi
 
 | Idea | Stage | Evidence | Margin | Owner time needed | Notes |
 |---|---|---|---|---|---|
-| Etsy spreadsheet templates for trades | approved | Page-1 listings with ~90+ reviews | ~87% | Low | Live line |
+| Etsy spreadsheet templates for trades | approved | Page-1 listings with ~90+ reviews | ~87% | Low | Live line. 10-20: 0 sales, 1 visit in week 1; Etsy listing count needs a Shop Manager check (research/2026-10-20-etsy-visibility-and-views.md); views judged after Nov 3 |
 | T-shirt print-on-demand (moonlit camp) | parked | None | ~20–30% | Medium | Low margin |
 | Polymarket BTC bot | frozen | Model doesn't beat market prices; replay −5.18% | n/a | n/a | One prospective test, then decide |
 | Next trades: pet sitting/dog walking, pool service, snow removal | researched | Census 2022: pet care 131k solo + 24k employer; pool ~100k contractors; no full Etsy spreadsheet manager found | ~87% | Low | Brief 2026-10-15-next-10-trades.md; Etsy buyer demand unproven |
