@@ -31,4 +31,4 @@ Auto-kill: needs Stephen's ongoing time; needs inventory or shipping; legal or r
 |---|---|---|---|---|
 | TradeSheets Co. (Etsy + Gumroad spreadsheet templates) | live | 2026-10-14 | $0 | More trades, pins, Gumroad |
 | Polymarket sports scanner | paper trial C1 | 2026-10-15 | not revenue (paper) | Score after 4 weeks or 40 combos |
-| Airbnb Host Business Manager (spreadsheet, Etsy + Gumroad) | APPROVED 2026-10-20, building | n/a | $0 | Plan in businesses/_proposals/airbnb-host-business-manager.md; build after APPROVED |
+| Airbnb Host Business Manager (spreadsheet, Etsy + Gumroad) | built 2026-10-20, in QA | n/a | $0 | QA, then publish on Etsy + Gumroad (Stephen approved the venture) |
