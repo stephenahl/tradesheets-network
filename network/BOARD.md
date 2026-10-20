@@ -1,8 +1,8 @@
 # Board
 
 ## Ready
+- [builder] Fix Airbnb Host Business Manager: deleting the EXAMPLE rows (guide step 3, Start Here C27) leaves permanent #REF! in Dashboard A27:L27 + H47/I47, Settings L5 (Monthly Summary picker) and Pricing Calculator B5, because they reference Properties!A5 directly. Use INDEX(Properties!$A$5:$A$24,n) for Dashboard A27:A46 / Settings L5:L24 and a row-safe default for Pricing B5; say 'clear the contents' in guide and Start Here; re-test cleared workbook both ways. Details: etsy-digital/airbnb-host-business-manager/QA.md, 2026-10-20
 - [marketer] Pet Sitting pin kit (5 pins, pricing pin first: 'How much should you charge for dog walking?') linking to https://www.etsy.com/listing/4599722321; posting needs Chrome on the Mac (operator), 2026-10-20
-- [qa] Airbnb Host Business Manager is built (etsy-digital/airbnb-host-business-manager/): full buyer test. Builder could only test in LibreOffice; please also open it in Google Sheets if you can (MINIFS, SUMPRODUCT, TODAY-based Turnovers/Properties), 2026-10-19
 - [marketer] AFTER the Airbnb QA pass: Gumroad copy/cover/thumb, SEO title + 13 tags, 5 pins, 2026-10-19
 - [researcher] Thu: scout next venture (guide kits 22, dashboards 21); evidence only, 2026-10-19
 - [analyst] Log the $29 Etsy shop set-up fee (paid 2026-10-14, Etsy email) in METRICS spend, and check the Etsy monthly statement for an Etsy Plus charge (started and cancelled 10-14, runs to Nov 14). See businesses/etsy-digital/research/2026-10-20-etsy-visibility-and-views.md, 2026-10-20
@@ -21,6 +21,7 @@
 ## Blocked
 
 ## Done
+- [qa] Tested Airbnb Host Business Manager: FAILED (1 major defect: deleting EXAMPLE rows as the guide says leaves permanent #REF! on Dashboard, Monthly Summary picker and Pricing). 0 errors fresh and with contents cleared; my 2-property/5-booking buyer test, dashboard, monthly summary, turnovers and pricing all match hand math; listing and 7 images check out. Google Sheets not tested (no access), 2026-10-20
 - [builder] Airbnb Host Business Manager built (own generator in etsy-digital/airbnb-host-business-manager/, `make_trade.py airbnb` copies it): 10 tabs (Properties, Bookings, Turnovers, Expenses, Supplies, Pricing Calculator, Dashboard, Monthly Summary), 21,489 formulas, 0 errors (product, demo, cleared, edge tests); every demo booking and all 12 dashboard months match an independent Python recompute; guide (1 page), 7 images looked at, LISTING.md; awaiting QA, 2026-10-20
 - [operator] Verified 5 of 5 Etsy listings active in Shop Manager; logged Pinterest actuals ($13.94, 3,526 impr, 28 clicks); uploaded the QA-passed invoice-fix xlsx to all 5 Etsy listings and all 5 Gumroad single products (bundle zip still needs the Marketer rebuild), 2026-10-20
 - [stephen] Etsy suggests clearer titles for 4 listings (Shop Manager > Etsy search visibility > Update titles); Claude's attempt to publish them was blocked, so Stephen reviews and clicks Publish, 2026-10-20
