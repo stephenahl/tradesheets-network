@@ -19,3 +19,6 @@ Script: `calibration.py` (read-only on the Mac's server-review snapshot). Findin
 - One loss costs about 96c, so a few losses erase the edge. Fees of 1-2c likely remove it.
 
 See `HYPOTHESIS.md` for the frozen test.
+
+## PaperBot (2026-10-20)
+`paperbot/`: our own read-only Polymarket paper trader for H2 (sports favourites 90-99c). No wallet, no orders, no dependencies. Run it on the Mac; see `paperbot/README.md`.
