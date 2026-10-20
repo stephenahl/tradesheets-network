@@ -15,15 +15,15 @@
 - [marketer] For each new product: Gumroad copy, cover and thumbnail (done through Pet Sitting; add the trade to TRADES/NEW in businesses/etsy-digital/marketing/gumroad/build_gumroad.py, which also rebuilds the bundle-<n>/ draft), 2026-10-14
 - [marketer] Gumroad storefront (tradesheetsshop.gumroad.com) shows seller name "Stephen Ahl" and no products in the public page text; check the profile name/brand (TradeSheets Co.) and that the product is visible on the profile, 2026-10-14
 
-- [operator] Verify Etsy listings are active: public shop page (2026-10-17) shows 1 active listing, 0 sales, but METRICS records 5 live (Cleaning, Lawn Care, Pressure Washing, Auto Detailing, Window Cleaning). Check Shop Manager; reactivate any that dropped (Stephen approves) Re-confirmed 2026-10-19 and 2026-10-20: public page still shows only Cleaning active, 0 sales Researcher 10-20: no Etsy email shows any deactivation/review, and the '1 active' reading is an unverified automated read; 4-step Shop Manager checklist in businesses/etsy-digital/research/2026-10-20-etsy-visibility-and-views.md. Do this before more pins go out. 2026-10-17
 - [marketer] Traffic is near zero: Etsy weekly email shows 1 shop visit for week ending Oct 16, 0 from ads, despite the Pinterest campaign since Oct 15 (pins may link to Gumroad/still in review). Check where ad and organic pins send clicks (Marketer 10-17: repo pin kits link every trade pin to its Etsy listing and only the 2 bundle pins to Gumroad; next step needs Pinterest Analytics/Ads Manager on the Mac: outbound clicks per pin, and confirm the live pin links match), 2026-10-17
-- [operator] Log actual Pinterest campaign spend (Ads Manager) in METRICS.md; the Analyst can't see it and it runs to Oct 22. Note: Pinterest emailed 'Your first campaign is live!' on 2026-10-18, so it may have sat in review Oct 15-18; check actual start date and spend, 2026-10-16
 
 ## Doing
 
 ## Blocked
 
 ## Done
+- [operator] Verified 5 of 5 Etsy listings active in Shop Manager; logged Pinterest actuals ($13.94, 3,526 impr, 28 clicks); uploaded the QA-passed invoice-fix xlsx to all 5 Etsy listings and all 5 Gumroad single products (bundle zip still needs the Marketer rebuild), 2026-10-20
+- [stephen] Etsy suggests clearer titles for 4 listings (Shop Manager > Etsy search visibility > Update titles); Claude's attempt to publish them was blocked, so Stephen reviews and clicks Publish, 2026-10-20
 - [researcher] Etsy 1-of-5 / near-zero views: no deactivation, review or pause email from Etsy; '1 active' is an unverified automated read (Shop Manager showed 6 active on 10-15); views too early to judge (shop open 10-15, ads live 10-18, pins from 10-19). Found $29 set-up fee not in METRICS. Brief: businesses/etsy-digital/research/2026-10-20-etsy-visibility-and-views.md, 2026-10-20
 - [qa] Re-tested the invoice fix: Pet Sitting PASSED (ready to publish) and all 5 live-trade xlsx PASSED (ready to re-upload). 0 errors fresh/cleared/buyer test; blank address, email and service print blank; dashboards match hand math. 1 cosmetic note (client name not bold), 2026-10-19
 - [builder] Invoice blank-field fix in _engine/build.py and all 6 trades (A13/A14 address/email, plus A12 client and the A17 description fallback that also showed 0); all 6 xlsx rebuilt: 7,642 formulas, 0 errors each; old file reproduces the defect, new one shows blanks; demo invoices and images unchanged. Pet Sitting back to QA; live re-uploads in APPROVALS, 2026-10-19

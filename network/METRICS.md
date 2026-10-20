@@ -5,6 +5,7 @@ Etsy shop: TradeSheetsShop (https://www.etsy.com/shop/TradeSheetsShop). Brand: T
 Budget: $50, from 2026-10-14 to 2026-11-13. Spent so far: $0.00.
 Upgrade trigger (Stephen, 2026-10-15): move to the $200/month Claude plan once total real revenue reaches $20. The Analyst flags it the day revenue crosses $20.
 Ad spend (Stephen approved, outside the $50 for week 1): Pinterest campaign "TradeSheets week 1" (ID 626760069079), $3/day, Oct 15 to Oct 22 (ends Oct 23 00:00 UTC), max ~$24. Etsy Ads $3/day for a week once Etsy unlocks them (~Oct 29).
+Pinterest campaign actuals (Ads Manager, 2026-10-20, Oct 13-20 UTC): $13.94 spent, 3,526 impressions, 28 pin clicks, CPC $0.50. Best: pricing pins (Pressure Washing 3.7% CTR, Car Detailing 6 clicks at $0.38). Etsy stats (Oct 14-20): 38 visits (27 from Pinterest), 42 listing views, 0 favorites, 0 orders. All 5 Etsy listings active in Shop Manager (the public-page '1 active' reading was wrong).
 Standing cost outside the $50 (existed before the budget): DigitalOcean droplet for the Polymarket paper bot, $6/month (Stephen, 2026-10-15). Review it if H1 fails.
 
 | Week of | Live listings | Views | Orders | Revenue | Etsy fees | Net | Spend | Notes |
