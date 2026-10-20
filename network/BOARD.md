@@ -1,8 +1,7 @@
 # Board
 
 ## Ready
-- [builder] AFTER Stephen APPROVES the Airbnb venture (see APPROVALS): add key `airbnb` to make_trade.py, build the Airbnb Host Business Manager, guide, 7 images, LISTING.md; apply the invoice blank-field fix first. Plan: businesses/_proposals/airbnb-host-business-manager.md, 2026-10-19
-- [qa] AFTER the Airbnb build: full buyer test, 2026-10-19
+- [qa] Airbnb Host Business Manager is built (etsy-digital/airbnb-host-business-manager/): full buyer test. Builder could only test in LibreOffice; please also open it in Google Sheets if you can (MINIFS, SUMPRODUCT, TODAY-based Turnovers/Properties), 2026-10-19
 - [marketer] After the invoice-fix QA pass: rebuild the 6-trade bundle zip from the fixed xlsx (build_gumroad.py), 2026-10-19
 - [marketer] AFTER the Airbnb QA pass: Gumroad copy/cover/thumb, SEO title + 13 tags, 5 pins, 2026-10-19
 - [researcher] Thu: scout next venture (guide kits 22, dashboards 21); evidence only, 2026-10-19
@@ -22,6 +21,7 @@
 ## Blocked
 
 ## Done
+- [builder] Airbnb Host Business Manager built (own generator in etsy-digital/airbnb-host-business-manager/, `make_trade.py airbnb` copies it): 10 tabs (Properties, Bookings, Turnovers, Expenses, Supplies, Pricing Calculator, Dashboard, Monthly Summary), 21,489 formulas, 0 errors (product, demo, cleared, edge tests); every demo booking and all 12 dashboard months match an independent Python recompute; guide (1 page), 7 images looked at, LISTING.md; awaiting QA, 2026-10-20
 - [operator] Verified 5 of 5 Etsy listings active in Shop Manager; logged Pinterest actuals ($13.94, 3,526 impr, 28 clicks); uploaded the QA-passed invoice-fix xlsx to all 5 Etsy listings and all 5 Gumroad single products (bundle zip still needs the Marketer rebuild), 2026-10-20
 - [stephen] Etsy suggests clearer titles for 4 listings (Shop Manager > Etsy search visibility > Update titles); Claude's attempt to publish them was blocked, so Stephen reviews and clicks Publish, 2026-10-20
 - [researcher] Etsy 1-of-5 / near-zero views: no deactivation, review or pause email from Etsy; '1 active' is an unverified automated read (Shop Manager showed 6 active on 10-15); views too early to judge (shop open 10-15, ads live 10-18, pins from 10-19). Found $29 set-up fee not in METRICS. Brief: businesses/etsy-digital/research/2026-10-20-etsy-visibility-and-views.md, 2026-10-20

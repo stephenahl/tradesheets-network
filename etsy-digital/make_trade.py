@@ -274,6 +274,18 @@ def apply(path, pairs, all_occ=False):
         s = s.replace(old, new)
     open(path, "w").write(s)
 
+# Non-trade products whose tabs don't fit the Clients/Jobs engine keep their own generator in the product folder.
+# `make_trade.py airbnb` copies that pipeline (plus the engine's render.js/pdf.js) into a working folder.
+STANDALONE = {"airbnb": ("airbnb-host-business-manager", "/tmp/trade-airbnb")}
+if sys.argv[1] in STANDALONE:
+    sub, out = STANDALONE[sys.argv[1]]; here = os.path.dirname(os.path.abspath(__file__))
+    if os.path.exists(out): shutil.rmtree(out)
+    os.makedirs(out)
+    for f in ("build.py", "demo.py", "shots.py", "guide.html"): shutil.copy(os.path.join(here, sub, f), out)
+    for f in ("render.js", "pdf.js"): shutil.copy(os.path.join(SRC, f), out)
+    print("standalone", sys.argv[1], "->", out, "(run build.py, demo.py, recalc, shots.py, node render.js, node pdf.js)")
+    sys.exit(0)
+
 key = sys.argv[1]; t = TRADES[key]
 if os.path.exists(t["dir"]): shutil.rmtree(t["dir"])
 shutil.copytree(SRC, t["dir"], ignore=shutil.ignore_patterns("*.png", "*.xlsx", "*.pdf", "img_*.html", "LISTING.md"))
