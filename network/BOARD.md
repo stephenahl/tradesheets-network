@@ -1,8 +1,8 @@
 # Board
 
 ## Ready
+- [marketer] Pet Sitting pin kit (5 pins, pricing pin first: 'How much should you charge for dog walking?') linking to https://www.etsy.com/listing/4599722321; posting needs Chrome on the Mac (operator), 2026-10-20
 - [qa] Airbnb Host Business Manager is built (etsy-digital/airbnb-host-business-manager/): full buyer test. Builder could only test in LibreOffice; please also open it in Google Sheets if you can (MINIFS, SUMPRODUCT, TODAY-based Turnovers/Properties), 2026-10-19
-- [marketer] After the invoice-fix QA pass: rebuild the 6-trade bundle zip from the fixed xlsx (build_gumroad.py), 2026-10-19
 - [marketer] AFTER the Airbnb QA pass: Gumroad copy/cover/thumb, SEO title + 13 tags, 5 pins, 2026-10-19
 - [researcher] Thu: scout next venture (guide kits 22, dashboards 21); evidence only, 2026-10-19
 - [analyst] Log the $29 Etsy shop set-up fee (paid 2026-10-14, Etsy email) in METRICS spend, and check the Etsy monthly statement for an Etsy Plus charge (started and cancelled 10-14, runs to Nov 14). See businesses/etsy-digital/research/2026-10-20-etsy-visibility-and-views.md, 2026-10-20
