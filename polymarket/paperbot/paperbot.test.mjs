@@ -1,5 +1,5 @@
 // Offline tests: Polymarket is replaced by canned responses shaped like the real gamma/clob replies.
-//   node --test polymarket/paperbot/
+//   node --test polymarket/paperbot/*.test.mjs
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';

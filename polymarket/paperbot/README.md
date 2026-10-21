@@ -26,4 +26,4 @@ The cloud workspace can't reach Polymarket, so the bot has to run on the Mac.
 - Paper results are never revenue. The prices come from global Polymarket, and Polymarket US (where Stephen trades) can quote differently.
 
 ## Tests
-`node --test polymarket/paperbot/` runs offline against canned Polymarket replies.
+`node --test polymarket/paperbot/*.test.mjs` runs offline against canned Polymarket replies.

@@ -77,7 +77,7 @@ export function topOfBook(book) {
 }
 
 // ---------- ledger (CSV, append-only apart from settling open rows) ----------
-const ledgerPath = (o) => path.join(o.data, 'ledger.csv');
+const ledgerPath = (o, file = 'ledger.csv') => path.join(o.data, file);
 const csvCell = (v) => { const s = v == null ? '' : String(v); return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s; };
 
 function parseCsvLine(line) {
@@ -90,18 +90,18 @@ function parseCsvLine(line) {
   out.push(cur); return out;
 }
 
-export function readLedger(o) {
-  const f = ledgerPath(o);
+export function readLedger(o, file) {
+  const f = ledgerPath(o, file);
   if (!fs.existsSync(f)) return [];
   const [head, ...lines] = fs.readFileSync(f, 'utf8').split('\n').filter(Boolean);
   const cols = parseCsvLine(head);
   return lines.map((l) => Object.fromEntries(parseCsvLine(l).map((v, i) => [cols[i], v])));
 }
 
-export function writeLedger(o, rows) {
+export function writeLedger(o, rows, file, columns = COLUMNS) {
   fs.mkdirSync(o.data, { recursive: true });
-  const body = [COLUMNS.join(','), ...rows.map((r) => COLUMNS.map((c) => csvCell(r[c])).join(','))].join('\n') + '\n';
-  const tmp = ledgerPath(o) + '.tmp'; fs.writeFileSync(tmp, body); fs.renameSync(tmp, ledgerPath(o));
+  const body = [columns.join(','), ...rows.map((r) => columns.map((c) => csvCell(r[c])).join(','))].join('\n') + '\n';
+  const tmp = ledgerPath(o, file) + '.tmp'; fs.writeFileSync(tmp, body); fs.renameSync(tmp, ledgerPath(o, file));
 }
 
 // ---------- scan ----------
