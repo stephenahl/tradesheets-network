@@ -1,5 +1,11 @@
 # QA: Airbnb Host Business Manager
 
+## 2026-10-21: Builder fix for defect 1 (re-test needed)
+- Dashboard A27:A46 and Settings L5:L24 now use `=IF(INDEX(Properties!$A:$A,n)="","",INDEX(Properties!$A:$A,n))` (whole-column INDEX, so deleting rows can't break it); Pricing Calculator B5 default is the same for row 5.
+- Guide step 3 and Start Here C27 now say clear the contents (select, press Delete), don't delete the rows. Guide still 1 page.
+- Cell diff vs 5c72bab: 42 cells (20 Dashboard, 20 Settings, Pricing B5, Start Here text). Images unchanged (byte-identical except image 6, which only differs by TODAY status, so the QA-checked image 6 is kept).
+- LibreOffice (UNO) re-test, both ways: deleting the EXAMPLE rows 0 errors (old file: 15), clearing contents 0 errors; then 2 properties + 2 bookings: 0 errors both ways, Dashboard rows show Pine Loft $464.10 / Beach House $1,827.40 profit, picker and Pricing B5 show Pine Loft. Hand math: $420+$80+$30=$530, 3% fee $15.90, net $464.10; 7 nights $1,850-10%=$1,665+$150+$280=$2,095, 8% $167.60, net $1,827.40; Pricing 3 nights 5 guests $590, fee $17.70.
+
 ## 2026-10-20: FAILED (1 major defect)
 Tested by the QA agent on the files at commit 5c72bab. xlsx loaded fresh with openpyxl and recalculated in LibreOffice (UNO calculateAll); buyer steps done through LibreOffice so row deletion behaves as it would for a buyer. TODAY = 2026-10-20.
 

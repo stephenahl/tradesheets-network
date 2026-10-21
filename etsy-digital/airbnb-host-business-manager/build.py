@@ -86,8 +86,8 @@ for i,(a,b) in enumerate(terms):
 r=r+5+len(terms)+1
 s.cell(r,2,"GOOGLE SHEETS").font=font(bold=True,size=12,color=ACC)
 c=s.cell(r+1,3,"Upload this file to Google Drive, open it, then File > Save as Google Sheets. Everything works in both Excel and Google Sheets."); c.font=font(); c.alignment=Alignment(wrap_text=True); s.row_dimensions[r+1].height=30
-c=s.cell(r+2,3,"The example rows (marked EXAMPLE) show the format. Delete them when you start. After that, clear a booking row instead of deleting it, so Booking IDs stay the same.")
-c.font=font(italic=True,color=GREY); c.alignment=Alignment(wrap_text=True); s.row_dimensions[r+2].height=30
+c=s.cell(r+2,3,"The example rows (marked EXAMPLE) show the format. When you start, clear their contents (select the cells and press Delete). Don't delete the rows themselves; clear a row the same way later, so Booking IDs stay the same.")
+c.font=font(italic=True,color=GREY); c.alignment=Alignment(wrap_text=True); s.row_dimensions[r+2].height=42
 c=s.cell(r+3,3,"Default fees and rates are examples. Check your own platform fees. Expense categories are an organizing aid, not tax advice. Not affiliated with or endorsed by Airbnb, Inc. or Vrbo.")
 c.font=font(italic=True,color=GREY); c.alignment=Alignment(wrap_text=True); s.row_dimensions[r+3].height=30
 
@@ -124,7 +124,7 @@ for i,a in enumerate(["Platform payout","Card","Bank transfer","Zelle","Venmo","
 section(st,"L3","PROPERTY PICKER (auto)")
 st["L4"]="All properties"; calc(st["L4"])
 for i in range(NP):
-    calc(st.cell(5+i,12,f'=IF(Properties!A{P0+i}="","",Properties!A{P0+i})'))
+    calc(st.cell(5+i,12,f'=IF(INDEX(Properties!$A:$A,{P0+i})="","",INDEX(Properties!$A:$A,{P0+i}))'))   # whole-column INDEX survives row deletion
 st.cell(26,12,"Feeds the property dropdowns. Don't edit.").font=font(italic=True,size=8,color=GREY)
 
 CH="Settings!$D$5:$D$12"; CHF="Settings!$E$5:$E$12"
@@ -287,7 +287,7 @@ q=sheet("Pricing Calculator")
 title(q,"Pricing Calculator","Price a stay before you accept it, and find the nightly rate you need to break even.")
 colw(q,[34,18,4,38,18])
 section(q,"A4","PRICE A STAY")
-qi=[("Property","=Properties!A5",None),("Check-in date",date(2026,11,13),DATE),("Nights",3,"0"),("Guests",5,"0"),("Channel","Airbnb",None),("Other fees / discounts",0,MONEY)]
+qi=[("Property",'=IF(INDEX(Properties!$A:$A,5)="","",INDEX(Properties!$A:$A,5))',None),("Check-in date",date(2026,11,13),DATE),("Nights",3,"0"),("Guests",5,"0"),("Channel","Airbnb",None),("Other fees / discounts",0,MONEY)]
 for i,(a,b,f) in enumerate(qi):
     r=5+i; q.cell(r,1,a).font=font(); inp(q.cell(r,2,b),f)
 q["B5"].comment=Comment("Pick a property from the dropdown.","Template")
@@ -413,7 +413,7 @@ month_rows(d,10,"$B$4","$D$4")
 header(d,26,["Property","Nights booked","Occupancy","ADR","RevPAR","Payout","Cleaning costs","Expenses","Profit"])
 d.cell(25,1,"BY PROPERTY").font=font(bold=True,color=ACC)
 for i in range(NP):
-    r=27+i; d.cell(r,1,f'=IF(Properties!A{P0+i}="","",Properties!A{P0+i})'); calc(d.cell(r,1))
+    r=27+i; d.cell(r,1,f'=IF(INDEX(Properties!$A:$A,{P0+i})="","",INDEX(Properties!$A:$A,{P0+i}))'); calc(d.cell(r,1))   # survives row deletion
     sel=f'$A{r}'
     M=metrics(YS,YE,sel)
     calc(d.cell(r,2,f'=IF({sel}="","",{M["nights"]})'),"0")
