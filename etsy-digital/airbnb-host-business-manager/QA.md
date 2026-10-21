@@ -1,5 +1,20 @@
 # QA: Airbnb Host Business Manager
 
+## 2026-10-21: PASSED (re-test of the #REF! fix)
+Tested by the QA agent on the files at commit 94b37e9 (xlsx, guide and Start Here changed; images unchanged since 5c72bab). LibreOffice (UNO calculateAll), buyer steps done in LibreOffice. TODAY = 2026-10-21.
+- Fresh: 21,489 formulas, 0 errors.
+- Defect 1 fixed: deleting the EXAMPLE rows (Properties 5, Bookings 5-6, Expenses 5-6) gives 0 errors (was 15 #REF!); clearing their contents also 0. Blank workbook: Dashboard shows "-", by-property rows, Settings L5 picker and Pricing B5 blank, no junk.
+- New buyer test, run both ways (rows deleted / contents cleared), identical results, 0 errors:
+  - Properties: Maple Studio ($100/$140, clean $60, cleaner $40, 2 incl, $15 extra), Ridge House ($200/$260, $120, $80, 4 incl, $25).
+  - Bookings: Thu-Sun Maple Airbnb 3 guests: $100+2x$140=$380 + $45 extra + $60 = $485, 3% $14.55, payout $470.45, net $430.45. Ridge 7 nights Vrbo, -$50: $1,520-10%=$1,368+$120-$50=$1,438, 8% $115.04, payout $1,322.96, net $1,242.96. Maple direct Nov 29-Dec 2, unpaid: $360, $10.80, $349.20, net $309.20. Ridge Booking.com 6 guests, actual payout $500: $400+$100+$120=$620, fee $120, net $420. Cancelled Maple stay excluded everywhere.
+  - Dashboard 2026: payout $2,642.61, profit $2,297.61, unpaid $349.20, tax set-aside $574.40, 15 nights / 730 = 2%, ADR $2,448/15 = $163. Nov 14 nights / 60 = 23%, ADR $168, RevPAR $39, payout $2,526.21, cleaning $226.67, expenses $105, profit $2,194.54; Dec 1 night, $116.40 / $13.33 / $103 (cross-month stay split 2/1). By property: Maple 6 nights $819.65 payout, $664.65 profit; Ridge 9, $1,822.96, $1,662.96; shared -$30; sum = year profit.
+  - Monthly Summary (Ridge House): Nov 9 nights, 30%, ADR $196, rent $1,768, 2 stays, avg 4.5, cleaning fees $240, platform fees $235.04.
+  - Turnovers: Nov 8 Maple -> next check-in Nov 29 (cancelled Nov 20 skipped), gap 21; Nov 16 Ridge SAME-DAY, next guests 6. Properties status Vacant, next check-in Nov 5 / Nov 9.
+  - Pricing (Ridge, Fri Dec 11, 7 nights, 7 guests, Booking.com): 2 weekend + 5 weekday, $1,520-$152+$120+$525 = $2,013, fee $301.95, payout $1,711.05, net $1,631.05, $233.01/night. Break-even ((2400+6.587x80)/0.85-6.587x120)/19.76 = $134.26; target-profit rate $193.80.
+- Guide (1 page) and Start Here C27 now say clear the contents; followed exactly, works.
+- Images unchanged and previously checked; 7_included re-checked, claims true.
+- Non-blocking notes: (a) LISTING.md 'How it works' step 3 still says 'delete the example rows' (works now, but differs from the guide); low-priority Builder task added. (b) If a buyer deletes Properties rows, the fixed ranges shrink (A5:A23) while the whole-column INDEX still reads row 24, so a 20th property would show on the Dashboard but not price its bookings; only matters for 20 listings after deleting rows, which the guide says not to do. (c) Google Sheets still not tested (no access); worth one open before publish.
+
 ## 2026-10-21: Builder fix for defect 1 (re-test needed)
 - Dashboard A27:A46 and Settings L5:L24 now use `=IF(INDEX(Properties!$A:$A,n)="","",INDEX(Properties!$A:$A,n))` (whole-column INDEX, so deleting rows can't break it); Pricing Calculator B5 default is the same for row 5.
 - Guide step 3 and Start Here C27 now say clear the contents (select, press Delete), don't delete the rows. Guide still 1 page.
