@@ -1,0 +1,164 @@
+{
+ "researched_at": "2026-10-22T15:15:00Z",
+ "method": "No-vig sportsbook anchor (DraftKings via SI; Dimers/Novig exchange prices; VegasInsider multi-book spreads; TheSpread/WagerTalk for CFB), then RESEARCH.md stats. Moves capped at 4 points. Polymarket prices from polymarket.com/sports/cfb/games and /sports/nba/games page snapshots (~15:00Z) and DefiRate's Polymarket US quotes for NE-CHI (Oct 21 23:30 ET). The gamma API was not approved for this run, so asks are page prices (not verified order-book asks), bids are estimates and liquidity is unknown (null). Moneyline slugs come from the Polymarket pages; spread/total slugs follow the 2026-10-15 pattern and are NOT verified.",
+ "legs": [
+  {
+   "id": "ne-ml",
+   "label": "NFL TNF: Patriots to win at Bears",
+   "market_slug": "nfl-ne-chi-2026-10-22",
+   "outcome": "Patriots",
+   "starts_utc": "2026-10-23T00:15:00Z",
+   "prob": 0.41,
+   "ask_at_research": 0.405,
+   "bid_at_research": 0.402,
+   "liquidity_at_research": null,
+   "why": "Anchor: DK CHI -148/NE +124 no-vig 42.8% NE; Novig exchange (Dimers) CHI -147/NE +144 = 40.8%; Kalshi 41c. Blend ~41.5%. Line opened CHI -1.5, now -3 at 7 of 9 books (VegasInsider) after NE lost both starting guards: Ben Brown (knee) and Vera-Tucker (hamstring) OUT on Wednesday's final report; Matt Pryor and Walter Rouse (first career start) replace them, RT Moses Q, CB Carlton Davis OUT (plus CBs Prunty, Canada). Chain: interior pressure vs Maye on a short week; CHI's top-10 defense (EPA/play, success rate) gets the matchup. Offset: CHI LB Sanborn OUT, LB T.J. Edwards doubtful (thin middle vs NE backs/TEs), RB Monangai OUT. Both 4-2; NE won 3 straight; Caleb Williams 30/36, 305 yds in his return (CHI 90 pts in his 2 full starts). Short week both sides; weather n/a. News broke Wednesday and the line moved 1.5 pts, so it is priced. Moved -0.5 for the OL chain: 41%. Polymarket US ask ~40.5c (1 - Bears bid 59.5): +0.5c, no edge.",
+   "sources": [
+    "si.com/betting/patriots-vs-bears-prediction-odds-spread-injuries-trends-for-nfl-week-7-2026",
+    "dimers.com/nfl/news/new-england-patriots-vs-chicago-bears-prediction-week-7-2026-ac",
+    "footballnationusa.com/post/patriots-bears-injury-report-new-england-o-line-week-7-2026",
+    "vegasinsider.com/nfl/odds/las-vegas/",
+    "defirate.com/odds/nfl/new-england-vs-chicago-10-22-2026/"
+   ]
+  },
+  {
+   "id": "ne-chi-u505",
+   "label": "NFL TNF: Patriots-Bears Under 50.5",
+   "market_slug": "nfl-ne-chi-2026-10-22-total-50pt5",
+   "outcome": "Under",
+   "starts_utc": "2026-10-23T00:15:00Z",
+   "prob": 0.505,
+   "ask_at_research": 0.49,
+   "bid_at_research": 0.485,
+   "liquidity_at_research": null,
+   "why": "Anchor: DK 49.5 (-110/-110) and Novig 50.5 (O -106/U +104, no-vig Under 49.5%): Under 50.5 ~50.5% blended. Dimers model Under 51.4% (projects 26-23 = 49). Under 4-2 across both teams' games; Over 2-1 in Williams starts. NE's patched interior OL lowers its drive success; CHI LB absences cut the other way. Weather: n/a (not found within budget). Kept at 50.5%. Polymarket US Over 50.5 lowest ask 51.5c, so Under ask ~49c: +1.5c, below bar.",
+   "sources": [
+    "dimers.com/nfl/news/new-england-patriots-vs-chicago-bears-prediction-week-7-2026-ac",
+    "si.com/betting/patriots-vs-bears-prediction-odds-spread-injuries-trends-for-nfl-week-7-2026",
+    "defirate.com/odds/nfl/new-england-vs-chicago-10-22-2026/"
+   ]
+  },
+  {
+   "id": "jmu-m105",
+   "label": "CFB: James Madison -10.5 at Appalachian State",
+   "market_slug": "cfb-jmad-applst-2026-10-22-spread-away-10pt5",
+   "outcome": "James Madison",
+   "starts_utc": "2026-10-22T23:00:00Z",
+   "prob": 0.51,
+   "ask_at_research": 0.49,
+   "bid_at_research": 0.48,
+   "liquidity_at_research": null,
+   "why": "Anchor: books split JMU -11.5 (TheSpread, opened 11; ML -470/+345 = 78.6% JMU) and -10.5 (WagerTalk, held at open, -110): fair cover at -10.5 ~51%. JMU 7-0, 42.9 ppg for / 16.0 against; RB Pettaway 767 yds, 4 straight 100-yd games vs App run D 101st in rush success allowed; App DL Benton and Harris OUT. App QB Singleton (ankle) cleared Thursday per official report but may split with Hasselbeck (125 rush yds at Coastal). JMU OL Tinilau doubtful, Rawls Q; WR Collins Q. JMU 3-8 all-time in Boone; won 58-10 last year. Total fell 57.5 -> 56.5 against 96% of money. Singleton news is a slight App plus, offsets the DL losses: 51%. Polymarket page JMU -10.5 at 49c: +2c, below bar. Volume $23.8K on the event.",
+   "sources": [
+    "thespread.com/ncaaf-articles/james-madison-vs-appalachian-state-prediction-october-22-2026/",
+    "wagertalk.com/news/college-football/james-madison-vs-app-state-prediction-picks-odds-october-22-2026/",
+    "rotowire.com/cfootball/headlines/malachi-singleton-news-available-thursday-236296",
+    "polymarket.com/sports/cfb/games"
+   ]
+  },
+  {
+   "id": "app-ml",
+   "label": "CFB: Appalachian State to upset James Madison",
+   "market_slug": "cfb-jmad-applst-2026-10-22",
+   "outcome": "Appalachian State",
+   "starts_utc": "2026-10-22T23:00:00Z",
+   "prob": 0.215,
+   "ask_at_research": 0.22,
+   "bid_at_research": 0.21,
+   "liquidity_at_research": null,
+   "why": "Anchor: JMU -470/App +345 no-vig 21.4% App. Same findings as jmu-m105 (Singleton cleared, home in Boone where App is 8-3 vs JMU; App DL out, run D 101st). 21.5%. Polymarket 22c: -0.5c.",
+   "sources": [
+    "thespread.com/ncaaf-articles/james-madison-vs-appalachian-state-prediction-october-22-2026/",
+    "rotowire.com/cfootball/headlines/malachi-singleton-news-available-thursday-236296"
+   ]
+  },
+  {
+   "id": "mem-m105",
+   "label": "CFB: Memphis -10.5 vs East Carolina",
+   "market_slug": "cfb-ecar-mphs-2026-10-22-spread-home-10pt5",
+   "outcome": "Memphis",
+   "starts_utc": "2026-10-22T23:30:00Z",
+   "prob": 0.50,
+   "ask_at_research": 0.48,
+   "bid_at_research": 0.47,
+   "liquidity_at_research": null,
+   "why": "Anchor: Memphis -10.5 (-110/-110), opened 10; ML -435/+325 = 77.6% Memphis. Memphis 5-2, QB Stokes 1,841 yds 18 TD 6 INT, RB Carter 780 yds; lost 31-17 at Tulane on SIX turnovers (luck-heavy: discount). ECU 3-3, QB Emory Williams (655 yds), lost 30-17 in OT at UAB; ECU won the last 3 meetings. Injuries: n/a in sources. Weather n/a. No advanced efficiency found (n/a). Kept at 50%. Polymarket page Memphis -10.5 at 48c: +2c, below bar; event volume only $4.5K (likely thin).",
+   "sources": [
+    "thespread.com/ncaaf-articles/east-carolina-vs-memphis-prediction-october-22-will-dog-cover-spread/",
+    "polymarket.com/sports/cfb/games"
+   ]
+  },
+  {
+   "id": "ksu-p105",
+   "label": "CFB: Kennesaw State +10.5 vs Liberty",
+   "market_slug": "cfb-librty-kenest-2026-10-22-spread-home-10pt5",
+   "outcome": "Kennesaw State",
+   "starts_utc": "2026-10-22T23:00:00Z",
+   "prob": 0.515,
+   "ask_at_research": 0.52,
+   "bid_at_research": 0.50,
+   "liquidity_at_research": null,
+   "why": "Anchor: Liberty -10 (opened -10.5), ML -430/+320 = 77.3% Liberty; +10.5 adds ~1.5 pts of cover vs +10: 51.5%. Liberty 5-1 (only loss JMU), 223 rush ypg (15th), off a bye after 35-3 vs Sam Houston; QB Purdie. KSU 1-5, five straight losses but the last three by one score; KSU won both prior meetings (2024, 2025 2OT). Injuries n/a. Total up 49 -> 50.5. Polymarket KSU +10.5 at 52c: -0.5c. Event volume $1K: thin.",
+   "sources": [
+    "thespread.com/ncaaf-articles/liberty-vs-kennesaw-state-prediction-october-22-2026/",
+    "polymarket.com/sports/cfb/games"
+   ]
+  },
+  {
+   "id": "cle-ml",
+   "label": "NBA: Cavaliers to win at 76ers (CLE opener)",
+   "market_slug": "nba-cle-phi-2026-10-22",
+   "outcome": "Cavaliers",
+   "starts_utc": "2026-10-22T23:00:00Z",
+   "prob": 0.43,
+   "ask_at_research": 0.42,
+   "bid_at_research": 0.41,
+   "liquidity_at_research": null,
+   "why": "Anchor: DK PHI -135/CLE +114 no-vig 44.9% CLE; Novig exchange CLE 42c/PHI 59c (~41.6%). Blend 43%. C Jarrett Allen (knee) questionable since Wed 5 PM ET (priced); CLE also without Tomlin and Diop. CLE season opener; PHI 1-0 after beating NYK (Maxey 28). Mitchell and Harden lead CLE; Embiid, J. Brown, Maxey for PHI. CLE was bottom-5 in opp 3PM last season vs Maxey's volume. Back-to-back: n/a (CLE first game). Dimers model PHI 63.5%. 43%. Polymarket 42c: +1c. If Allen is ruled OUT, re-check (fade CLE).",
+   "sources": [
+    "si.com/betting/cavaliers-vs-76ers-prediction-odds-and-best-nba-prop-bets-for-thursday-oct-22-2026",
+    "dimers.com/nba/news/cleveland-cavaliers-vs-philadelphia-76ers-prediction-10-22-2026-ac",
+    "heavy.com/sports/nba/cleveland-cavaliers/allen-announcement-before-76ers-oct/",
+    "polymarket.com/sports/nba/games"
+   ]
+  },
+  {
+   "id": "den-ml",
+   "label": "NBA: Nuggets to win at Thunder",
+   "market_slug": "nba-den-okc-2026-10-22",
+   "outcome": "Nuggets",
+   "starts_utc": "2026-10-23T01:30:00Z",
+   "prob": 0.275,
+   "ask_at_research": 0.26,
+   "bid_at_research": 0.25,
+   "liquidity_at_research": null,
+   "why": "Anchor: DK OKC -298/DEN +250 no-vig 27.6% DEN. DEN opener (0-0); OKC 1-0 after winning at SAS by 12 as a 2.5-pt dog (SGA 32). DEN: best offensive rating last season but 21st defensively, lost Peyton Watson, added DeRozan, thin bench; Strawther OUT, Spencer Jones Q. OKC: #1 defense last season, +11.7 home margin; Oweh, Sorber, Topic OUT. H2H last season: DEN kept both OKC games within 8. Rest: OKC 1 day, DEN fresh. 27.5%. Polymarket 26c: +1.5c, below bar.",
+   "sources": [
+    "si.com/betting/nuggets-vs-thunder-prediction-odds-and-best-nba-prop-bets-for-thursday-oct-22-2026",
+    "polymarket.com/sports/nba/games"
+   ]
+  },
+  {
+   "id": "den-p85",
+   "label": "NBA: Nuggets +8.5 at Thunder",
+   "market_slug": "nba-den-okc-2026-10-22-spread-away-8pt5",
+   "outcome": "Nuggets",
+   "starts_utc": "2026-10-23T01:30:00Z",
+   "prob": 0.52,
+   "ask_at_research": 0.52,
+   "bid_at_research": 0.50,
+   "liquidity_at_research": null,
+   "why": "Anchor: DK DEN +7.5 (-105)/OKC -7.5 (-115): no-vig DEN +7.5 48.9%; one extra point at 8 adds ~3: ~52%. Same findings as den-ml. 52%. Polymarket DEN +8.5 at 52c: 0c.",
+   "sources": [
+    "si.com/betting/nuggets-vs-thunder-prediction-odds-and-best-nba-prop-bets-for-thursday-oct-22-2026",
+    "polymarket.com/sports/nba/games"
+   ]
+  }
+ ],
+ "lifts": {
+  "ne-chi-u505|ne-ml": 1.03,
+  "app-ml|jmu-m105": 0.01,
+  "den-ml|den-p85": 1.92
+ },
+ "notes": "No VALUE leg. Every price is within 2c of the no-vig line; the injury news (NE guards out, Allen questionable) broke Wednesday and the lines moved. Best leans: JMU -10.5 and Memphis -10.5 at +2c (half-point better than some books, but thin, unverified books). Lifts: app-ml|jmu-m105 0.01 = mutually exclusive; den-ml|den-p85 = ML win implies cover (P(both) = P(ML)). Tennis: Herbert (82/19 Polymarket vs 1.22/4.25 no-vig 22.3%) looked +3c but Lyon scheduled it 16:30 CEST = 14:30Z, so it had started: excluded per the live-match rule. ATP Almaty/Brussels/Lyon/Lisbon/Florence matches on Polymarket all started before 15:00Z. Friday NBA/CFB (23:00Z Oct 23+) is ~32h out: left for tomorrow's board. Polymarket API not approved for this run; run combo.mjs live on the Mac to check real asks and liquidity."
+}
