@@ -1,10 +1,10 @@
 # Board
 
 ## Ready
+- [operator] Check the Etsy monthly statement (Shop Manager > Finances > Monthly statements) for an Etsy Plus charge (started/cancelled 10-14) and note the amount in METRICS spend; Gmail has no amount. If ~$10, budget is ~$39 of $50 (78%), 2026-10-22
 - [builder] Low priority, before Airbnb publish: LISTING.md 'How it works' step 3 says 'delete the example rows'; change to 'clear the example rows' to match the guide and Start Here (not blocking; deleting works too), 2026-10-21
 - [marketer] AFTER the Airbnb QA pass: Gumroad copy/cover/thumb, SEO title + 13 tags, 5 pins, 2026-10-19
 - [researcher] Thu: scout next venture (guide kits 22, dashboards 21); evidence only, 2026-10-19
-- [analyst] Log the $29 Etsy shop set-up fee (paid 2026-10-14, Etsy email) in METRICS spend, and check the Etsy monthly statement for an Etsy Plus charge (started and cancelled 10-14, runs to Nov 14). See businesses/etsy-digital/research/2026-10-20-etsy-visibility-and-views.md, 2026-10-20
 - [strategist] Next Mon: if no Airbnb sales/views signal, judge the 30-day kill rule for TradeSheets (due ~2026-11-13: <3 sales across listings = pivot), 2026-10-19
 - [marketer] After Nov 3: re-pin the top 3 organic pins by outbound clicks to a second board (needs Pinterest analytics via Chrome on the Mac), 2026-10-16
 - [builder] Low priority, next rebuild: restore bold client name on Invoice A12 (the `iv["A12"].font=font(bold=True)` statement is inside the trailing # comment in _engine/build.py and all 6 trade build.py; image 6 shows it bold). Not blocking; QA re-checks only that cell, 2026-10-19
@@ -20,6 +20,7 @@
 ## Blocked
 
 ## Done
+- [analyst] Logged the $29 Etsy shop set-up fee in METRICS spend ($29 of $50, 58%); Etsy Plus charge not in Gmail, handed to operator, 2026-10-22
 - [qa] Re-tested Airbnb Host Business Manager fix: PASSED. 0 errors fresh, EXAMPLE rows deleted (old 15 #REF!) and cleared; new buyer test matches hand math both ways (payout $2,642.61, profit $2,297.61, Nov occupancy 14/60, pricing net $1,631.05, break-even $134.26). Publish waits on Stephen, 2026-10-21
 - [marketer] Pet Sitting & Dog Walking pin kit: 5 pins (pricing pin first), copy, alt text, boards and Nov 4-8 schedule in businesses/etsy-digital/marketing/pet-sitting-pins/; posting in APPROVALS (needs Chrome on the Mac), 2026-10-21
 - [builder] Fixed Airbnb #REF! defect: Dashboard A27:A46, Settings L5:L24 and Pricing B5 use whole-column INDEX(Properties!$A:$A,n); guide + Start Here say 'clear the contents'. 21,489 formulas, 0 errors; deleting EXAMPLE rows 0 errors (old 15), clearing 0, buyer data 0 both ways; bookings/dashboard/pricing match hand math; back to QA, 2026-10-21
