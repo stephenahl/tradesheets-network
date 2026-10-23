@@ -33,7 +33,7 @@ WHAT YOU GET
 HOW IT WORKS
 1. Download the file after purchase.
 2. Open it in Excel, or upload it to Google Drive and choose File › Save as Google Sheets.
-3. Enter your settings and properties, delete the example rows, and start logging bookings.
+3. Enter your settings and properties, clear the example rows, and start logging bookings.
 
 GOOD TO KNOW
 • This is a digital download. Nothing is shipped.
