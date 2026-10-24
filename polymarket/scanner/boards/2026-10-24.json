@@ -19,8 +19,130 @@
     "dimers.com/cfb/predictions/2026_8_fau_rice",
     "polymarket.com/sports/cfb/games"
    ]
+  },
+  {
+   "id": "gb-p35",
+   "label": "NFL: Packers +3.5 at Lions",
+   "market_slug": "nfl-gb-det-2026-10-25-spread-home-3pt5",
+   "outcome": "Packers",
+   "starts_utc": "2026-10-25T20:25:00Z",
+   "prob": 0.52,
+   "ask_at_research": 0.51,
+   "bid_at_research": 0.5,
+   "liquidity_at_research": null,
+   "why": "Anchor: Caesars GB +3.5 (-117), BetMGM DET -3.5 (-105) => GB +3.5 ~52% no-vig; ML DET -175 / GB +157 (62.4% DET), consensus DET -180/+150; spread opened/held DET -3. Stats: GB 4-2, won 3 straight (23-13 vs DAL); Love 5th in pass yds/game with 24 completions of 20+ yds vs a DET defense that is last in total defense and allows the most EPA/play on 20+ air-yard throws. DET 3-2, off a bye, ~33 ppg (2nd), Goff 12 TD/0 INT, Hutchinson 32 pressures in 5 games. GB 4-1 ATS last 5 meetings (weak). Injuries: GB LB Zaire Franklin OUT, G Aaron Banks Q, CB St-Juste Q, Jacobs back from exempt list; DET S Brian Branch Q (Achilles), C Cade Mays Q. Indoors (Ford Field), weather n/a. Rest: DET off bye (edge DET). Matchup lean GB offsets the bye; no move. 52% vs ask 51c: +1c, below bar.",
+   "sources": [
+    "bettorsinsider.com/nfl/2026/10/24/nfl-week-7-sunday-betting-guide-packers-lions-chiefs-seahawks-and-bengals-ravens-spreads-and-totals",
+    "vegasinsider.com/nfl/nfl-week-7-odds-2026/",
+    "cbssports.com/nfl/news/nfl-week-7-injury-report-baker-mayfield-lamar-jackson-questionable",
+    "polymarket.com/sports/nfl"
+   ]
+  },
+  {
+   "id": "bal-ml",
+   "label": "NFL: Ravens to beat Bengals",
+   "market_slug": "nfl-cin-bal-2026-10-25",
+   "outcome": "Ravens",
+   "starts_utc": "2026-10-25T17:00:00Z",
+   "prob": 0.485,
+   "ask_at_research": 0.48,
+   "bid_at_research": 0.47,
+   "liquidity_at_research": null,
+   "why": "Anchor: consensus CIN -118 / BAL -102 => BAL 48.3%. Opened BAL -3 (-160); flipped to CIN -1.5 on Wednesday's Lamar Jackson news. Lamar (high-ankle sprain Oct 4, missed 2 games) limited all week, QUESTIONABLE, 'trending in the right direction', late decision possible; Huntley starts otherwise (3rd straight; BAL 3-1 in his starts since 2025, 7-12 all-time without Lamar). Henry leads NFL (130 car, 534 yds, 7 TD); CIN off bye but allowed a season-high 217 rush yds at MIA. Burrow 289.5 yds/g in 11 starts vs BAL; BAL 11-3 vs CIN with Lamar. BAL OUT OLB Robinson, S Hawkins; CB Tampa doubtful; CIN no designations. BAL just lost at CLE. Weather n/a. Market prices roughly a 1-in-3 chance Lamar plays; +0.5c. Lean only: if Lamar is declared active, BAL should be ~58% and this becomes value (check the inactives ~15:30Z Sunday).",
+   "sources": [
+    "cbssports.com/nfl/news/nfl-week-7-injury-report-baker-mayfield-lamar-jackson-questionable",
+    "vegasinsider.com/nfl/nfl-week-7-odds-2026/",
+    "si.com/betting/lamar-jackson-injury-update-completely-flips-bengals-vs-ravens-odds-for-nfl-week-7-2026",
+    "bettorsinsider.com/nfl/2026/10/24/nfl-week-7-sunday-betting-guide-packers-lions-chiefs-seahawks-and-bengals-ravens-spreads-and-totals"
+   ]
+  },
+  {
+   "id": "atl-ml",
+   "label": "NFL: Falcons to beat 49ers",
+   "market_slug": "nfl-sf-atl-2026-10-25",
+   "outcome": "Falcons",
+   "starts_utc": "2026-10-25T17:00:00Z",
+   "prob": 0.43,
+   "ask_at_research": 0.43,
+   "bid_at_research": 0.42,
+   "liquidity_at_research": null,
+   "why": "Anchor: 8-book consensus SF -148 / ATL +124 => ATL 42.8%; spread -2.5 (-115) everywhere but HardRock -3; total 49.5. Moved from SF -4.5 / -218 open on SF injuries: OUT WR Mike Evans, WR Deebo Samuel, DE Nick Bosa, LBs Gifford and Wallow, S Sigle; WR Kirk and CB Stout Q. ATL OUT RB Brian Robinson, OT Jerrell, LB Deablo; Q both Terrell CBs, Henderson, Ebukam, Za'Darius Smith, Dexter. Injury news is days old and the line moved 2 points: priced. Indoors. 43% vs ask 43c: no edge.",
+   "sources": [
+    "vegasinsider.com/nfl/matchups/49ers-vs-falcons/",
+    "cbssports.com/nfl/news/nfl-week-7-injury-report-baker-mayfield-lamar-jackson-questionable",
+    "polymarket.com/sports/nfl"
+   ]
+  },
+  {
+   "id": "no-ml",
+   "label": "NFL (Paris): Saints to beat Steelers",
+   "market_slug": "nfl-pit-no-2026-10-25",
+   "outcome": "Saints",
+   "starts_utc": "2026-10-25T13:30:00Z",
+   "prob": 0.41,
+   "ask_at_research": 0.4,
+   "bid_at_research": 0.39,
+   "liquidity_at_research": null,
+   "why": "Anchor: consensus PIT -162 / NO +136 => NO 40.7%; opened PIT -2 (-130/+110), now -3 (DK -3.5). Neutral site (Paris), so NO's nominal home field is worth little; travel equal. PIT OUT WR Skowronek, CB Echols; RB Dowdle Q (limited all week). NO G Cesar Ruiz Q, DT Shepherd Q (illness). Total 44.5. EPA/last-5: n/a within budget. 41% vs 40c: +1c, below bar.",
+   "sources": [
+    "vegasinsider.com/nfl/nfl-week-7-odds-2026/",
+    "cbssports.com/nfl/news/nfl-week-7-injury-report-baker-mayfield-lamar-jackson-questionable",
+    "rotowire.com/betting/nfl/odds/week-7",
+    "polymarket.com/sports/nfl/nfl-pit-no-2026-10-25"
+   ]
+  },
+  {
+   "id": "tb-ml",
+   "label": "NFL: Buccaneers to beat Panthers",
+   "market_slug": "nfl-tb-car-2026-10-25",
+   "outcome": "Buccaneers",
+   "starts_utc": "2026-10-25T17:00:00Z",
+   "prob": 0.42,
+   "ask_at_research": 0.42,
+   "bid_at_research": 0.41,
+   "liquidity_at_research": null,
+   "why": "Anchor: consensus CAR -155 / TB +130 => TB 41.7% (open CAR -175/+145); DK CAR -3.5. Mayfield (dislocated right thumb, Week 3) QUESTIONABLE after returning to practice; rookie Jalon Daniels started the last 3 (TB 1-2 without Mayfield, close games). TB 1-5. TB OUT WR Egbuka, RT Goedeke, S Winfield. CAR OUT OLBs Jaelan Phillips and Incoom; Bryce Young full. Total 44.5. Mayfield playing is partly priced (line came back from -175). 42% vs 42c: no edge; lean TB only if Mayfield is active.",
+   "sources": [
+    "si.com/betting/positive-baker-mayfield-injury-update-doesn-t-shift-buccaneers-vs-panthers-odds-for-nfl-week-7-just-yet",
+    "cbssports.com/nfl/news/nfl-week-7-injury-report-baker-mayfield-lamar-jackson-questionable",
+    "vegasinsider.com/nfl/nfl-week-7-odds-2026/"
+   ]
+  },
+  {
+   "id": "cle-ml",
+   "label": "NFL: Browns to win at Titans",
+   "market_slug": "nfl-cle-ten-2026-10-25",
+   "outcome": "Browns",
+   "starts_utc": "2026-10-25T17:00:00Z",
+   "prob": 0.54,
+   "ask_at_research": 0.55,
+   "bid_at_research": 0.54,
+   "liquidity_at_research": null,
+   "why": "Anchor: consensus CLE -130 / TEN +110 => CLE 54.3%; line flipped from TEN -2.5 open to CLE -2.5. CLE OUT QB Dillon Gabriel (back), G Teven Jenkins, DTs Khalil Davis and Mike Hall; CB Denzel Ward and S Delpit Q. TEN no OUTs; WR Calvin Ridley Q (no practice last 2 days), RB Spears Q. Total 36.5 (lowest on the board). Starter for CLE and EPA: n/a within budget. 54% vs 55c: -1c.",
+   "sources": [
+    "vegasinsider.com/nfl/nfl-week-7-odds-2026/",
+    "cbssports.com/nfl/news/nfl-week-7-injury-report-baker-mayfield-lamar-jackson-questionable",
+    "polymarket.com/sports/nfl"
+   ]
+  },
+  {
+   "id": "den-ari-o425",
+   "label": "NFL: Broncos-Cardinals Over 42.5",
+   "market_slug": "nfl-den-ari-2026-10-25-total-42pt5",
+   "outcome": "Over",
+   "starts_utc": "2026-10-25T20:05:00Z",
+   "prob": 0.525,
+   "ask_at_research": 0.52,
+   "bid_at_research": 0.51,
+   "liquidity_at_research": null,
+   "why": "Anchor: consensus total 43.5 (O -112 / U -108), open 43.5 => Over 42.5 ~52.5% (43 carries a little weight). ML DEN -230 / ARI +190. ARI QB Carson Beck Q (back), RB Jeremiyah Love OUT, OL Gaines OUT, CB Melton Q, S Budda Baker Q; DEN RB Badie OUT, RB Coleman Q, CB Surtain Q (limited), S Hufanga OUT. Defensive absences on both sides vs a possible backup QB for ARI roughly cancel. Retractable roof: weather n/a. +0.5c.",
+   "sources": [
+    "vegasinsider.com/nfl/nfl-week-7-odds-2026/",
+    "cbssports.com/nfl/news/nfl-week-7-injury-report-baker-mayfield-lamar-jackson-questionable",
+    "polymarket.com/sports/nfl"
+   ]
   }
  ],
  "lifts": {},
- "notes": "Draft at 15:15Z (CFB 16:00Z kickoffs); NFL legs follow."
+ "notes": "One VALUE leg on page prices: FAU -8.5 (+3.5c; the book line moved to 9.5-10.5 and Polymarket's spread still sits at 8.5). NFL Sunday is efficient: all 7 researched legs within 1c of the no-vig consensus (Rotowire's Oct 23 lines were stale; VegasInsider 8-book consensus used). Strongest NFL leans are QB-status bets: Ravens if Lamar is active, Bucs if Mayfield is active (check inactives ~90 min before 17:00Z). Not researched (lookup budget): NBA Sat night (MIA-CHA 22:00Z, BKN-CLE, MIL-PHI 23:30Z, SAS-DAL, WAS-CHI 00:00Z; Polymarket books ~$1-6K volume), later CFB kickoffs (page showed only 16:00Z games), tennis (Vienna/Basel semis in progress; finals Sunday). Chiefs-Seahawks SNF (00:20Z Mon) is beyond 30h. Only one VALUE leg, so no combo qualifies; practice combo P1 (FAU -8.5 + GB +3.5) logged as PRACTICE. Liquidity unknown: combo.mjs flags legs 'thin book' offline; run it live on the Mac."
 }
