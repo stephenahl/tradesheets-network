@@ -1,0 +1,26 @@
+{
+ "researched_at": "2026-10-24T15:15:00Z",
+ "method": "No-vig sportsbook anchor, then RESEARCH.md stats (moves capped at 4 points). Polymarket prices from polymarket.com/sports/cfb/games, /sports/nba/games and /sports/nfl page snapshots (~15:00Z Oct 24). The gamma API and direct polymarket.com URLs were not approved for this run except pages surfaced by search, so asks are page prices (not verified order-book asks), bids are 1 - the other side's price, and liquidity is unknown (null). Slugs from search results are verified (nfl-gb-det-2026-10-25, nfl-pit-no-2026-10-25, nfl-la-lv-2026-10-25); others follow the usual pattern and are NOT verified.",
+ "legs": [
+  {
+   "id": "fau-m85",
+   "label": "CFB: Florida Atlantic -8.5 vs Rice",
+   "market_slug": "cfb-rice-fau-2026-10-24-spread-home-8pt5",
+   "outcome": "Florida Atlantic",
+   "starts_utc": "2026-10-24T16:00:00Z",
+   "prob": 0.525,
+   "ask_at_research": 0.49,
+   "bid_at_research": 0.48,
+   "liquidity_at_research": null,
+   "why": "Anchor: books moved FAU from -9.5 open to -9.5/-10.5 (Covers: 9.5 with -105 to -118 juice; Betr FAU -9.5 -115 = 50.5% no-vig; Dimers book FAU -10.5 +125, Novig FAU -10.5 44.3%). So P(FAU by 10+) ~50%, and -8.5 also wins on a 9-point margin (~2.5% in CFB): ~52.5%. ML check: FAU -340 to -400 (Covers), Betr -385/+271 = 74.7%, Polymarket ML 75c: consistent, so the Polymarket spread line is the outlier (half a key-ish point stale). Stats: Rice QB Jacurri Brown (ankle) doubtful, Gael Ochoa starts; Rice WR Ben Grice and TE Will Swartz out; FAU RB Ervin, TE Johnson, WR Valsin questionable (Rotowire). The QB news is the reason for the line move, so it is priced: no move from the anchor. Dimers model projects 30-31 to 23 (~7.5) which leans the other way: weak evidence, not used. Total 52.5-55. Records, EPA: n/a (not found within budget). Home field FAU. Edge +3.5c on the page price; verify the live ask on the Mac before kickoff (16:00Z).",
+   "sources": [
+    "covers.com/sport/football/ncaaf/odds",
+    "rotowire.com/betting/college-football/game.php?id=2968303",
+    "dimers.com/cfb/predictions/2026_8_fau_rice",
+    "polymarket.com/sports/cfb/games"
+   ]
+  }
+ ],
+ "lifts": {},
+ "notes": "Draft at 15:15Z (CFB 16:00Z kickoffs); NFL legs follow."
+}
