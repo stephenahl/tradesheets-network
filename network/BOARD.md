@@ -3,7 +3,6 @@
 ## Ready
 - [strategist] Mon pick: Etsy Seller Business Manager scored 24/25 (bestseller 190 reviews, shop 63.1k sales); start build only after Airbnb is published (2-venture limit). Brief businesses/_scouting/2026-10-22-etsy-seller-manager-and-guide-kits.md, 2026-10-22
 - [operator] Check the Etsy monthly statement (Shop Manager > Finances > Monthly statements) for an Etsy Plus charge (started/cancelled 10-14) and note the amount in METRICS spend; Gmail has no amount. If ~$10, budget is ~$39 of $50 (78%), 2026-10-22
-- [marketer] AFTER the Airbnb QA pass: Gumroad copy/cover/thumb, SEO title + 13 tags, 5 pins, 2026-10-19
 - [strategist] Next Mon: if no Airbnb sales/views signal, judge the 30-day kill rule for TradeSheets (due ~2026-11-13: <3 sales across listings = pivot), 2026-10-19
 - [marketer] After Nov 3: re-pin the top 3 organic pins by outbound clicks to a second board (needs Pinterest analytics via Chrome on the Mac), 2026-10-16
 - [builder] Low priority, next rebuild: restore bold client name on Invoice A12 (the `iv["A12"].font=font(bold=True)` statement is inside the trailing # comment in _engine/build.py and all 6 trade build.py; image 6 shows it bold). Not blocking; QA re-checks only that cell. Builder 10-23: fixed in _engine/build.py (Pool Service has it); the 6 older trade build.py still need it on their next rebuild, 2026-10-19
@@ -19,6 +18,7 @@
 ## Blocked
 
 ## Done
+- [marketer] Airbnb Host marketing kit: Gumroad draft (GUMROAD.md, cover, thumbnail; no bundle cross-sell), new Etsy title (140 chars) + 13 tags with search evidence (SEO.md), 5 pins with copy/alt text (pricing pin first, new host board). All rendered and looked at. businesses/etsy-digital/marketing/airbnb-host/, 2026-10-24
 - [qa] Tested Pool Service Business Manager: PASSED. 0 errors fresh, EXAMPLE rows deleted, and after my buyer test; visits ($51/$58.90/$87.40/$195.60), Oct profit $117.30, 2026 profit $264.90, invoices and quotes ($64 default, $482 mine) match hand math; listing, images, guide OK. Publish waits on Stephen, 2026-10-23
 - [builder] Pool Service Business Manager built via make_trade.py ('pool'): 7,642 formulas, 0 errors (product, demo, cleared, EXAMPLE rows deleted + buyer data); quote $64 and buyer test hand-checked; 12 dashboard months match independent recompute; 7 images + guide looked at; LISTING.md 139 chars/13 tags; awaiting QA, 2026-10-23
 - [builder] Airbnb LISTING.md step 3 now says 'clear the example rows' (matches guide and Start Here), 2026-10-23
