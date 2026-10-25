@@ -1,0 +1,164 @@
+{
+ "researched_at": "2026-10-25T15:40:00Z",
+ "method": "No-vig sportsbook anchor (RG.org Oct 25 morning snapshot of FD/DK/FAN/BR/LBMD, TheSpread, Covers), then RESEARCH.md stats (moves capped at 4 points). Polymarket prices from polymarket.com/sports/nfl/games (~15:00Z, PIT-NO live in Q2) and NBA team pages; KC-SEA cross-checked against defirate's Polymarket US/Kalshi table. The gamma API and direct polymarket.com URLs were not approved for this run, so asks are page prices (not verified order-book asks), bids are ask-1c, liquidity unknown (null). Verified slugs: nfl-gb-det-2026-10-25-spread-home-3pt5, nba-orl-nyk-2026-10-25, nba-tor-min-2026-10-25; others follow the usual pattern and are NOT verified.",
+ "legs": [
+  {
+   "id": "gb-p35",
+   "label": "NFL: Packers +3.5 at Lions",
+   "market_slug": "nfl-gb-det-2026-10-25-spread-home-3pt5",
+   "outcome": "Packers",
+   "starts_utc": "2026-10-25T20:25:00Z",
+   "prob": 0.51,
+   "ask_at_research": 0.49,
+   "bid_at_research": 0.48,
+   "liquidity_at_research": null,
+   "why": "Anchor (Oct 25 morning, 5 books): GB +3.5 -112/-108 FD, -115/-105 DK, -114/-108 BR, -118/-105 LBMD => GB +3.5 50.4-51.4% no-vig (~51%); ML DET -179 to -196 / GB +150 to +160 => GB ~37.7%. Line went DET -3 open -> -4 midweek -> back to -3.5 Sunday. Stats: GB 4-2, 3 straight wins, allowed 14/7/13 pts last 3; Love healthy; Jacobs makes season debut; Parsons (ACL) and LB Franklin OUT; Banks/St-Juste Q. DET 3-2, 32.8 ppg (tied 1st), Goff 12 TD/0 INT, defense near bottom in points allowed; Branch and Mays practiced fully (expected back); DET off bye. Indoors, weather n/a. EPA n/a this run. Matchup lean GB (DET pass D) offset by DET rest + healthy secondary: no move. 51% vs page ask 49c = +2c, below the 3c bar.",
+   "sources": [
+    "rg.org/news/gambling-industry/best-bets-today-chiefs-seahawks-packers-lions-october-25-2026",
+    "thespread.com/nfl-articles/packers-vs-lions-prediction-and-best-bet-for-october-25-2026/",
+    "polymarket.com/sports/nfl/games"
+   ]
+  },
+  {
+   "id": "gbdet-u545",
+   "label": "NFL: Packers-Lions Under 54.5",
+   "market_slug": "nfl-gb-det-2026-10-25-total-54pt5",
+   "outcome": "Under",
+   "starts_utc": "2026-10-25T20:25:00Z",
+   "prob": 0.49,
+   "ask_at_research": 0.47,
+   "bid_at_research": 0.46,
+   "liquidity_at_research": null,
+   "why": "Anchor: total 54.5, Over -115/Under -105 at FD and DK, -114/-105 LBMD, -109/-112 BR (FAN 55) => Under 48.9-50.4% (~49%). Opened ~53.5, peaked 55.5 midweek. Stats: every DET game has gone over with 55+ combined; GB games 4-2 to the under and GB allowed <=14 in 3 straight; GB adds Jacobs (more run, slower clock). Dome, no weather. Trends conflict: no move. 49% vs 47c = +2c, below bar. Slug follows the usual pattern (unverified).",
+   "sources": [
+    "rg.org/news/gambling-industry/best-bets-today-chiefs-seahawks-packers-lions-october-25-2026",
+    "thespread.com/nfl-articles/packers-vs-lions-prediction-and-best-bet-for-october-25-2026/",
+    "polymarket.com/sports/nfl/games"
+   ]
+  },
+  {
+   "id": "kc-ml",
+   "label": "NFL SNF: Chiefs to win at Seahawks",
+   "market_slug": "nfl-kc-sea-2026-10-25",
+   "outcome": "Chiefs",
+   "starts_utc": "2026-10-26T00:20:00Z",
+   "prob": 0.425,
+   "ask_at_research": 0.42,
+   "bid_at_research": 0.41,
+   "liquidity_at_research": null,
+   "why": "Anchor: SEA -154/KC +130 FD (41.8% KC no-vig), -143/+120 DK (43.6%), -156/+130 FAN, -143/+118 BR => KC ~42.5%. Polymarket US 41.5c, Kalshi 42c (defirate). Stats: KC 5-0 (22-6 over LAC; Mahomes 23/30 272y 0 TD 1 INT); SEA 3-3, lost 17-14 OT at DEN on TNF (Darnold 27/51, 2 INT) so SEA has 10 days rest. KC injuries: WR Rashee Rice OUT, T Jaylon Moore OUT (concussion), LT Josh Simmons IR, WR Thornton IR, CB Sneed Q (did not travel) => thin WR room and OL vs Seattle's front; SEA: Charbonnet OUT, LBs Surratt/Thomas OUT, Nwosu/Emmanwori expected to play. Kalshi shows SEA up 6 points this week (KC news priced). Total 42.5 all books. No move. +0.5c.",
+   "sources": [
+    "defirate.com/odds/nfl/kansas-city-vs-seattle-10-25-2026/",
+    "rotowire.com/betting/nfl/game.php?id=2978869",
+    "rg.org/news/gambling-industry/best-bets-today-chiefs-seahawks-packers-lions-october-25-2026",
+    "polymarket.com/sports/nfl/games"
+   ]
+  },
+  {
+   "id": "kc-p25",
+   "label": "NFL SNF: Chiefs +2.5 at Seahawks",
+   "market_slug": "nfl-kc-sea-2026-10-25-spread-home-2pt5",
+   "outcome": "Chiefs",
+   "starts_utc": "2026-10-26T00:20:00Z",
+   "prob": 0.475,
+   "ask_at_research": 0.47,
+   "bid_at_research": 0.46,
+   "liquidity_at_research": null,
+   "why": "Anchor: books split SEA -3 (-105; FD/FAN/DK) and SEA -2.5 (-118/-122; BR/LBMD). KC +2.5 no-vig 48.5% (BR) and 47.4% (LBMD); from KC +3 -115 (51.1% ex-push, ~9% push on 3) ~46.5%. Consensus ~47.5%. Polymarket US 'Seahawks by 3+' 53.5c (KC +2.5 ~46.5c). Same injury/rest notes as kc-ml (KC OL and WR depth thin; SEA 10 days rest). No move. +0.5c.",
+   "sources": [
+    "defirate.com/odds/nfl/kansas-city-vs-seattle-10-25-2026/",
+    "rg.org/news/gambling-industry/best-bets-today-chiefs-seahawks-packers-lions-october-25-2026",
+    "polymarket.com/sports/nfl/games"
+   ]
+  },
+  {
+   "id": "bal-p25",
+   "label": "NFL: Ravens +2.5 vs Bengals",
+   "market_slug": "nfl-cin-bal-2026-10-25-spread-away-2pt5",
+   "outcome": "Ravens",
+   "starts_utc": "2026-10-25T17:00:00Z",
+   "prob": 0.475,
+   "ask_at_research": 0.47,
+   "bid_at_research": 0.46,
+   "liquidity_at_research": null,
+   "why": "Anchor: CIN -3 (-105)/BAL +3 (-115) at FAN/DK/BR, CIN -2.5 -120/BAL +2.5 -102 FD, -122/+100 LBMD => BAL +2.5 ~47.5-48%; ML CIN -147 to -156 => BAL ~42%. Line flipped from BAL -3 open to CIN -3 (Lamar news) and total 51 -> 46.5. Stats: Lamar Jackson OUT (high ankle, 3rd straight), Tyler Huntley 3rd start (1-1); BAL scored a season-low 10 at CLE last week; Henry 534 yds/7 TD; BAL D without Robinson (IR) and S Hawkins, Tampa doubtful. CIN 3-2, off bye, no designations, Burrow 11 TD, 17 sacks (T-6th). All priced (news broke days ago). No move. +0.5c.",
+   "sources": [
+    "rg.org/news/gambling-industry/best-bets-today-chiefs-seahawks-packers-lions-october-25-2026",
+    "thespread.com/nfl-articles/bengals-vs-ravens-prediction-and-best-bet-for-sunday-october-25/",
+    "polymarket.com/sports/nfl/games"
+   ]
+  },
+  {
+   "id": "nyj-ml",
+   "label": "NFL: Jets to beat Dolphins",
+   "market_slug": "nfl-mia-nyj-2026-10-25",
+   "outcome": "Jets",
+   "starts_utc": "2026-10-25T17:00:00Z",
+   "prob": 0.66,
+   "ask_at_research": 0.66,
+   "bid_at_research": 0.65,
+   "liquidity_at_research": null,
+   "why": "Anchor: NYJ -217 (FAN/DK) / MIA +190 (FD); -220/+180 (TheSpread) => NYJ 65.8-66.5%; spread NYJ -4.5 (opened -5), total 39 -> 38.5-39.5. Stats: MIA 0-5, 14.0 ppg (last), 4 sacks (last), pass D 28th per play, Malik Willis 2 TD/4 INT, off bye; CB Reese Taylor OUT. NYJ 2-4, 18.7 ppg (27th), 290.6 ypg (25th), Geno Smith 7 TD/1 INT but 19 sacks taken (most), 17 sacks on D; Breece Hall Q (returning), OL Mitchell OUT, EDGE Ossai OUT. ~90% of ML tickets on NYJ. No move. 0c.",
+   "sources": [
+    "rg.org/news/gambling-industry/best-bets-today-chiefs-seahawks-packers-lions-october-25-2026",
+    "thespread.com/nfl-articles/dolphins-vs-jets-prediction-and-best-bet-for-sunday-october-25/",
+    "polymarket.com/sports/nfl/games"
+   ]
+  },
+  {
+   "id": "nyk-ml",
+   "label": "NBA: Knicks to beat Magic",
+   "market_slug": "nba-orl-nyk-2026-10-25",
+   "outcome": "Knicks",
+   "starts_utc": "2026-10-25T23:00:00Z",
+   "prob": 0.72,
+   "ask_at_research": 0.72,
+   "bid_at_research": 0.71,
+   "liquidity_at_research": null,
+   "why": "Anchor: NYK -300/ORL +240 (LWOS) => 71.8%; FD NYK -294, BR ORL +270; spread NYK -7.5 -110/-110, total 223.5. Stats: ORL without Banchero (ankle, 4-6 wks), Isaac, Nelson, Penda; Black Q; ORL 0-2, 26.6% from 3, scored 93 vs MIN. NYK 0-2 (lost by 6 to PHI, by 4 to BOS), Alvarado Q only; KAT 22/10, Anunoby 20/10. Ratings/pace n/a (2 games: noise). Banchero news is priced (line moved to -7.5). Polymarket 72c (team page), spread -7.5 50/51. No move. 0c.",
+   "sources": [
+    "lastwordonsports.com/basketball/2026/10/25/magic-vs-knicks-pre/",
+    "rg.org/news/gambling-industry/best-bets-today-chiefs-seahawks-packers-lions-october-25-2026",
+    "polymarket.com/teams/nba/knicks"
+   ]
+  },
+  {
+   "id": "uta-ml",
+   "label": "NBA: Jazz to beat Lakers",
+   "market_slug": "nba-lal-uta-2026-10-25",
+   "outcome": "Jazz",
+   "starts_utc": "2026-10-25T21:00:00Z",
+   "prob": 0.33,
+   "ask_at_research": 0.31,
+   "bid_at_research": 0.3,
+   "liquidity_at_research": null,
+   "why": "Anchor: FD LAL -230/UTA +190 => UTA 33.1%; FAN UTA +200, FD LAL -222; spread LAL -5.5, total 237.5. numberFire LAL 67.4% (agrees). Stats: LAL 2-0 (Doncic 33.5/7.7/8.3 last season, Reaves 23.3), UTA 1-1 at home (Markkanen 26.7, George 23.6). Injuries n/a (source had none). Back-to-back n/a. No move. 31c is a games-page price on a market with only ~$5.7K volume at fetch (stale/thin): +2c, below bar, verify live. Slug pattern unverified.",
+   "sources": [
+    "fanduel.com/research/jazz-vs-lakers-prediction-nba-odds-spread-best-bets-for-10-25-2026",
+    "rg.org/news/gambling-industry/best-bets-today-chiefs-seahawks-packers-lions-october-25-2026",
+    "polymarket.com/sports/nba/games"
+   ]
+  },
+  {
+   "id": "phi-ml",
+   "label": "NBA: 76ers to beat Pistons",
+   "market_slug": "nba-det-phi-2026-10-25",
+   "outcome": "76ers",
+   "starts_utc": "2026-10-25T23:30:00Z",
+   "prob": 0.56,
+   "ask_at_research": 0.55,
+   "bid_at_research": 0.54,
+   "liquidity_at_research": null,
+   "why": "Anchor: PHI -135 (DK) / DET +124 (FD) => PHI ~56.3% (best prices from two books, so slightly understated vig). Stats: PHI beat NYK 106-100 this week; injuries, ratings, rest: n/a (FanDuel preview failed to load; lookup budget). No move. +1c, thin research: lean only. Slug pattern unverified.",
+   "sources": [
+    "rg.org/news/gambling-industry/best-bets-today-chiefs-seahawks-packers-lions-october-25-2026",
+    "polymarket.com/sports/nba/games"
+   ]
+  }
+ ],
+ "lifts": {
+  "gb-p35|gbdet-u545": 1.05,
+  "kc-ml|kc-p25": 2.1
+ },
+ "notes": "No VALUE legs: every NFL and NBA price is within 0-2c of the no-vig consensus. Closest: Packers +3.5 (+2c), GB-DET Under 54.5 (+2c), Jazz ML (+2c on a thin, stale page price). Skipped: PIT-NO (live in Paris), MNF DAL-PHI (00:15Z Oct 27, beyond 30h), CFB (no games in window), tennis (Polymarket tennis/ATP pages only showed stale Oct 24 ITF/Challenger lists; Basel qualifying listed but unpriced; not researched). Other NFL 1pm games (IND-MIN, CLE-TEN, SF-ATL, NYG-HOU, TB-CAR), DEN-ARI and LA-LV all within 1c on ML. kc-ml|kc-p25 lift 2.1 because a KC win always covers +2.5 (nested). Practice combo PRACTICE-Q1 (GB +3.5 + 76ers ML) logged; not counted in trial C1."
+}
