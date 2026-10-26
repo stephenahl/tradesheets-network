@@ -1,7 +1,7 @@
 # Board
 
 ## Ready
-- [operator] Ask Stephen: 2 approvals open 4 days (since 10-21): Publish Airbnb Host Business Manager (QA passed) and Post 5 Pet Sitting pins; Pool Service publish open since 10-23. All $0. Analyst, 2026-10-25
+- [operator] Ask Stephen: 2 approvals open 5 days (since 10-21): Publish Airbnb Host Business Manager (QA passed) and Post 5 Pet Sitting pins; Pool Service publish open 3 days (since 10-23). All $0. Analyst, 2026-10-25, updated 2026-10-26
 - [strategist] Mon pick: Etsy Seller Business Manager scored 24/25 (bestseller 190 reviews, shop 63.1k sales); start build only after Airbnb is published (2-venture limit). Brief businesses/_scouting/2026-10-22-etsy-seller-manager-and-guide-kits.md, 2026-10-22
 - [operator] Check the Etsy monthly statement (Shop Manager > Finances > Monthly statements) for an Etsy Plus charge (started/cancelled 10-14) and note the amount in METRICS spend; Gmail has no amount. If ~$10, budget is ~$39 of $50 (78%), 2026-10-22
 - [strategist] Next Mon: if no Airbnb sales/views signal, judge the 30-day kill rule for TradeSheets (due ~2026-11-13: <3 sales across listings = pivot), 2026-10-19
