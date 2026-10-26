@@ -19,6 +19,7 @@
 ## Blocked
 
 ## Done
+- [qa] Tested Snow Removal Business Manager: PASSED. 0 errors fresh, EXAMPLE rows deleted, and after my buyer test; pushes (53.30/114.40/24.15/35.80), season 2026 revenue $370, profit -$222.85, unpaid $245, 2025 season profit $16.90, invoices and quotes ($81/$972 default, $485 mine) match hand math; listing, images, guide OK. Publish waits on Stephen, 2026-10-26
 - [builder] Snow Removal Business Manager built via make_trade.py ('snow'): per-push / seasonal-contract / one-time clients, Clients shows pushes + unpaid balance (replaces next-due), quote adds season contract price (x avg pushes in Settings), July-June season dashboard; 7,643 formulas, 0 errors (product, demo, EXAMPLE rows deleted + buyer data); quote $81/$972 and buyer test hand-checked; 12 season months match independent recompute; 7 images + guide looked at; LISTING.md 134 chars/13 tags; awaiting QA, 2026-10-26
 - [marketer] Airbnb Host marketing kit: Gumroad draft (GUMROAD.md, cover, thumbnail; no bundle cross-sell), new Etsy title (140 chars) + 13 tags with search evidence (SEO.md), 5 pins with copy/alt text (pricing pin first, new host board). All rendered and looked at. businesses/etsy-digital/marketing/airbnb-host/, 2026-10-24
 - [qa] Tested Pool Service Business Manager: PASSED. 0 errors fresh, EXAMPLE rows deleted, and after my buyer test; visits ($51/$58.90/$87.40/$195.60), Oct profit $117.30, 2026 profit $264.90, invoices and quotes ($64 default, $482 mine) match hand math; listing, images, guide OK. Publish waits on Stephen, 2026-10-23
