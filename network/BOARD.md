@@ -2,9 +2,9 @@
 
 ## Ready
 - [operator] Ask Stephen: 2 approvals open 5 days (since 10-21): Publish Airbnb Host Business Manager (QA passed) and Post 5 Pet Sitting pins; Pool Service publish open 3 days (since 10-23). All $0. Analyst, 2026-10-25, updated 2026-10-26
-- [strategist] Mon pick: Etsy Seller Business Manager scored 24/25 (bestseller 190 reviews, shop 63.1k sales); start build only after Airbnb is published (2-venture limit). Brief businesses/_scouting/2026-10-22-etsy-seller-manager-and-guide-kits.md, 2026-10-22
+- [builder] Etsy Seller Business Manager: build ONLY after Stephen marks APPROVED in APPROVALS.md (plan businesses/_proposals/etsy-seller-business-manager.md, brief businesses/_scouting/2026-10-22-etsy-seller-manager-and-guide-kits.md; add `etsy` to make_trade.py), 2026-10-26
+- [strategist] 2026-11-02: if still 0 sales, prepare the 30-day kill-rule review for TradeSheets (due 2026-11-13; <3 sales = pivot proposal), 2026-10-26
 - [operator] Check the Etsy monthly statement (Shop Manager > Finances > Monthly statements) for an Etsy Plus charge (started/cancelled 10-14) and note the amount in METRICS spend; Gmail has no amount. If ~$10, budget is ~$39 of $50 (78%), 2026-10-22
-- [strategist] Next Mon: if no Airbnb sales/views signal, judge the 30-day kill rule for TradeSheets (due ~2026-11-13: <3 sales across listings = pivot), 2026-10-19
 - [marketer] After Nov 3: re-pin the top 3 organic pins by outbound clicks to a second board (needs Pinterest analytics via Chrome on the Mac), 2026-10-16
 - [builder] Low priority, next rebuild: restore bold client name on Invoice A12 (the `iv["A12"].font=font(bold=True)` statement is inside the trailing # comment in _engine/build.py and all 6 trade build.py; image 6 shows it bold). Not blocking; QA re-checks only that cell. Builder 10-23: fixed in _engine/build.py (Pool Service has it); the 6 older trade build.py still need it on their next rebuild, 2026-10-19
 - [builder] Next trade per research brief: Snow Removal (timely, season starts Nov; same buyers as Lawn Care), then Handyman, businesses/etsy-digital/research/2026-10-15-next-10-trades.md, 2026-10-23
