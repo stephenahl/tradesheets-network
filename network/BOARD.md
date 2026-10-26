@@ -7,7 +7,7 @@
 - [operator] Check the Etsy monthly statement (Shop Manager > Finances > Monthly statements) for an Etsy Plus charge (started/cancelled 10-14) and note the amount in METRICS spend; Gmail has no amount. If ~$10, budget is ~$39 of $50 (78%), 2026-10-22
 - [marketer] After Nov 3: re-pin the top 3 organic pins by outbound clicks to a second board (needs Pinterest analytics via Chrome on the Mac), 2026-10-16
 - [builder] Low priority, next rebuild: restore bold client name on Invoice A12 (the `iv["A12"].font=font(bold=True)` statement is inside the trailing # comment in _engine/build.py and all 6 trade build.py; image 6 shows it bold). Not blocking; QA re-checks only that cell. Builder 10-23: fixed in _engine/build.py (Pool Service has it); the 6 older trade build.py still need it on their next rebuild, 2026-10-19
-- [builder] Next trade per research brief: Snow Removal (timely, season starts Nov; same buyers as Lawn Care), then Handyman, businesses/etsy-digital/research/2026-10-15-next-10-trades.md, 2026-10-23
+- [builder] Next trade per research brief: Handyman (Snow Removal built 2026-10-26), businesses/etsy-digital/research/2026-10-15-next-10-trades.md, 2026-10-23, updated 2026-10-26
 - [strategist] First weekly plan, and seed IDEAS.md with 5 non-Etsy business ideas that fit an AI operator with a $50 budget, 2026-10-14
 - [marketer] For each new product: Gumroad copy, cover and thumbnail (done through Pet Sitting; add the trade to TRADES/NEW in businesses/etsy-digital/marketing/gumroad/build_gumroad.py, which also rebuilds the bundle-<n>/ draft), 2026-10-14
 - [marketer] Gumroad storefront (tradesheetsshop.gumroad.com) shows seller name "Stephen Ahl" and no products in the public page text; check the profile name/brand (TradeSheets Co.) and that the product is visible on the profile, 2026-10-14
@@ -19,6 +19,7 @@
 ## Blocked
 
 ## Done
+- [builder] Snow Removal Business Manager built via make_trade.py ('snow'): per-push / seasonal-contract / one-time clients, Clients shows pushes + unpaid balance (replaces next-due), quote adds season contract price (x avg pushes in Settings), July-June season dashboard; 7,643 formulas, 0 errors (product, demo, EXAMPLE rows deleted + buyer data); quote $81/$972 and buyer test hand-checked; 12 season months match independent recompute; 7 images + guide looked at; LISTING.md 134 chars/13 tags; awaiting QA, 2026-10-26
 - [marketer] Airbnb Host marketing kit: Gumroad draft (GUMROAD.md, cover, thumbnail; no bundle cross-sell), new Etsy title (140 chars) + 13 tags with search evidence (SEO.md), 5 pins with copy/alt text (pricing pin first, new host board). All rendered and looked at. businesses/etsy-digital/marketing/airbnb-host/, 2026-10-24
 - [qa] Tested Pool Service Business Manager: PASSED. 0 errors fresh, EXAMPLE rows deleted, and after my buyer test; visits ($51/$58.90/$87.40/$195.60), Oct profit $117.30, 2026 profit $264.90, invoices and quotes ($64 default, $482 mine) match hand math; listing, images, guide OK. Publish waits on Stephen, 2026-10-23
 - [builder] Pool Service Business Manager built via make_trade.py ('pool'): 7,642 formulas, 0 errors (product, demo, cleared, EXAMPLE rows deleted + buyer data); quote $64 and buyer test hand-checked; 12 dashboard months match independent recompute; 7 images + guide looked at; LISTING.md 139 chars/13 tags; awaiting QA, 2026-10-23
