@@ -1,0 +1,21 @@
+# QA: Handyman Business Manager
+
+## 2026-10-28: PASSED
+Tested by the QA agent at commit a416585 (product from f24c19c). Fresh xlsx loaded with openpyxl and recalculated in LibreOffice (UNO calculateAll); buyer steps done in LibreOffice (EXAMPLE rows deleted as whole rows, as the guide says). The repo xlsx is identical (0 cell diffs) to a fresh run of its build.py.
+- Fresh file: 7,642 formulas, 0 errors. Demo checks: J-0001 150+45=195, costs 32+45+5.60 → profit 112.40; J-0002 160 → 91.20; J-0003 160+38=198 → 91.20; Oct revenue 393, job costs 189.40, expenses 112.20, profit 91.40; year profit 182.60, tax 45.65, unpaid 198. Maple (monthly, last Oct 1) next due Oct 31 → Due soon; Johnson (one-time) "—". Invoice J-0003 INV-0003, Oct 1 → due Oct 15, DUE, $160 + $38 = $198.
+- EXAMPLE rows deleted (Clients 2, Jobs 3, Expenses 2): 0 errors, blank invoice, all-zero dashboard, no junk in Clients/Jobs; Jobs client dropdown still points at Clients.
+- Buyer test, 4 clients (monthly property manager, one-time with phone only, quarterly HOA with no phone, every-6-months with no jobs), 5 jobs (one with a service + price override, two unpaid, blank materials/miles, one in 2025), 3 expenses (one in 2025). All match hand math:
+  - Jobs: 144+30=174 (labor 2×30=60, 10 mi×0.70=7, materials 22 → 85.00); override 350+144=494 (105, 8.40, 120 → 260.60); 125 (45, 4.20 → 75.80); 166+25.50=191.50 (90, 18.75 → 82.75); Dec 2025 166 (75, 3.50 → 87.50).
+  - Clients: Hernandez 2 jobs/$668, last Oct 10, next Nov 9, Scheduled; Whitfield 1/$125, one-time "—"; Oakridge 2/$357.50, last Jul 5 + 91 = Oct 4, Overdue; Becker 0, New.
+  - Dashboard 2026: Jul 191.50/108.75/0 → 82.75; Sep 174/89/48 → 37; Oct 619/282.60/189.99 → 146.41, unpaid 619; totals revenue $984.50, profit $266.16, 4 jobs, tax $66.54. 2025: Dec 166/78.50/55.25 → $32.25, tax $8.06.
+  - Invoices: J-0003 phone-only client prints blank address/email, falls back to client's usual job "Door Hang / Adjust", $125, DUE, due Nov 3; J-0002 uses the job's own service "Ceiling Fan / Light Install", $350 + $144 = $494; J-0001 PAID $174; unknown J-0099 blank.
+- Quote calculator: default 175+131.25+25+144+40 = 515.25 → $515, 4.75 h, labor $142.50, profit $252.50, $78.11/h (= image 3). Mine: Drywall Patch & Paint, 3 units, difficulty 2, quarterly, paint touch-up + ladder: 175+262.50+50+0+80 = 567.50, −5% = −28.38 → $539, 7.75 h, labor $232.50, profit $306.50, $69.55/h. Furniture Assembly monthly $110 −10% → $99; with minimum set to $150 → $150 (minimum works). Caulk monthly with $10 materials: 120+12, discount 10% of labor part only (−12) → $120, 2 h, profit $50.
+- Dropdowns: client, job/service, worker, paid, payment method, repeat plan, expense category/paid with/receipt, quote job/plan/add-ons all point at the right lists. Conditional formatting: Overdue/Due soon status, Paid? = No, negative profit. Chart present.
+- Listing: title 138 chars, 13 tags (max 19 chars, no duplicates), AI disclosure present. Job menu (8 jobs), add-ons (6), quote factors, repeat plans, materials markup, minimum charge, expense categories and 8 tabs all match the file. No leftover wording from other trades in the xlsx.
+- Images (all 7 looked at): dashboard months sum to $7,430 revenue / $3,837 job costs / 38 jobs / $1,879 profit, tax $470 (25%); unpaid $615 = the three unpaid October jobs in image 5 (185+250+180); invoice image INV-0037 Maple Oct 8 $250 = job J-0037; clients' next-due dates match last job + plan days (Maple Nov 7, Summit Jan 8, Patel Jan 9, Lakeview/Oak Street Overdue). No typos.
+- Quick-start guide (1 page) followed step by step: works as written (delete EXAMPLE rows → 0 errors).
+
+### Notes (not blocking)
+- Quote Calculator "Estimated hours" cell is formatted 0.0, so the file shows 4.8 where image 3 shows 4.75 (same value). Format 0.00 would match.
+- Repeat-plan discount ("labor only") also discounts difficulty and add-ons, i.e. everything except materials. Reasonable, but "labor & add-ons" or "excl. materials" would be more exact.
+- Same as other trades: listing/images say Google Sheets works but QA tested in LibreOffice only; MAXIFS needs Excel 2019/365 or Google Sheets; guide says "Message us on Etsy" (Gumroad buyers too).
