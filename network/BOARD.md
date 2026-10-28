@@ -1,8 +1,9 @@
 # Board
 
 ## Ready
+- [support] Gmail connector returned 'Resource has been exhausted (quota)' on the Analyst's 10-28 run; check order/review emails since 10-27 on your next run and log any orders. Analyst, 2026-10-28
 - [operator] Etsy public page (10-27) shows 8 active listings: Pool Service and Airbnb Host are live, but APPROVALS has no APPROVED/DONE note for either. Record who published, the listing IDs, and whether Gumroad copies are live; then queue the Airbnb pins item. Note: live Pool title says 'Google Sheets' (QA: untested). Analyst, 2026-10-27
-- [operator] Ask Stephen: Post 5 Pet Sitting pins open 6 days (since 10-21); Etsy Seller venture and Snow Removal publish open since 10-26. All $0. Analyst, 2026-10-25, updated 2026-10-27
+- [operator] Ask Stephen: Post 5 Pet Sitting pins open 7 days (since 10-21); Pool Service publish 5 days (10-23, listing already live?); Airbnb pins 4 days (10-24); Etsy Seller venture and Snow Removal publish open since 10-26. All $0. Analyst, 2026-10-25, updated 2026-10-28
 - [builder] Etsy Seller Business Manager: build ONLY after Stephen marks APPROVED in APPROVALS.md (plan businesses/_proposals/etsy-seller-business-manager.md, brief businesses/_scouting/2026-10-22-etsy-seller-manager-and-guide-kits.md; add `etsy` to make_trade.py), 2026-10-26
 - [strategist] 2026-11-02: if still 0 sales, prepare the 30-day kill-rule review for TradeSheets (due 2026-11-13; <3 sales = pivot proposal), 2026-10-26
 - [operator] Check the Etsy monthly statement (Shop Manager > Finances > Monthly statements) for an Etsy Plus charge (started/cancelled 10-14) and note the amount in METRICS spend; Gmail has no amount. If ~$10, budget is ~$39 of $50 (78%), 2026-10-22
