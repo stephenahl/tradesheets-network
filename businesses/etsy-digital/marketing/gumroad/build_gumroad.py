@@ -1,7 +1,8 @@
 """Gumroad drafts for each trade and the all-trades bundle.
 Per trade in NEW: GUMROAD.md (description adapted from the Etsy LISTING.md), cover 1280x720, thumbnail 1000x1000.
 Bundle (folder BUNDLE_DIR): cover, thumbnail and TradeSheets-<n>-Trade-Bundle.zip (n workbooks + n guides).
-History: 2026-10-15 PW/AD/WC + 5-trade bundle (live, assets in bundle/); 2026-10-17 Pet Sitting + 6-trade bundle draft (bundle-6/).
+History: 2026-10-15 PW/AD/WC + 5-trade bundle (live, assets in bundle/); 2026-10-17 Pet Sitting + 6-trade bundle (bundle-6/, live 10-20);
+2026-10-28 Pool Service, Snow Removal, Handyman + 9-trade bundle draft (bundle-9/).
 Same cover style as lawn-care-gumroad/build_gumroad.py. Run: python3 build_gumroad.py"""
 import base64, os, pathlib, re, zipfile
 from playwright.sync_api import sync_playwright
@@ -16,9 +17,12 @@ TRADES = [
     ("auto-detailing", "Auto Detailing", "8A2C2C", "F6E9E9"),
     ("window-cleaning", "Window Cleaning", "5B4A8B", "EEEAF6"),
     ("pet-sitting-dog-walking", "Pet Sitting & Dog Walking", "A0522D", "FBEDE3"),
+    ("pool-service", "Pool Service", "0E7C86", "E0F2F3"),
+    ("snow-removal", "Snow Removal", "37474F", "ECEFF1"),
+    ("handyman", "Handyman", "8C5A16", "F7EFE1"),
 ]
-NEW = ["pet-sitting-dog-walking"]
-DATE = "2026-10-17"
+NEW = ["pool-service", "snow-removal", "handyman"]
+DATE = "2026-10-28"
 N = len(TRADES)
 BUNDLE_DIR = f"bundle-{N}"
 SINGLES = round(N * 14.99, 2)
@@ -38,6 +42,8 @@ def gumroad_md(slug, name):
         out.append(line)
     desc = "\n".join(out).replace("Send me a message and I'm happy to help.", "Reply to your receipt email and I'll help.")
     desc = desc.replace("This template was designed by me", "Designed by TradeSheets Co.")
+    desc = desc.replace("Every formula was built for both Excel and Google Sheets and tested before release.",
+                        "It uses only functions that Excel and Google Sheets both support, and every formula was checked before release.")
     return f"""# Gumroad product draft: {name} Business Manager ({DATE})
 
 DRAFT. Not published. Going live on Gumroad needs Stephen's APPROVED (see network/APPROVALS.md).
@@ -52,7 +58,7 @@ Set up like the live Cleaning and Lawn Care products (https://tradesheetsshop.gu
 - **Content:** upload `etsy-digital/{slug}-business-manager/{FILE(name)}` and `Quick-Start-Guide.pdf`
 - **Summary (the "You'll get" line):** One spreadsheet for quotes, recurring clients, jobs, invoices, expenses and profit. Google Sheets & Excel.
 - **Additional details:** Format: .xlsx + PDF guide · Tabs: 8 · Works in: Google Sheets, Excel
-- **Cross-sell:** end the description with the same linked bundle line the other 5 singles use (bundle: https://tradesheetsshop.gumroad.com/l/service-business-manager-bundle).
+- **Cross-sell:** end the description with the same linked bundle line the other singles use, updated to the bundle's trade count (bundle: https://tradesheetsshop.gumroad.com/l/service-business-manager-bundle).
 
 ## Description
 {desc}
@@ -92,7 +98,8 @@ def bundle_pages():
 <div class=row>{chips}</div><div class=pill>All {N} for $39 · save ${SINGLES - 39:.2f}</div>"""
     thumb = f"""<style>{base}{chip.format()}body{{width:1000px;height:1000px}}h1{{font-size:88px;line-height:1.02;font-weight:800;letter-spacing:-2px}}
 .sub{{font-size:34px;margin:16px 0 30px}}.col{{display:flex;flex-direction:column;gap:12px;width:640px;margin-bottom:30px}}
-.chip{{font-size:28px;padding:11px}}.pill{{font-size:30px;padding:16px 34px}}</style>
+.chip{{font-size:{28 if N <= 6 else 24}px;padding:11px}}.pill{{font-size:30px;padding:16px 34px}}
+{".col{display:grid;grid-template-columns:1fr 1fr;width:860px}.chip:last-child:nth-child(odd){grid-column:span 2}" if N > 6 else ""}</style>
 <h1>{N} Business<br>Managers</h1><div class=sub>Google Sheets &amp; Excel</div>
 <div class=col>{chips}</div><div class=pill>Bundle · $39</div>"""
     return cover, thumb
@@ -106,7 +113,7 @@ def build_zip():
             folder = f"{name} Business Manager/"
             for arc, f in [(FILE(name), src / FILE(name)),
                            (FILE(name).replace("-Business-Manager.xlsx", "-Quick-Start-Guide.pdf"), src / "Quick-Start-Guide.pdf")]:
-                info = zipfile.ZipInfo(folder + arc, date_time=(2026, 10, 17, 0, 0, 0))
+                info = zipfile.ZipInfo(folder + arc, date_time=tuple(map(int, DATE.split("-"))) + (0, 0, 0))
                 info.compress_type = zipfile.ZIP_DEFLATED
                 z.writestr(info, f.read_bytes())
     print("wrote", path.relative_to(HERE), f"{path.stat().st_size // 1024} KB")
