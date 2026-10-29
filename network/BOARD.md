@@ -1,6 +1,7 @@
 # Board
 
 ## Ready
+- [researcher] Tuesday: why do live listings with views get 0 orders? Compare our top-viewed listing (Pressure Washing, 18 views/7 days) with 2-3 page-1 rivals on price, thumbnail, Excel vs Sheets, reviews, title; recommend 3 fixes. Researcher, 2026-10-29
 - [operator] Etsy public page (10-27) shows 8 active listings: Pool Service and Airbnb Host are live, but APPROVALS has no APPROVED/DONE note for either. Record who published, the listing IDs, and whether Gumroad copies are live; then queue the Airbnb pins item. Note: live Pool title says 'Google Sheets' (QA: untested). Analyst, 2026-10-27
 - [operator] Ask Stephen: Post 5 Pet Sitting pins open 8 days (since 10-21; schedule starts Nov 4); Pool Service publish 6 days (10-23, listing already live?); Airbnb pins 5 days (10-24); Etsy Seller venture and Snow Removal publish 3 days (10-26); Handyman publish and Gumroad 3-trade/bundle-9 since 10-28. All $0. Analyst, 2026-10-25, updated 2026-10-29
 - [builder] Etsy Seller Business Manager: build ONLY after Stephen marks APPROVED in APPROVALS.md (plan businesses/_proposals/etsy-seller-business-manager.md, brief businesses/_scouting/2026-10-22-etsy-seller-manager-and-guide-kits.md; add `etsy` to make_trade.py), 2026-10-26
@@ -21,6 +22,7 @@
 ## Blocked
 
 ## Done
+- [researcher] Scouting (Thu): Real Estate Agent commission/GCI tracker scored 22/25, queued behind Etsy Seller and Landlord (24): realtor shops 18k+ sales but closest tracker listing 12 reviews; identical AI-built rival at $1.89 with 0 reviews. New idea: Transaction Coordinator tracker. 5 Etsy pages (2 unavailable), $0. Brief: businesses/_scouting/2026-10-29-real-estate-agent-tracker.md, 2026-10-29
 - [qa] Tested Handyman Business Manager: PASSED. 0 errors fresh, EXAMPLE rows deleted, and after my buyer test; jobs ($85/$260.60/$75.80/$82.75), 2026 revenue $984.50, profit $266.16, unpaid $619, statuses (Scheduled/Overdue/New), invoices and quotes ($515 default, $539 mine, $150 minimum) match hand math; listing, images, guide OK. Publish waits on Stephen, 2026-10-28
 - [marketer] Gumroad drafts for Pool Service, Snow Removal and Handyman (GUMROAD.md, cover 1280x720, thumbnail 1000; Pool's 'tested in Google Sheets' line made honest) and 9-trade bundle draft ($39 kept, BUNDLE.md, cover, thumbnail, 996 KB zip) via build_gumroad.py; all images rendered and looked at. businesses/etsy-digital/marketing/gumroad/, 2026-10-28
 - [builder] Handyman Business Manager built via make_trade.py ('handyman'): flat-rate job menu, quote = base + extra units (75% of base each) + difficulty + materials x (1+20% markup) + add-ons, labor-only repeat-plan discount, minimum job charge ($95); Jobs track materials billed vs cost; 7,642 formulas, 0 errors (product, demo, EXAMPLE rows deleted in LibreOffice, buyer data); quotes $515 / $144 / $150 (min) and buyer test hand-checked; 12 dashboard months match independent recompute; 7 images + guide looked at; LISTING.md 138 chars/13 tags; awaiting QA, 2026-10-28
