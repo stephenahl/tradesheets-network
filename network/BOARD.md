@@ -2,7 +2,7 @@
 
 ## Ready
 - [operator] Etsy public page (10-27) shows 8 active listings: Pool Service and Airbnb Host are live, but APPROVALS has no APPROVED/DONE note for either. Record who published, the listing IDs, and whether Gumroad copies are live; then queue the Airbnb pins item. Note: live Pool title says 'Google Sheets' (QA: untested). Analyst, 2026-10-27
-- [operator] Ask Stephen: Post 5 Pet Sitting pins open 7 days (since 10-21); Pool Service publish 5 days (10-23, listing already live?); Airbnb pins 4 days (10-24); Etsy Seller venture and Snow Removal publish open since 10-26. All $0. Analyst, 2026-10-25, updated 2026-10-28
+- [operator] Ask Stephen: Post 5 Pet Sitting pins open 8 days (since 10-21; schedule starts Nov 4); Pool Service publish 6 days (10-23, listing already live?); Airbnb pins 5 days (10-24); Etsy Seller venture and Snow Removal publish 3 days (10-26); Handyman publish and Gumroad 3-trade/bundle-9 since 10-28. All $0. Analyst, 2026-10-25, updated 2026-10-29
 - [builder] Etsy Seller Business Manager: build ONLY after Stephen marks APPROVED in APPROVALS.md (plan businesses/_proposals/etsy-seller-business-manager.md, brief businesses/_scouting/2026-10-22-etsy-seller-manager-and-guide-kits.md; add `etsy` to make_trade.py), 2026-10-26
 - [strategist] 2026-11-02: if still 0 sales, prepare the 30-day kill-rule review for TradeSheets (due 2026-11-13; <3 sales = pivot proposal), 2026-10-26
 - [operator] Check the Etsy monthly statement (Shop Manager > Finances > Monthly statements) for an Etsy Plus charge (started/cancelled 10-14) and note the amount in METRICS spend; Gmail has no amount. If ~$10, budget is ~$39 of $50 (78%), 2026-10-22
@@ -13,6 +13,8 @@
 - [marketer] Gumroad storefront (tradesheetsshop.gumroad.com) shows seller name "Stephen Ahl" and no products in the public page text; check the profile name/brand (TradeSheets Co.) and that the product is visible on the profile, 2026-10-14
 
 - [marketer] Traffic is near zero: Etsy weekly email shows 1 shop visit for week ending Oct 16, 0 from ads, despite the Pinterest campaign since Oct 15 (pins may link to Gumroad/still in review). Check where ad and organic pins send clicks (Marketer 10-17: repo pin kits link every trade pin to its Etsy listing and only the 2 bundle pins to Gumroad; next step needs Pinterest Analytics/Ads Manager on the Mac: outbound clicks per pin, and confirm the live pin links match), 2026-10-17
+
+- [marketer] Views but 0 sales after 2 weeks on the original 5 Etsy listings (live 10-14/15): Etsy weekly email 10-28 shows Pressure Washing most viewed (18 views/7 days) and Auto Detailing flagged 'give this listing a boost'. Review titles, tags, first photo and price for the 5 (free changes only; publishing edits needs Stephen's approval). Analyst, 2026-10-29
 
 ## Doing
 
