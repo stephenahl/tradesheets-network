@@ -1,0 +1,20 @@
+# QA: Carpet Cleaning Business Manager
+
+## 2026-10-30: PASSED
+Tested by the QA agent at commit e7c31b1. Fresh xlsx recalculated in LibreOffice (UNO calculateAll); buyer steps done in LibreOffice (EXAMPLE rows deleted as whole rows, as the guide says). The repo xlsx is identical (0 cell diffs) to a fresh run of its build.py.
+- Fresh file: 7,642 formulas, 0 errors. Demo checks: J-0001 Johnson 230+45=275, costs 18+66+5.60 → profit 185.40; J-0002 Bright Dental 300 → 187.20; J-0003 300+40=340 → 216.20; Oct revenue 615, job costs 213.40, expenses 112.20, profit 289.40; year profit 476.60, tax 119.15, unpaid 340. Johnson (annual, Oct 1) next due Oct 1 2027; Bright Dental (quarterly, Oct 11) Jan 10 2027. Invoice J-0003 INV-0003, due Oct 25, DUE, $300 + $40 = $340.
+- EXAMPLE rows deleted (Clients 2, Jobs 3, Expenses 2): 7,614 formulas, 0 errors, blank invoice, all-zero dashboard, no junk in Clients/Jobs; Jobs client dropdown still points at Clients.
+- Buyer test, 5 clients (every-6-months homeowner, one-time property manager with no phone, quarterly office with no email/address, monthly sofa client with no jobs, annual client with blank service), 5 jobs (one with service + price override, two unpaid, blank miles, one in 2025), 3 expenses (one in 2025). All match hand math (labor $22/h, $0.70/mi):
+  - Jobs: 245+45=290 − 20 − 66 − 8.40 = 195.60; override 210 − 15.50 − 55 = 139.50; 260+25=285 → 196.80; 340+40=380 → 260.00; Dec 2025 120 → 90.90.
+  - Clients: Lopez 2 visits/$500, last Oct 5, next Apr 5 2027, Scheduled; Harbor View 1/$285, one-time "—"; Dr. Kim 1/$380, Aug 1 + 91 = Oct 31, Due soon; Reed 0, New; Park 1/$120, next Dec 15 2026, Scheduled.
+  - Dashboard 2026: Apr 290/94.40/0 → 195.60; Aug 380/120/48 → 212 (unpaid 380); Sep 285/88.20/0 → 196.80; Oct 210/70.50/58.40 → 81.10 (unpaid 210); totals revenue $1,165, profit $685.50, 4 jobs, unpaid $590, tax $171.38. 2025: Dec 120/29.10/32 → $58.90, tax $14.73.
+  - Invoices: J-0002 uses the job's own service "Tile & Grout", $210, DUE, due Oct 19; J-0001 falls back to the client's service, $245 + $45 = $290 PAID; J-0004 client with no address/email prints blank lines, $380 DUE; J-0005 client with no service prints "Carpet cleaning service", $120; unknown J-0099 blank.
+- Quote calculator: default 150+80+35+20+40 = 325, −5% → $309, 3.9 h, labor $85.80, profit $223.20, $79.23/h (= image 3). Mine: 6 rooms, 2 staircases, soil 3, pet odor + furniture moving + deodorizer, quarterly: 150+120+70+60+90 = 490, −49 → $441, 5.9 h, labor $129.80, profit $311.20. Sofa monthly: 110 − 16.50 → $94, 1.25 h, profit $66.50.
+- Dropdowns: client, service, frequency, tech, paid, payment method, expense category/paid with/receipt, quote service/frequency/add-ons all point at the right lists. Conditional formatting on Clients status and Jobs (unpaid/negative). Dashboard chart present.
+- Listing: title 135 chars, 13 tags (max 19 chars, no duplicates), AI disclosure present. Services (6), add-ons (6), quote factors, frequencies, expense categories, 8 tabs and notes column all match the file. No leftover wording from other trades in the xlsx.
+- Images (all 7 looked at): dashboard months sum to $9,230 revenue / $3,160 job costs / $1,897 expenses / 37 jobs / $4,173 profit, tax $1,043 (25%); Oct unpaid $625 = the two unpaid jobs in image 5 ($160 + $465); labor = hours × $22 on every jobs row; invoice INV-0036 Price Residence Oct 2 → due Oct 16, $120 + $40 = $160 = job J-0036; clients' next-due dates = last visit + frequency days (Oak Street Cafe Overdue). No typos.
+- Quick-start guide (1 page) followed step by step: works as written (delete EXAMPLE rows → 0 errors).
+
+### Notes (not blocking)
+- Quote "extra rooms over 3" applies to every service. The label and guide say 0 for sofa/rug, but a buyer who enters rooms for Tile & Grout or Commercial Carpet gets +$40 per room over 3. Label could say "0 unless the service is priced per 3 rooms".
+- Same as other trades: listing/images say Google Sheets works but QA tested in LibreOffice only; MAXIFS needs Excel 2019/365 or Google Sheets; guide says "Message us on Etsy" (Gumroad buyers too).
