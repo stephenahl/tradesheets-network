@@ -1,0 +1,148 @@
+{
+ "researched_at": "2026-10-31T15:05:00Z",
+ "method": "Polymarket prices read from the public gamma API (events?slug= and markets list) on 2026-10-31 ~14:55-15:05Z; ask/bid stored for the leg's own outcome (index-1 outcomes mirrored as 1-bid0 / 1-ask0). Anchors: no-vig sportsbook moneylines from bet365 (FOX Sports table, Oct 28), FanDuel Research and DraftKings (SI, Oct 27), RotoWire consensus (Oct 26) and VegasInsider book-by-book (Oct 30, TEN-CIN). Stats per RESEARCH.md from the official NFL Week 8 injury report (nfl.com), RotoWire line-move article (Oct 28), SI/FanDuel previews. Moves capped at 4 points. Caveat: an earlier markets?slug= read returned thin $3k books with 5-7c spreads for the NFL 1pm games; the events?slug= and liquidity-sorted reads show the real books ($100k-$1.1M, 1-2c spreads), so only the latter are used.",
+ "legs": [
+  {
+   "id": "bal-p35",
+   "label": "NFL: Ravens +3.5 at Bills",
+   "market_slug": "nfl-bal-buf-2026-11-01-spread-home-3pt5",
+   "outcome": "Ravens",
+   "starts_utc": "2026-11-01T18:00:00Z",
+   "prob": 0.535,
+   "ask_at_research": 0.54,
+   "bid_at_research": 0.53,
+   "liquidity_at_research": 210540,
+   "why": "Anchor: FD BUF -3 (-118)/BAL +3 (-104) => BUF covers -3 51.5% no-vig ex-push; with ~9% on exactly 3, P(BUF by 4+) ~46.9% => BAL +3.5 ~53.1%. bet365 Oct 28 BUF -3.5, ML BAL +149/BUF -178 (BAL 38.5% no-vig). Injuries: Lamar Jackson (ankle, out since Wk4 halftime) not on the final report and expected to play (Rapoport); line moved +3.5 -> +3 on that news, so mostly priced. Not a full practice since Wk4 (mobility risk). BAL OUT G Ioane (starting C/G), S Hawkins; BUF OUT WR Shavers, Q WR DJ Moore, TE Kincaid, OT Spencer Brown, CB Alford; S Gardner-Johnson suspended. Efficiency: BUF defense 30th in EPA/play and 30th in success rate allowed (only bottom-3 in both); Lamar 70.8% comp, 6 TD/1 INT, 144 rush yds in 4 games. Situation: BUF 5-1 off a bye; BAL 4-3, two straight division losses incl. 35-13 at CIN with Huntley. Trends: BUF 3-1-1 ATS last 5 H2H (weak). Total 53.5-54.5 (up 3), weather n/a. Net +0.4 for Lamar vs a bottom-3 defense: 53.5% vs ask 54c = -0.5c.",
+   "sources": [
+    "https://fanduel.com/research/bills-vs-ravens-predictions-odds-picks-best-bets-for-nfl-week-8-2026",
+    "https://www.si.com/betting/ravens-vs-bills-prediction-odds-spread-injuries-trends-for-nfl-week-8-01m5wyc6vhrv",
+    "https://www.si.com/betting/positive-lamar-jackson-injury-update-improves-ravens-odds-vs-bills-in-nfl-week-8-2026",
+    "https://www.nfl.com/news/nfl-week-8-injury-report-2026-season",
+    "https://www.foxsports.com/stories/nfl/2026-nfl-odds-week-8-lines-spreads-results-all-14-games"
+   ]
+  },
+  {
+   "id": "bal-ml",
+   "label": "NFL: Ravens ML at Bills",
+   "market_slug": "nfl-bal-buf-2026-11-01",
+   "outcome": "Ravens",
+   "starts_utc": "2026-11-01T18:00:00Z",
+   "prob": 0.39,
+   "ask_at_research": 0.39,
+   "bid_at_research": 0.38,
+   "liquidity_at_research": 458179,
+   "why": "Anchor: FD BAL +148/BUF -176 => BAL 38.7%; DK +154/-185 => 37.8%; bet365 +149/-178 => 38.5%; avg 38.3%. numberFire BUF 67.9% (BAL 32.1%, model only). Stats as bal-p35 (Lamar back vs BUF defense 30th EPA/play; BAL 7-13 all-time without Lamar). Lamar news broke Oct 28 and moved the line, so only +0.7: 39% vs ask 39c = 0.",
+   "sources": [
+    "https://fanduel.com/research/bills-vs-ravens-predictions-odds-picks-best-bets-for-nfl-week-8-2026",
+    "https://www.si.com/betting/ravens-vs-bills-prediction-odds-spread-injuries-trends-for-nfl-week-8-01m5wyc6vhrv",
+    "https://www.foxsports.com/stories/nfl/2026-nfl-odds-week-8-lines-spreads-results-all-14-games"
+   ]
+  },
+  {
+   "id": "det-m35",
+   "label": "NFL: Lions -3.5 vs Vikings",
+   "market_slug": "nfl-min-det-2026-11-01-spread-home-3pt5",
+   "outcome": "Lions",
+   "starts_utc": "2026-11-01T18:00:00Z",
+   "prob": 0.49,
+   "ask_at_research": 0.48,
+   "bid_at_research": 0.47,
+   "liquidity_at_research": 339925,
+   "why": "Anchor: bet365 (Oct 28) DET -3.5, ML MIN +150/DET -180 => DET 61.6% no-vig; RotoWire consensus DET -3 (-155/+143 => 59.6%). Line opened DET -4.5, fell to -3 despite 63% tickets/82% money on DET, then back to -3.5. A -3.5 line with a ~62% ML puts the cover near 49-50%. Injuries (final report): DET OUT S Kerby Joseph, Q CB McCreary; Amon-Ra St. Brown (ankle) was Q midweek and is NOT on the final report (playing). MIN: Aaron Jones (knee) was Q midweek, not on final report; only S Jay Ward Q. EPA, last-5 detail n/a (not found within budget). Dome, no weather. 49% vs ask 48c = +1c (below the 3c bar).",
+   "sources": [
+    "https://www.foxsports.com/stories/nfl/2026-nfl-odds-week-8-lines-spreads-results-all-14-games",
+    "https://www.rotowire.com/football/article/nfl-week-8-odds-biggest-line-moves-betting-splits-and-key-injuries-144292",
+    "https://www.rotowire.com/betting/nfl/odds/week-8",
+    "https://www.nfl.com/news/nfl-week-8-injury-report-2026-season"
+   ]
+  },
+  {
+   "id": "min-ml",
+   "label": "NFL: Vikings ML at Lions",
+   "market_slug": "nfl-min-det-2026-11-01",
+   "outcome": "Vikings",
+   "starts_utc": "2026-11-01T18:00:00Z",
+   "prob": 0.385,
+   "ask_at_research": 0.38,
+   "bid_at_research": 0.37,
+   "liquidity_at_research": 496501,
+   "why": "Anchor: bet365 MIN +150/DET -180 => MIN 38.4%; RotoWire consensus +143/-155 => 40.4% (older, Oct 26, before the move back to -3.5). Use the newer 38.4%. Stats as det-m35 (both teams near full health on the final report; DET without S Kerby Joseph). 38.5% vs ask 38c = +0.5c.",
+   "sources": [
+    "https://www.foxsports.com/stories/nfl/2026-nfl-odds-week-8-lines-spreads-results-all-14-games",
+    "https://www.rotowire.com/betting/nfl/odds/week-8",
+    "https://www.nfl.com/news/nfl-week-8-injury-report-2026-season"
+   ]
+  },
+  {
+   "id": "ten-ml",
+   "label": "NFL: Titans ML at Bengals",
+   "market_slug": "nfl-ten-cin-2026-11-01",
+   "outcome": "Titans",
+   "starts_utc": "2026-11-01T18:00:00Z",
+   "prob": 0.145,
+   "ask_at_research": 0.14,
+   "bid_at_research": 0.13,
+   "liquidity_at_research": 1130683,
+   "why": "Anchor (VegasInsider Oct 30): FD +570/-820 => TEN 14.4%; bet365 +550/-800 => 14.8%; BetMGM +550/-750; DK/Caesars +490/-675 => 16.3%; sharpest books ~14.5-15%. Line opened CIN -6.5 (+235/-290), now -11.5 to -12.5 after CIN beat BAL 35-13 off the bye. Injuries: TEN OUT RB Spears, WR Carnell Tate, P Townsend; Q WR Calvin Ridley, DL Franklin-Myers, CB Jaylon Jones. CIN OUT S Dugger only. Efficiency: CIN 6th EPA/play, 5th success rate; Burrow 71.7%, 15 TD/3 INT, 7th adj EPA/play. TEN 1-6. Trends: CIN 8-2 ATS last 10 H2H (weak). Total 49.5 -> 46.5. TEN depth losses support the lower end: 14.5% vs ask 14c = +0.5c.",
+   "sources": [
+    "https://www.vegasinsider.com/nfl/matchups/bengals-vs-titans/",
+    "https://www.si.com/betting/titans-vs-bengals-prediction-odds-spread-injuries-trends-for-nfl-week-8-2026",
+    "https://www.nfl.com/news/nfl-week-8-injury-report-2026-season"
+   ]
+  },
+  {
+   "id": "tb-m25",
+   "label": "NFL: Buccaneers -2.5 vs Falcons",
+   "market_slug": "nfl-atl-tb-2026-11-01-spread-home-2pt5",
+   "outcome": "Buccaneers",
+   "starts_utc": "2026-11-01T18:00:00Z",
+   "prob": 0.495,
+   "ask_at_research": 0.5,
+   "bid_at_research": 0.49,
+   "liquidity_at_research": 103749,
+   "why": "Anchor: FD TB -2.5 (-106)/ATL +2.5 (-114) => TB covers 50.4% no-vig; ML TB -126/ATL +108 (TB 53.7%); bet365 TB -142/ATL +121 (56.5%). Line opened TB -4.5, now -1.5 to -2.5 with ~65% of tickets on ATL. numberFire TB 53.7%. Injuries: TB OUT WR Emeka Egbuka, Q RB Gainwell, RT Goedeke; ATL OUT RB Brian Robinson, nine Q incl. LB Deablo, CB Avieon Terrell, DB Bowman, OT Cam Williams. TB won 43-13 vs CAR last week. EPA n/a. Indoor-ish (Tampa outdoor, weather n/a). Egbuka out trims TB: 49.5% vs ask 50c = -0.5c.",
+   "sources": [
+    "https://www.fanduel.com/research/buccaneers-vs-falcons-predictions-odds-picks-best-bets-for-nfl-week-8-2026",
+    "https://www.rotowire.com/football/article/nfl-week-8-odds-biggest-line-moves-betting-splits-and-key-injuries-144292",
+    "https://www.nfl.com/news/nfl-week-8-injury-report-2026-season"
+   ]
+  },
+  {
+   "id": "nyj-m15",
+   "label": "NFL: Jets -1.5 vs Raiders",
+   "market_slug": "nfl-lv-nyj-2026-11-01-spread-home-1pt5",
+   "outcome": "Jets",
+   "starts_utc": "2026-11-01T18:00:00Z",
+   "prob": 0.5,
+   "ask_at_research": 0.51,
+   "bid_at_research": 0.49,
+   "liquidity_at_research": 111900,
+   "why": "Anchor: bet365 NYJ -1.5, ML LV +102/NYJ -122 => NYJ 53.5% ML; RotoWire consensus pick'em (-106/-108 => 50.2%). Line held NYJ -1.5 against 78% of tickets and 95% of money on LV (books happy to hold the Jets side). Total 41.5 -> 45.5. Injuries: NYJ OUT OL Max Mitchell, DL T'Vondre Sweat, LB Ossai; D LB David Bailey; Q RB Breece Hall, G Parham. LV OUT TE Runyon, DE Patrick Johnson; Q WR Bech, OL Powers-Johnson. NYJ defensive front losses offset the line resistance. 50% vs ask 51c = -1c.",
+   "sources": [
+    "https://www.foxsports.com/stories/nfl/2026-nfl-odds-week-8-lines-spreads-results-all-14-games",
+    "https://www.rotowire.com/football/article/nfl-week-8-odds-biggest-line-moves-betting-splits-and-key-injuries-144292",
+    "https://www.nfl.com/news/nfl-week-8-injury-report-2026-season"
+   ]
+  },
+  {
+   "id": "wisc-ml",
+   "label": "CFB: Wisconsin ML at Iowa",
+   "market_slug": "cfb-wisc-iowa-2026-10-31",
+   "outcome": "Wisconsin",
+   "starts_utc": "2026-10-31T16:00:00Z",
+   "prob": 0.445,
+   "ask_at_research": 0.45,
+   "bid_at_research": 0.44,
+   "liquidity_at_research": 426798,
+   "why": "Anchor: Dimers odds page WISC +122/IOWA -127 => WISC 44.6% no-vig (book unnamed); Dimers model IOWA 58.2%; total 39.5 (low-scoring, more variance toward the dog). QB/injury/efficiency for 2026: n/a (search returned 2024 previews only; not found within the lookup budget). Kickoff 16:00Z, about an hour after research. No move: 44.5% vs ask 45c = -0.5c.",
+   "sources": [
+    "https://www.dimers.com/cfb/predictions/2026_9_iowa_wis"
+   ]
+  }
+ ],
+ "lifts": {
+  "bal-ml|bal-p35": 1.8,
+  "det-m35|min-ml": 0.0
+ },
+ "notes": "No VALUE legs: every leg is within -1c to +1c of the no-vig anchor on the real Polymarket books. bal-ml|bal-p35 lift 1.8 because a Ravens win always covers +3.5 (exact 0.39/(0.39*0.535)=1.87, rounded down). det-m35|min-ml lift 0 (mutually exclusive). Not boarded: ARI-DAL, CLE-PIT, IND-JAX (books priced at the no-vig line on the thin read; real books not re-read within budget), 4pm NFL games (start ~30.5h out), NBA and tennis (lookup budget spent on NFL). Nothing logged to picks.csv (C1 logs VALUE legs only). Paper only, never revenue. ~37 web lookups."
+}
