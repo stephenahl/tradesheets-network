@@ -2,7 +2,8 @@
 Per trade in NEW: GUMROAD.md (description adapted from the Etsy LISTING.md), cover 1280x720, thumbnail 1000x1000.
 Bundle (folder BUNDLE_DIR): cover, thumbnail and TradeSheets-<n>-Trade-Bundle.zip (n workbooks + n guides).
 History: 2026-10-15 PW/AD/WC + 5-trade bundle (live, assets in bundle/); 2026-10-17 Pet Sitting + 6-trade bundle (bundle-6/, live 10-20);
-2026-10-28 Pool Service, Snow Removal, Handyman + 9-trade bundle draft (bundle-9/).
+2026-10-28 Pool Service, Snow Removal, Handyman + 9-trade bundle draft (bundle-9/);
+2026-10-31 Carpet Cleaning + 10-trade bundle draft (bundle-10/).
 Same cover style as lawn-care-gumroad/build_gumroad.py. Run: python3 build_gumroad.py"""
 import base64, os, pathlib, re, zipfile
 from playwright.sync_api import sync_playwright
@@ -20,9 +21,10 @@ TRADES = [
     ("pool-service", "Pool Service", "0E7C86", "E0F2F3"),
     ("snow-removal", "Snow Removal", "37474F", "ECEFF1"),
     ("handyman", "Handyman", "8C5A16", "F7EFE1"),
+    ("carpet-cleaning", "Carpet Cleaning", "9C2A5B", "F8E6EE"),
 ]
-NEW = ["pool-service", "snow-removal", "handyman"]
-DATE = "2026-10-28"
+NEW = ["carpet-cleaning"]
+DATE = "2026-10-31"
 N = len(TRADES)
 BUNDLE_DIR = f"bundle-{N}"
 SINGLES = round(N * 14.99, 2)
@@ -75,9 +77,9 @@ def trade_pages(slug, name, acc, light):
     hero = PRODUCTS / f"{slug}-business-manager" / "images" / "1_hero.png"
     img = "data:image/png;base64," + base64.b64encode(hero.read_bytes()).decode()
     base = BASE.format(acc=acc, light=light)
-    cover = f"""<style>{base}body{{width:1280px;height:720px}}h1{{font-size:{76 if len(name) <= 20 else 64}px;font-weight:800;letter-spacing:-1.5px;color:#{acc}}}
+    cover = f"""<style>{base}body{{width:1280px;height:720px}}h1{{font-size:{76 if len(name) <= 14 else 64}px;font-weight:800;letter-spacing:-1.5px;color:#{acc}}}
 .sub{{font-size:32px;margin:18px 0 32px}}.pill{{font-size:27px;padding:16px 32px}}</style>
-<h1>{name.replace('&', '&amp;')}{' ' if len(name) <= 20 else '<br>'}Business Manager</h1><div class=sub>Quotes · Clients · Jobs · Invoices · Profit dashboard</div>
+<h1>{name.replace('&', '&amp;')}{' ' if len(name) <= 14 else '<br>'}Business Manager</h1><div class=sub>Quotes · Clients · Jobs · Invoices · Profit dashboard</div>
 <div class=pill>Google Sheets &amp; Excel · Instant download</div>"""
     thumb = f"""<style>{base}body{{width:1000px;height:1000px;justify-content:flex-start;padding-top:90px}}h1{{font-size:{96 if len(name) <= 20 else 74}px;line-height:1.02;font-weight:800;letter-spacing:-2px;color:#{acc}}}
 .sub{{font-size:34px;margin:22px 0 34px}}.pill{{font-size:28px;padding:14px 30px}}
