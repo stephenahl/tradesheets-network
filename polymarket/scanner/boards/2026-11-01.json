@@ -1,0 +1,26 @@
+{
+ "researched_at": "2026-11-01T16:20:00Z",
+ "method": "BLOCKED RUN. WebFetch to gamma-api.polymarket.com needs a permission approval that nobody could answer in this unattended run (request withdrawn twice); the shell gets a 403 from the proxy. Polymarket prices therefore come second-hand: DeFi Rate game page (snapshot Nov 1 10:10 ET: Polymarket intl ask, Polymarket US lowest asks, Kalshi) and predscope (event liquidity, 15:25Z). Bid is inferred from the Polymarket US Broncos ask (49.5c => Chiefs bid ~50.5c), so treat the spread as approximate. Anchors: VegasInsider per-book moneylines (Oct 30-31) and the Action Network game page (Nov 1). Sunday 1pm games were boarded yesterday (2026-10-31.json); MNF CHI@SEA starts Nov 3 01:15Z (~33h out) and was left for tomorrow.",
+ "legs": [
+  {
+   "id": "kc-ml",
+   "label": "NFL: Chiefs ML at Broncos",
+   "market_slug": "nfl-kc-den-2026-11-01",
+   "outcome": "Chiefs",
+   "starts_utc": "2026-11-01T21:25:00Z",
+   "prob": 0.515,
+   "ask_at_research": 0.52,
+   "bid_at_research": 0.505,
+   "liquidity_at_research": 4000000,
+   "why": "Anchor: Action Network Nov 1 KC -117 / DEN -102 => KC 51.6% no-vig; VegasInsider consensus KC -115 / DEN -105 => 51.1%. Spread KC -1.5 (-106), total 40.5-41.5 (down from 43.5 open). Records KC 5-1, DEN 5-2. Efficiency (season box): KC 7.7 yds/pass att and 5.3 yds/carry vs DEN 5.8 and 3.8: KC's offense is clearly better per play. DEN form: 4-1 last 5 (W 30-16 @ARI, W 17-14 OT SEA, W 23-17 @LAC, L 14-24 @SF, W 30-26 LA), 3-0 ATS at home, unders 5-2. Injuries: DEN WR Waddle Q (chest), RBs Badie and RJ Harvey OUT, WR Pat Bryant OUT (thin backfield); KC WR Thornton OUT, RB Brashard Smith OUT. QBs: no QB on either report. Rest: n/a (no bye info found). Altitude/home field favors DEN (already in the line). Weather 61F, wind 6, dry: no total effect. Bets 51/49 (split). Net: KC per-play edge vs DEN home form and its depleted backfield roughly offset; hold at the anchor 51.5%. Ask 52c (Polymarket intl, DeFi Rate 10:10 ET) => -0.5c, no edge. Polymarket US lowest ask 50.7c (+0.8c, still below the 3c bar).",
+   "sources": [
+    "https://defirate.com/odds/nfl/kansas-city-vs-denver-11-01-2026/",
+    "https://predscope.com/event/nfl-kc-den-2026-11-01",
+    "https://www.actionnetwork.com/nfl-game/chiefs-broncos-score-odds-november-1-2026/290954",
+    "https://www.vegasinsider.com/nfl/nfl-week-8-odds-2026/"
+   ]
+  }
+ ],
+ "lifts": {},
+ "notes": "No VALUE legs. Only one leg could be priced: the Polymarket API (gamma-api) was not reachable in this unattended run (WebFetch permission request withdrawn; shell blocked), and second-hand pages only priced KC@DEN. Not boarded for lack of Polymarket prices: LAC@LAR, NE@MIA, PHI@WAS, CAR@GB (Sunday late/SNF), NBA, tennis. Kalshi KC 51c / DEN 50c agree with the books. Nothing logged to picks.csv. Paper only, never revenue. ~17 web lookups."
+}
