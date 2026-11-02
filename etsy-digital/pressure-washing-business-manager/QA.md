@@ -1,5 +1,12 @@
 # QA: Pressure Washing Business Manager
 
+## 2026-11-02: bold client name re-check PASSED
+Tested by the QA agent at commit 41730d4 (Builder: bold client name on Invoice A12). xlsx loaded fresh with openpyxl, recalculated in LibreOffice.
+- Independent cell-by-cell diff vs the previous shipped file (41730d4~1), covering values/formulas, number formats, fonts, fills, borders, alignment, validations, conditional formats, merges and column widths: the only difference is Invoice A12 font bold False -> True. 7,642 formulas. Committed xlsx values/formulas = a fresh run of this folder's build.py.
+- 0 errors fresh. Buyer test (EXAMPLE rows cleared; 3 clients incl. a phone-only client with no email/address and one with no service; 3 jobs incl. a $80 override and 2 unpaid; 2 expenses Oct/Nov): 0 errors; job prices, labor, mileage, profit, next-due/status, dashboard 2026 (revenue $195, unpaid $125, tax $0 on a loss) match hand math; invoice J-0002 shows "Ray Ortiz" bold, blank address/email, $80 total, DUE. Invoice rendered to PDF and looked at (Lawn Care, Pet Sitting): client name bold.
+- Non-blocking, pre-existing (not caused by this change): the Invoice sheet has no fit-to-page setting (fitToPage off, columns A-E about 6.85 in vs 7.0 in printable at 0.75 in margins). Printed or exported to PDF from LibreOffice, the Amount column and dates spill onto a second page and "INVOICE" is cut off. Excel probably fits by a hair; untested. Fix: Invoice page setup fitToWidth=1 (fitToPage on) in _engine/build.py and each trade's build.py.
+- Verdict: ready for the optional re-upload.
+
 ## 2026-10-19: invoice fix PASSED (spot-check of the rebuilt xlsx for the live re-upload)
 Tested by the QA agent at commit a373056 (Builder's invoice fix). Fresh xlsx loaded with openpyxl and recalculated in LibreOffice (UNO calculateAll); buyer steps done in LibreOffice (EXAMPLE rows deleted as rows).
 - Cell-by-cell diff against the previous shipped file: only Invoice A12, A13, A14, A17 changed; 7,642 formulas; nothing else (values, validations) differs.
