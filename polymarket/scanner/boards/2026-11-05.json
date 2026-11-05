@@ -1,0 +1,40 @@
+{
+ "researched_at": "2026-11-05T16:10:00Z",
+ "method": "BLOCKED RUN. WebFetch needs a permission approval nobody could answer in this unattended run: gamma-api.polymarket.com was refused (PROVENANCE_REQUIRED), and after that every WebFetch (defirate, predscope, polymarket.com) was refused too; the shell cannot reach Polymarket. So NO Polymarket prices were read: ask/bid/liquidity are null and combo.mjs --offline skips these legs. On Stephen's Mac the live run prices them from the slug (slugs follow the house pattern but are UNVERIFIED; a wrong slug shows as a live price error). Anchor: Covers TNF preview (spread JAX -9.5, total 42.5, model 80/20) and CBS Sports preview (JAX -10, total 40), both read before the block. No book-by-book moneylines could be read, so the ML anchor is the spread converted to win probability (-9.5/-10 ~ 78-80%).",
+ "legs": [
+  {
+   "id": "jax-ml",
+   "label": "NFL: Jaguars ML at Ravens (TNF)",
+   "market_slug": "nfl-jax-bal-2026-11-05",
+   "outcome": "Jaguars",
+   "starts_utc": "2026-11-06T01:15:00Z",
+   "prob": 0.79,
+   "ask_at_research": null,
+   "bid_at_research": null,
+   "liquidity_at_research": null,
+   "why": "Anchor: JAX -9.5 (Covers) / -10 (CBS) => ~79% win prob (Covers model 80%); no per-book MLs readable. QB: BAL without Lamar Jackson (thumb) and Tyler Huntley (toe); third-stringer Joe Fagnano starts, 91 pass yds in his debut vs BUF and nursing an ankle on a short week. JAX: Lawrence healthy, leads NFL in passer rating; NT Davon Hamilton OUT, edge Travon Walker playing hurt. Form: JAX 5-2, 14-3 last 17, beat IND 42-7, 73 pts last two; BAL lost 3 straight, <=13 pts in each, allowed 71 last two, 30th in yds/play last 3. Red zone: BAL allows TDs on 83% of trips last 3; JAX top-10 both sides. Weak trend: BAL 0-7 ATS last 7 home. Rest: both short week. Weather upper 60s, light wind: no effect. EPA/turnover margin/OL-CB injuries: n/a (pages blocked). The QB downgrade is already in the 9.5-pt line, so hold at anchor 0.79. Value only if live ask <= 0.76.",
+   "sources": [
+    "https://www.covers.com/nfl/jaguars-vs-ravens-prediction-picks-nov-5-2026",
+    "https://www.cbssports.com/betting/news/ravens-vs-jaguars-odds-prediction-betting-preview-start-time-thursday-night-football-picks-best-bets/"
+   ]
+  },
+  {
+   "id": "bal-p95",
+   "label": "NFL: Ravens +9.5 vs Jaguars (TNF)",
+   "market_slug": "nfl-jax-bal-2026-11-05-spread-away-9pt5",
+   "outcome": "Ravens",
+   "starts_utc": "2026-11-06T01:15:00Z",
+   "prob": 0.50,
+   "ask_at_research": null,
+   "bid_at_research": null,
+   "liquidity_at_research": null,
+   "why": "Anchor: the market line itself (-9.5/-10) => ~50% no-vig; juice n/a. Same findings as jax-ml. Ravens 0-4-1 ATS as home dogs and 0-7 ATS at home is small-sample (weak); a backup-QB team tends to run and shorten the game (total 40-42.5), which helps +9.5 a little, while JAX's last-ranked run-stop win rate helps BAL's run game. Offsetting; hold 0.50. Slug unverified (guessed 'spread-away' for an away favorite).",
+   "sources": [
+    "https://www.covers.com/nfl/jaguars-vs-ravens-prediction-picks-nov-5-2026",
+    "https://www.cbssports.com/betting/news/ravens-vs-jaguars-odds-prediction-betting-preview-start-time-thursday-night-football-picks-best-bets/"
+   ]
+  }
+ ],
+ "lifts": {"bal-p95|jax-ml": 0.73},
+ "notes": "No VALUE legs: no Polymarket price could be read. Not boarded: CFB UTSA at FAU (Thu), Friday CFB, NBA, tennis (no prices or lines readable after the block). Nothing logged to picks.csv. Paper only, never revenue. ~8 web lookups. Lean: Jaguars ML at 79% if Polymarket is 76c or lower."
+}
