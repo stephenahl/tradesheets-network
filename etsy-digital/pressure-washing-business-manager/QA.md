@@ -1,5 +1,23 @@
 # QA: Pressure Washing Business Manager
 
+## 2026-11-06: new listing photos (quote-calculator hero + rising demo dashboard) PASSED
+Tested at 6778b0f. Scope: the 7 images and LISTING.md photo order; the xlsx and guide are not part of this change.
+- xlsx and guide untouched: last changed in 41730d4 (QA-passed 11-02). Engine build.py output = shipped xlsx (0 cell diffs). Shipped xlsx recalculated fresh: 7,642 formulas, 0 errors.
+- Reproduced the images myself from the engine: build.py -> demo.py (ramp seed 34, 33 jobs) -> LibreOffice recalc (7,642 formulas, 0 errors) -> shots.py -> render.js. All 7 PNGs are pixel-identical to the committed ones, so every number in them comes from the recalculated workbook.
+- Dashboard (image 2), recomputed from the raw job inputs (client price + add-ons; hours x $25 + supplies + miles x $0.70) and expenses, not from the formulas: Jun $860/$219, Jul $1,760/$782, Aug $1,975/$972, Sep $3,015/$1,705, Oct $3,340/$1,913 (revenue/profit); total $10,950, job costs $3,501, expenses $1,858, 33 jobs, profit $5,591, margin 51%, unpaid $1,145 (= J-0031 $495 + J-0032 $175 + J-0033 $475), tax set-aside $1,398 (25%). All match. 0 job-row mismatches. Revenue now rises every month.
+- Hero (image 1) and image 3 quote: 325 + 75 + 60 (1 surface) + 60 (2,600 sq ft = 3 x 250 over 2,000 x $20) + 50 (window rinse) = 570, -5% annual = 541.50 -> $542; hours 3 + 0.75 + 0.75 + 0.75 + 0.5 = 5.75; labor $143.75; profit $398.25; $94.26/h. The shipped file's Quote Calculator shows exactly these defaults, so a buyer opening it sees the hero's $542.
+- Looked at all 7 images: no typos; tab names in the window chrome match the file's 8 sheets; clients/jobs/invoice cross-check (Lakeview HOA 2 visits $915 = $420 + $495; Kim invoice $175 = J-0032; due Nov 7 = Oct 24 + 14 days). Hero readable at a 340 px thumbnail.
+- Hero claims: "Pricing Calculator + Business Spreadsheet", Quote Calculator inputs and outputs are true of the file. "Instant Download" true (digital download).
+- make_trade.py with the new demo.py/shots.py: all 7 other trades convert with leftovers [] (engine change doesn't break them).
+
+### Notes (not blocking)
+- "Excel & Google Sheets" badge: same claim as the live title, description and image 7, but QA has still never tested the file in Google Sheets (no access). Worth one manual check by Stephen.
+- Quote shows subtotal $570, discount -$28.50, quote $542.00 (file rounds to whole dollars, unlabeled). A careful buyer may see $541.50. Pre-existing; a "(rounded)" label or ROUND to cents would remove the question.
+- Photo order puts the Quote Calculator (image 3) 5th, so the buyer sees the same quote twice. Fine, but the slot could go to something new later.
+- Demo oddity: Kim Residence "Roof Soft Wash" at $175 while Settings base is $450 (image 5 and the image 6 invoice). Per-client prices are allowed; pre-existing random demo data.
+- Engine: demo.py's ramp loop keeps the last seed (499) silently if no seed gives a rising series; for later trades, check the printed "ramp seed" line.
+- Client statuses (Overdue/Scheduled) use TODAY() at render time; re-rendering on another day can change image 4.
+
 ## 2026-11-02: bold client name re-check PASSED
 Tested by the QA agent at commit 41730d4 (Builder: bold client name on Invoice A12). xlsx loaded fresh with openpyxl, recalculated in LibreOffice.
 - Independent cell-by-cell diff vs the previous shipped file (41730d4~1), covering values/formulas, number formats, fonts, fills, borders, alignment, validations, conditional formats, merges and column widths: the only difference is Invoice A12 font bold False -> True. 7,642 formulas. Committed xlsx values/formulas = a fresh run of this folder's build.py.
