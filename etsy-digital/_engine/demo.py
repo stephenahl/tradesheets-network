@@ -23,8 +23,30 @@ for i,(n,s,f,p) in enumerate(clients):
         d+=timedelta(days=step[f])
 # extra one-time jobs from walk-ins (as one-time clients above)
 jobs.sort()
+# Growth ramp (Builder 2026-11-06): re-spread the same clients over the same window as a young business that
+# adds clients month by month, so the demo dashboard rises instead of falling (Researcher brief 2026-11-03).
+# Appended rather than edited so make_trade.py's exact-string replacements above still match for every trade.
+if jobs:
+    import calendar
+    lo=min(j[0] for j in jobs); hi=max(j[0] for j in jobs); hi=hi.replace(day=calendar.monthrange(hi.year,hi.month)[1])
+    span=(hi-lo).days; info={n:(s,f,p) for n,s,f,p in clients}
+    def mkey(d): return (d.year,d.month)
+    for seed in range(500):
+        rr=random.Random(seed); new=[]
+        for n,(s,f,p) in info.items():
+            u=rr.random()
+            d=lo+timedelta(days=int(span*(u**0.6 if f=="One-time" else 0.85*u**1.3)))
+            while d<=hi:
+                new.append((d,n,s,p))
+                if f=="One-time" or f not in step: break
+                d+=timedelta(days=step[f])
+        tot={}
+        for d,n,s,p in new: tot[mkey(d)]=tot.get(mkey(d),0)+p
+        ms=sorted(tot); v=[tot[m] for m in ms]
+        if len(ms)>=3 and all(b>a*1.08 for a,b in zip(v,v[1:])): break
+    jobs=sorted(new); print("ramp seed",seed,dict(zip(ms,v)))
 for k,(d,n,s,p) in enumerate(jobs):
-    r=5+k; paid="No" if d>date(2026,10,1) and random.random()<0.6 else "Yes"
+    r=5+k; paid="No" if d>date(2026,10,1) and k>=len(jobs)-3 else "Yes"
     vals={2:d,3:n,5:hrs[s]+random.choice([0,0,0.5]),6:random.choice(["Me","Crew 2"]),9:random.choice([0,0,50,75,85]),11:paid,12:None if paid=="No" else random.choice(["Zelle","Card","Check"]),13:round(random.uniform(12,30),2),14:random.randint(4,20)}
     for c,v in vals.items(): jb.cell(r,c,v)
     for c in (4,7,18): jb.cell(r,c,None)

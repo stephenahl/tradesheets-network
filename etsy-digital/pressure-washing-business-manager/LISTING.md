@@ -4,7 +4,7 @@
 **Who made it:** I did · **What is it:** A finished product · **When:** Made to order is not applicable; choose 2020–2026
 **Price:** $14.99 (launch). Raise to $19.99 after the first 5 reviews.
 **Files to upload:** `Pressure-Washing-Business-Manager.xlsx`, `Quick-Start-Guide.pdf`
-**Photos, in order:** img_1_hero, img_3_quote, img_4_clients, img_5_jobs, img_2_dashboard, img_6_invoice, img_7_included
+**Photos, in order:** 1_hero (Quote Calculator, "Price Every Job in 60 Seconds", Instant Download badge; new 2026-11-06), 2_dashboard (revenue now rises Jun-Oct), 4_clients, 5_jobs, 3_quote, 6_invoice, 7_included
 
 ## Title (139 characters max)
 Pressure Washing Business Spreadsheet Google Sheets Excel, Soft Wash Quote Calculator, Client Tracker, Invoice, Profit Dashboard, Template

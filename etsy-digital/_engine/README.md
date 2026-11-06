@@ -14,4 +14,6 @@ All five trade products were made from these files. Scheduled Builders start in 
    - `node pdf.js`: Quick-Start-Guide.pdf.
 4. Copy the xlsx, guide PDF, images, build.py and a LISTING.md (title of 140 characters or fewer, 13 tags of 20 characters or fewer, AI disclosure) to `etsy-digital/<slug>/`. Add "Publish <product>, QA: pending" to APPROVALS.md.
 
+Images (2026-11-06): image 1 is the Quote Calculator hero ("Price Every Job in 60 Seconds", "<Trade> Pricing Calculator + Business Spreadsheet", Instant Download · Excel & Google Sheets badge). demo.py ends with a growth ramp that re-spreads the demo clients so monthly revenue rises; it is appended after `jobs.sort()` so every make_trade.py replacement still matches. Only Pressure Washing has the new images so far; the other trades are the control.
+
 Hand-check one quote against the Settings prices before finishing. QA re-tests independently.

@@ -53,7 +53,6 @@ dash=f'<div class="ttl">Dashboard — {d["B4"].value}</div><div class="sub">Upda
 K=[None,"$0","$0","$0",None,"$0","%","$0"]
 mt='<table><tr>'+"".join(f"<th>{d.cell(8,c).value}</th>" for c in range(1,9))+'</tr>'+"".join('<tr>'+"".join(f'<td>{fmt(d.cell(r,c).value,k)}</td>' for c,k in zip(range(1,9),K))+'</tr>' for r in rows+[21])+'</table>'
 hero=f'<div class="ttl">Dashboard — {d["B4"].value}</div><div class="sub">Updates automatically from your Jobs and Expenses</div><div class="kpis">{kp}</div><div style="display:flex;gap:30px"><div style="flex:1.2">{mt}</div><div style="flex:1">{chart}</div></div>'
-page("1_hero",win("Dashboard",hero,1800),"Pressure Washing Business Manager","Clients · Jobs · Quotes · Invoices · Profit — Google Sheets & Excel")
 page("2_dashboard",win("Dashboard",dash,1880),None,None)
 q=wb['Quote Calculator']
 qi="".join(f'<tr><td>{q.cell(r,1).value}</td><td class="in">{fmt(q.cell(r,2).value)}</td></tr>' for r in range(4,9))
@@ -61,6 +60,22 @@ qa="".join(f'<tr><td>{q.cell(r,4).value}</td><td class="in">{q.cell(r,5).value}<
 qo="".join(f'<tr style="{"font-weight:800;font-size:28px;color:"+ACC if q.cell(r,1).value=="QUOTE PRICE" else ""}"><td>{q.cell(r,1).value}</td><td>{fmt(q.cell(r,2).value,"$" if r!=21 else None)}</td></tr>' for r in list(range(12,20))+[21,22,23,24])
 qb=f'<div class="ttl">Quote Calculator</div><div class="sub">Price any job in under a minute — house size, stories, extra surfaces, add-ons and frequency</div><div style="display:flex;gap:40px"><div style="flex:1"><table><tr><th colspan=2>Property details</th></tr>{qi}</table><br><table><tr><th colspan=2>Add-ons</th></tr>{qa}</table></div><div style="flex:1"><table><tr><th colspan=2>Your quote</th></tr>{qo}</table></div></div>'
 page("3_quote",win("Quote Calculator",qb,1600),"Quote with confidence","Know your price, hours and profit before you say yes")
+# Hero (Builder 2026-11-06, Researcher brief 2026-11-03): the Quote Calculator, big headline, Instant Download badge, tight margins.
+NAME="Pressure Washing Business Manager"; TRADE=NAME.replace(" Business Manager","")
+def qrow(r):
+    lab=q.cell(r,1).value; v=q.cell(r,2).value
+    if lab=="QUOTE PRICE": return f'<tr class="qp"><td>Quote price</td><td>{fmt(v,"$")}</td></tr>'
+    return f'<tr><td>{lab}</td><td>{fmt(v,"$" if r!=21 else None)}</td></tr>'
+on=[r for r in range(4,10) if str(q.cell(r,5).value)=="Yes"]
+ha="".join(f'<tr><td>{q.cell(r,4).value}</td><td class="in">{q.cell(r,5).value}</td></tr>' for r in range(4,10))
+hq="".join(qrow(r) for r in list(range(12,20))+[21,23,24] if q.cell(r,1).value)
+hb=f'<div class="ttl" style="font-size:40px">Quote Calculator</div><div class="sub" style="font-size:23px">Type the job details. Price, hours and profit fill in instantly.</div><div style="display:flex;gap:44px"><div style="flex:1"><table><tr><th colspan=2>Property details</th></tr>{qi}</table><table style="margin-top:22px"><tr><th colspan=2>Add-ons</th></tr>{ha}</table></div><div style="flex:1"><table><tr><th colspan=2>Your quote</th></tr>{hq}</table></div></div>'
+HCSS=f"""body{{justify-content:flex-start;padding-top:56px}} .hero table{{font-size:29px}} .hero td{{padding:13px 14px}} .hero th{{font-size:29px;padding:14px}}
+.hero tr.qp td{{background:{ACC};color:#fff;font-size:44px;font-weight:800;padding:16px 12px;border:0}}
+.hl{{font-size:112px;font-weight:800;color:#15324a;letter-spacing:-2px;margin:0;line-height:1.05;text-align:center}}
+.hs{{font-size:46px;font-weight:700;color:{ACC};margin:14px 0 22px;text-align:center}}
+.pill{{display:inline-flex;align-items:center;gap:14px;background:#15324a;color:#fff;font-size:34px;font-weight:700;padding:14px 34px;border-radius:50px;margin-bottom:34px}}"""
+open("img_1_hero.html","w").write(f'<html><head><style>{CSS}{HCSS}</style></head><body><div class="hl">Price Every Job in 60 Seconds</div><div class="hs">{TRADE} Pricing Calculator + Business Spreadsheet</div><div class="pill">&#x2B07; Instant Download &nbsp;·&nbsp; Excel &amp; Google Sheets</div><div class="hero">{win("Quote Calculator",hb,1880)}</div></body></html>')
 c=wb['Clients']
 cb=f'<div class="ttl">Clients</div><div class="sub">Next due date and overdue alerts fill in automatically</div>'+table(c,5,13,[1,5,6,7,10,11,12,13,14],[None,None,None,"$",None,"$",None,None,None],inputs=(1,5,6,7),status_col=14)
 page("4_clients",win("Clients",cb,1880),"Never miss a repeat customer","Annual, 6-month and quarterly clients come back on schedule")
