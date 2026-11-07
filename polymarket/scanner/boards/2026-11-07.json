@@ -1,0 +1,7 @@
+{
+ "researched_at": "2026-11-07T16:05:00Z",
+ "method": "BLOCKED RUN (2nd in a row, same as 2026-11-05). WebFetch to Polymarket needs a permission approval nobody can answer in an unattended run: gamma-api.polymarket.com/events and polymarket.com/sports/nfl/games both refused (PROVENANCE_REQUIRED); the shell cannot reach Polymarket. Sportsbook pages did load but gave no usable anchor: SportsbookReview's NFL odds page still showed the Oct 29-Nov 2 slate, and Covers' Week 10 opening-lines page listed every Sunday spread/total as off the board, with a matchup list that conflicts with its own links (Chiefs-Falcons vs Bengals-Falcons) and with the 11-05 board (TNF was JAX at BAL there, Covers says WAS-NYG). With no Polymarket price and no trustworthy anchor, no leg could pass the RESEARCH.md checklist, so the board is empty rather than guessed.",
+ "legs": [],
+ "lifts": {},
+ "notes": "No VALUE legs, nothing logged to picks.csv. Paper only, never revenue. ~6 web lookups. Fix needed: allow WebFetch for gamma-api.polymarket.com (and polymarket.com) in this scheduled task's permissions, or run the research step from an attended session."
+}
