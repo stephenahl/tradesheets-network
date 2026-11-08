@@ -1,0 +1,7 @@
+{
+ "researched_at": "2026-11-08T15:55:00Z",
+ "method": "BLOCKED RUN (3rd in a row, after 2026-11-05 and 2026-11-07). WebFetch to gamma-api.polymarket.com/events?tag_slug=nfl was refused with PROVENANCE_REQUIRED (permission prompt not answered in an unattended run); the shell cannot reach Polymarket. Without exact slugs and bid/ask/liquidity no leg can be priced or tested, so the board is empty rather than guessed. Fallback Polymarket URLs were not tried (same permission gate).",
+ "legs": [],
+ "lifts": {},
+ "notes": "No VALUE legs, nothing logged to picks.csv. Paper only, never revenue. 1 web lookup. Fix needed: allow WebFetch for gamma-api.polymarket.com in this scheduled task's permissions (or run research from an attended session); until then every scheduled run will block."
+}
