@@ -256,6 +256,9 @@ for r in range(6,25):
         if cell.font.name!=F or (cell.font.color is None): pass
         if not cell.font.bold and cell.font.size==11: cell.font=font()
 iv.print_area="A1:E25"
+# print/PDF on 1 page wide (QA 2026-11-02: LibreOffice split it over 2 pages)
+from openpyxl.worksheet.properties import PageSetupProperties
+iv.sheet_properties.pageSetUpPr=PageSetupProperties(fitToPage=True); iv.page_setup.fitToWidth=1; iv.page_setup.fitToHeight=0; iv.page_setup.orientation="portrait"
 
 # ---------------- DASHBOARD
 d=sheet("Dashboard")
