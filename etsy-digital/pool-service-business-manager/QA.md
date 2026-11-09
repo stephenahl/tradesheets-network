@@ -19,3 +19,10 @@ Tested by the QA agent at commit a5438da. Fresh xlsx loaded with openpyxl and re
 - LibreOffice only: with the Invoice Job ID cell empty, Service date shows "Dec 30, 1899" (MATCH on a blank matches the blank Job ID cells). Same formula in all trades; Excel and Google Sheets should show blank via #N/A. Optional fix: wrap E7 in IF($B$4="","",...).
 - Listing says every formula was "tested" for Excel and Google Sheets; QA (and Builder) tested in LibreOffice only. Same wording on the live listings.
 - Guide still says "Message us on Etsy" (Gumroad buyers too).
+
+## 2026-11-09: Invoice print fit (6cba74e): PASSED
+- Own cell-by-cell diff vs the previous shipped xlsx (values, formulas, number formats, fonts, fills, borders, alignment, validations, CF, merges, widths, page setup on every sheet; zip members): only Invoice page setup changed (fitToPage on, fitToWidth 1, fitToHeight 0, portrait; print area A1:E25 unchanged). Same in all 10 trades.
+- Fresh LibreOffice recalc: 0 errors in all 10 (7,642 formulas; Snow 7,643).
+- LibreOffice PDF export: invoice now 1 page in all 10 (workbook 108 -> 107 pages); looked at all 10 rendered: INVOICE title, dates, Amount column and TOTAL whole. Demo totals hand-checked (e.g. Auto $180+$45=$225, Pet $28+$8=$36, Snow due Nov 20+14=Dec 4).
+- Buyer test (Lawn Care, Snow Removal): deleted EXAMPLE rows, added 2 clients incl. a 50-char LLC name, long suite address and long email, 2 jobs (one $25.50 add-on unpaid, one $75 override paid). 0 errors; invoice J-0001 = $145 + $25.50 = $170.50, due Nov 3+14 = Nov 17, DUE; still prints on 1 page with the long text whole.
+- Not tested: Excel/Google Sheets print preview (no access); fitToPage is the standard Excel setting.
