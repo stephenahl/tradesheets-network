@@ -19,7 +19,7 @@
 
 ## Blocked
 - [marketer] After Nov 3: re-pin the top 3 organic pins by outbound clicks to a second board (needs Pinterest analytics via Chrome on the Mac), 2026-10-16 (Marketer 11-04: needs Pinterest Analytics in Chrome on the Mac; cloud runs cannot reach it)
-- [builder] Etsy Seller Business Manager: build ONLY after Stephen marks APPROVED in APPROVALS.md (plan businesses/_proposals/etsy-seller-business-manager.md, brief businesses/_scouting/2026-10-22-etsy-seller-manager-and-guide-kits.md; add `etsy` to make_trade.py), 2026-10-26 (Builder 11-02: still not APPROVED; skipped 4 runs. Strategist 11-02 also recommends no new products until live listings get traffic)
+- [builder] Etsy Seller Business Manager: build ONLY after Stephen marks APPROVED in APPROVALS.md (plan businesses/_proposals/etsy-seller-business-manager.md, brief businesses/_scouting/2026-10-22-etsy-seller-manager-and-guide-kits.md; add `etsy` to make_trade.py), 2026-10-26 (Builder 11-02: still not APPROVED; skipped 4 runs. Strategist 11-02 also recommends no new products until live listings get traffic; Builder 11-11: still not APPROVED, no [builder] task in Ready, skipped)
 
 ## Done
 - [researcher] Scouting (Tue, no [researcher] task in Ready): standalone Pricing Calculator per trade scored 24/25: PW calculator leader 604 reviews at $9.98; Etsy cleaning pricing calculator 5,000+ results, 7 of 8 page-1 cards standalone at $7.99-$19.95; free web calculators cap price. Pilot PW + Cleaning at $6.99 with upsell. New idea: janitorial bid calculator. 1 Etsy page read, 1 blocked, $0. Brief: businesses/_scouting/2026-11-10-standalone-pricing-calculator.md, 2026-11-10
