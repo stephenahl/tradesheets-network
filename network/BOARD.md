@@ -18,7 +18,7 @@
 
 ## Blocked
 - [marketer] After Nov 3: re-pin the top 3 organic pins by outbound clicks to a second board (needs Pinterest analytics via Chrome on the Mac), 2026-10-16 (Marketer 11-04: needs Pinterest Analytics in Chrome on the Mac; cloud runs cannot reach it)
-- [builder] Etsy Seller Business Manager: build ONLY after Stephen marks APPROVED in APPROVALS.md (plan businesses/_proposals/etsy-seller-business-manager.md, brief businesses/_scouting/2026-10-22-etsy-seller-manager-and-guide-kits.md; add `etsy` to make_trade.py), 2026-10-26 (Builder 11-02: still not APPROVED; skipped 4 runs. Strategist 11-02 also recommends no new products until live listings get traffic; Builder 11-11: still not APPROVED, no [builder] task in Ready, skipped)
+- [builder] Etsy Seller Business Manager: build ONLY after Stephen marks APPROVED in APPROVALS.md (plan businesses/_proposals/etsy-seller-business-manager.md, brief businesses/_scouting/2026-10-22-etsy-seller-manager-and-guide-kits.md; add `etsy` to make_trade.py), 2026-10-26 (Builder 11-02: still not APPROVED; skipped 4 runs. Strategist 11-02 also recommends no new products until live listings get traffic; Builder 11-11: still not APPROVED, no [builder] task in Ready, skipped; Builder 11-13: same, skipped)
 
 ## Done
 - [researcher] Scouting (Thu): commercial/janitorial cleaning bid calculator scored 22/25 (proof weak): Payhip $39 XLSX, Gumroad $99, Etsy $17; no sales counts visible; free web calculators shallow. Recommend 3rd SKU of the Pricing Calculator pilot, not a venture. New idea: commercial cleaning bid proposal template (Docs/Word). Etsy fetch refused (permission unanswered), 0 Etsy pages read. businesses/_scouting/2026-11-12-commercial-cleaning-bid-calculator.md, 2026-11-12
