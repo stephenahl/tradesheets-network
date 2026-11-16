@@ -35,3 +35,5 @@ Auto-kill: needs Stephen's ongoing time; needs inventory or shipping; legal or r
 | Etsy Seller Business Manager (spreadsheet, Etsy + Gumroad) | proposed 2026-10-26, score 24, waiting on Stephen's yes | n/a | $0 | Approve, then 1 Builder run; slot 2 of 2 |
 
 Strategist 2026-11-02: both build/launch slots are full (Airbnb Host launching; Etsy Seller waiting on Stephen's yes since 10-26), so no new venture proposed. Next in line: Landlord / Long-Term Rental Manager (24), then Real Estate Agent tracker (22). Bottleneck is traffic and approvals, not products; see businesses/_proposals/tradesheets-30day-review.md.
+
+Strategist 2026-11-16: still no new venture proposed. Airbnb Host (launch, publish unconfirmed) and Etsy Seller (proposed 10-26, still not approved, 3 weeks) hold both slots; 0 sales across 11 products and 8 weeks of backlog mean another venture adds approvals, not revenue. Kill-rule decision put to Stephen in APPROVALS (day 33). If he picks option 2/3, Landlord Rental Manager (24) is next. Added build-only Pricing Calculator pilot as a product-line test inside TradeSheets, not a venture.
