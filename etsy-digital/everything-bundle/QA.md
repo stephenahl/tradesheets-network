@@ -16,3 +16,17 @@ Non-blocking notes
 - "Google Sheets & Excel" is still untested in Google Sheets (no access), same as every listing.
 - The calculators' last tab points to the single managers' Etsy/Gumroad pages; START HERE tells bundle buyers they already have them. Fine, though those listings should be live before the bundle publishes.
 - License wording is a business/legal call for Stephen, not a QA one. It is internally consistent (10 clients, own copy per client, no resale or public sharing).
+
+## 2026-11-25: PASSED (listing copy + images). Tested at 78aa9a1: businesses/etsy-digital/marketing/everything-bundle/ (COPY.md, everything/, pro/)
+- Etsy titles: 136 / 134 chars (<=140). Tags: 13 each, all unique, longest 18 / 19 (<=20), computed by my script. AI disclosure present in both Etsy descriptions; Gumroad keeps it ("Designed by TradeSheets Co. with the help of AI tools").
+- Zips unchanged since my 11-23 file pass (no commits to etsy-digital/ since, other than my QA note). Contents match the copy: 10 managers + 2 calculators + a guide PDF for each + START HERE (25 files); Pro adds Airbnb + guide + Client Setup License.pdf (28).
+- Claims checked in the bundled workbooks (openpyxl): every manager has Quote Calculator, Clients, Jobs, Invoice (Job ID), Expenses, Dashboard with tax set-aside and margin, mileage costing, Settings; Clients status highlights Overdue / Due soon (Snow: Unpaid / Due soon, unpaid balance column); Jobs 'Paid? = No' turns red. Per-trade 'priced by' wording matches START HERE (already checked against each Quote Calculator on 11-23). Airbnb description matches its tabs and START HERE.
+- Pro 'What the license allows' matches the License PDF text point for point (own business no time limit; up to 10 clients, own copy each, change prices/wording/colors/tabs; no resale/give-away/public posting/>10 clients).
+- Value math: $163.88 / $178.87; saves $114.88 (70.1%) / $99.87 (55.8%); thumbnails 'save $114' / 'save $99' round down (not overstated). Gumroad net ~$43.60 / $70.60 = 10% + $0.50 fee (internal note only).
+- Looked at all 8 images: Etsy hero + what's-inside 2000x1600, Gumroad cover 1280x720, thumb 1000x1000, both tiers. No typos, nothing cut off; embedded screens ($542 quote, Lawn dashboard $11,855 / $5,047, Handyman invoice $160 + $90 = $250) are the QA-passed listing screens and add up. The 6 reused listing photos named in COPY.md exist.
+
+Non-blocking notes
+- 'Google Sheets' still untested (no access), same as every listing.
+- Pro thumbnail tiles show only the 10 trades (calculators and Airbnb not tiled); the '13' headline and cover cover it. Cosmetic.
+- Pro title names 'Virtual Assistant, Bookkeeper' as buyer types; the description makes clear it's for people who set up trade businesses, not VA/bookkeeping templates. Fine, but watch for mismatched buyers.
+- Single managers' 'Full Business Manager' links in the calculators should be live before the bundle publishes (as noted 11-23).
