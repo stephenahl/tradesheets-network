@@ -12,7 +12,7 @@ Set up like the live Cleaning and Lawn Care products (https://tradesheetsshop.gu
 - **Content:** upload `etsy-digital/pressure-washing-business-manager/Pressure-Washing-Business-Manager.xlsx` and `Quick-Start-Guide.pdf`
 - **Summary (the "You'll get" line):** One spreadsheet for quotes, recurring clients, jobs, invoices, expenses and profit. Google Sheets & Excel.
 - **Additional details:** Format: .xlsx + PDF guide · Tabs: 8 · Works in: Google Sheets, Excel
-- **Cross-sell:** add a line at the end of the description linking the 5-trade bundle once it is live.
+- **Cross-sell:** end the description with this line, linked (updated 2026-11-25 for the Everything Bundle; use it the day that bundle goes live, replacing the old "Get all 6 ... for $39" line on live singles): "Run more than one service? Get all 10 Business Managers plus 2 Pricing Calculators in the [Everything Bundle](https://tradesheetsshop.gumroad.com/l/service-business-manager-bundle) for $49." Copy: `../everything-bundle/COPY.md`.
 
 ## Description
 Run your pressure washing business from one spreadsheet: quotes, recurring clients, jobs, invoices, expenses and profit. It works in Google Sheets and Excel, with no subscription or app.

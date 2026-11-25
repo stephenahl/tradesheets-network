@@ -60,7 +60,7 @@ Set up like the live Cleaning and Lawn Care products (https://tradesheetsshop.gu
 - **Content:** upload `etsy-digital/{slug}-business-manager/{FILE(name)}` and `Quick-Start-Guide.pdf`
 - **Summary (the "You'll get" line):** One spreadsheet for quotes, recurring clients, jobs, invoices, expenses and profit. Google Sheets & Excel.
 - **Additional details:** Format: .xlsx + PDF guide · Tabs: 8 · Works in: Google Sheets, Excel
-- **Cross-sell:** end the description with the same linked bundle line the other singles use, updated to the bundle's trade count (bundle: https://tradesheetsshop.gumroad.com/l/service-business-manager-bundle).
+- **Cross-sell:** end the description with the Everything Bundle line from `../everything-bundle/COPY.md` (\"Run more than one service? Get all 10 Business Managers plus 2 Pricing Calculators in the Everything Bundle for $49.\", linked to https://tradesheetsshop.gumroad.com/l/service-business-manager-bundle).
 
 ## Description
 {desc}

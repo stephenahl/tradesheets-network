@@ -12,7 +12,7 @@ Set up like the live Cleaning and Lawn Care products (https://tradesheetsshop.gu
 - **Content:** upload `etsy-digital/snow-removal-business-manager/Snow-Removal-Business-Manager.xlsx` and `Quick-Start-Guide.pdf`
 - **Summary (the "You'll get" line):** One spreadsheet for quotes, recurring clients, jobs, invoices, expenses and profit. Google Sheets & Excel.
 - **Additional details:** Format: .xlsx + PDF guide · Tabs: 8 · Works in: Google Sheets, Excel
-- **Cross-sell:** end the description with the same linked bundle line the other singles use, updated to the bundle's trade count (bundle: https://tradesheetsshop.gumroad.com/l/service-business-manager-bundle).
+- **Cross-sell:** end the description with this line, linked (updated 2026-11-25 for the Everything Bundle; use it the day that bundle goes live, replacing the old "Get all 6 ... for $39" line on live singles): "Run more than one service? Get all 10 Business Managers plus 2 Pricing Calculators in the [Everything Bundle](https://tradesheetsshop.gumroad.com/l/service-business-manager-bundle) for $49." Copy: `../everything-bundle/COPY.md`.
 
 ## Description
 Run your snow removal business from one spreadsheet: quotes, per-push and seasonal clients, every push, invoices, expenses and profit for the whole season. It works in Google Sheets and Excel, with no subscription or app.
